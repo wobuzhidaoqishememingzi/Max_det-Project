@@ -1,0 +1,7 @@
+Score: 48.0, Count: 4
+Score: 44.0, Count: 5
+Score: 42.0, Count: 1
+Score: 40.0, Count: 11
+Score: 39.0, Count: 1
+Score: 38.0, Count: 5
+Score: 36.0, Count: 3

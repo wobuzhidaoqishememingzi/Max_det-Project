@@ -1,0 +1,83 @@
+INFO - 08/24/25 17:43:43 - 0:00:00 - ============ Initialized logger ============
+INFO - 08/24/25 17:43:43 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=cpu_testrun6 --dump_path=C:/Users/123li/Downloads/Project/dim6 --num_initial_empty_objects=30 --final_database_size=10 --target_db_size=10 --nb_local_searches=50 --max_epochs=1 --type=transformer --sample-only=1000 --max-output-length=100 --max-steps=500 --cpu true --n_tokens=3 --exp_id "z4vwysb36x"
+                                     cpu: True
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: C:/Users/123li/Downloads/Project/dim6\cpu_testrun6\z4vwysb36x
+                                     exp_id: z4vwysb36x
+                                     exp_name: cpu_testrun6
+                                     final_database_size: 10
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: False
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_port: -1
+                                     max_epochs: 1
+                                     max_output_length: 100
+                                     max_steps: 500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 64
+                                     n_embd2: 32
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 4
+                                     n_nodes: 1
+                                     n_tokens: 3
+                                     nb_local_searches: 50
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 30
+                                     num_workers: 8
+                                     sample_only: 1000
+                                     seed: -1
+                                     target_db_size: 10
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 08/24/25 17:43:43 - 0:00:00 - The experiment will be stored in C:/Users/123li/Downloads/Project/dim6\cpu_testrun6\z4vwysb36x
+                                     
+INFO - 08/24/25 17:43:43 - 0:00:00 - Running command: python fc_loop.py --exp_name=cpu_testrun6 --dump_path=C:/Users/123li/Downloads/Project/dim6 --num_initial_empty_objects=30 --final_database_size=10 --target_db_size=10 --nb_local_searches=50 --max_epochs=1 --type=transformer --sample-only=1000 --max-output-length=100 --max-steps=500 --cpu true --n_tokens=3
+
+INFO - 08/24/25 17:43:43 - 0:00:00 - seed: 607365466
+INFO - 08/24/25 17:43:43 - 0:00:00 - JULIA_NUM_THREADS is set to 1
+INFO - 08/24/25 17:44:00 - 0:00:17 - Created C:/Users/123li/Downloads/Project/dim6\cpu_testrun6\z4vwysb36x/temp.txt and training tokenizer...
+INFO - 08/24/25 17:44:00 - 0:00:17 - Directory 'C:/Users/123li/Downloads/Project/dim6\cpu_testrun6\z4vwysb36x/tokenizer_data' created.
+INFO - 08/24/25 17:44:00 - 0:00:17 - File 'C:/Users/123li/Downloads/Project/dim6\cpu_testrun6\z4vwysb36x/temp.txt' has been deleted.
+INFO - 08/24/25 17:44:00 - 0:00:17 - 0 / 10
+INFO - 08/24/25 17:44:00 - 0:00:17 - initializing at generation: 1
+INFO - 08/24/25 17:44:00 - 0:00:17 - number of examples in the dataset: 10
+INFO - 08/24/25 17:44:00 - 0:00:17 - max word length: 41
+INFO - 08/24/25 17:44:00 - 0:00:17 - number of unique characters in the vocabulary: 3
+INFO - 08/24/25 17:44:00 - 0:00:17 - vocabulary:
+INFO - 08/24/25 17:44:00 - 0:00:17 - ['V0', 'V1', 'V2']
+INFO - 08/24/25 17:44:00 - 0:00:17 - split up the dataset into 9 training examples and 1 test examples
+INFO - 08/24/25 17:44:00 - 0:00:17 - dataset determined that: vocab_size=4, block_size=101
+INFO - 08/24/25 17:44:00 - 0:00:17 - model #params: 207040
+INFO - 08/24/25 17:44:00 - 0:00:17 - ============ Start of generation 1 ============
+INFO - 08/24/25 17:44:00 - 0:00:17 - Memory allocated:  0.00MB, reserved: 0.00MB
+INFO - 08/24/25 17:44:00 - 0:00:17 - training
+INFO - 08/24/25 17:44:31 - 0:00:48 - step 0 | loss 1.5736 | step time 10747.96ms
+INFO - 08/24/25 17:44:46 - 0:01:03 - step 100 | loss 0.3337 | step time 148.17ms
+INFO - 08/24/25 17:45:00 - 0:01:17 - step 200 | loss 0.0610 | step time 142.76ms
+INFO - 08/24/25 17:45:15 - 0:01:32 - step 300 | loss 0.0550 | step time 137.00ms
+INFO - 08/24/25 17:45:29 - 0:01:46 - step 400 | loss 0.0541 | step time 143.97ms
+INFO - 08/24/25 17:45:44 - 0:02:01 - Memory allocated:  0.00MB, reserved: 0.00MB
+INFO - 08/24/25 17:45:44 - 0:02:01 - generating
+INFO - 08/24/25 17:46:58 - 0:03:16 - distribution of sample lengths: average: 121.623 max: 299
+INFO - 08/24/25 17:46:58 - 0:03:16 - decoding
+INFO - 08/24/25 17:46:58 - 0:03:16 - Decoding complete. Check the output in C:/Users/123li/Downloads/Project/dim6\cpu_testrun6\z4vwysb36x/transformer-output-decoded.txt
+INFO - 08/24/25 17:46:58 - 0:03:16 - Memory allocated:  0.00MB, reserved: 0.00MB
+INFO - 08/24/25 17:46:58 - 0:03:16 - ============ End of generation 1 ============
+INFO - 08/24/25 17:46:58 - 0:03:16 - launching search.jl
+INFO - 08/24/25 17:46:58 - 0:03:16 - JULIA_NUM_THREADS is set to 1
+INFO - 08/24/25 17:47:09 - 0:03:26 - distribution of scores
+INFO - 08/24/25 17:47:09 - 0:03:26 - Score: 9.0, Count: 9
+INFO - 08/24/25 17:47:09 - 0:03:26 - Score: 8.0, Count: 1
+INFO - 08/24/25 17:47:09 - 0:03:26 - tokenizing
+INFO - 08/24/25 17:47:09 - 0:03:26 - Loading tokenizer from C:/Users/123li/Downloads/Project/dim6\cpu_testrun6\z4vwysb36x/tokenizer_data/tokenizer.json...

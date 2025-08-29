@@ -1,0 +1,108 @@
+INFO - 07/19/25 17:18:09 - 0:00:00 - ============ Initialized logger ============
+INFO - 07/19/25 17:18:09 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=run1 --dump_path=C:/Users/123li/Downloads/Project/dim9_run --num_initial_empty_objects=80 --final_database_size=20 --target_db_size=20 --nb_local_searches=300 --sample-only=10000 --max_epochs=1 --type=transformer --cpu true --max-output-length=200 --exp_id "r2m0jolmhq"
+                                     cpu: True
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: C:/Users/123li/Downloads/Project/dim9_run\run1\r2m0jolmhq
+                                     exp_id: r2m0jolmhq
+                                     exp_name: run1
+                                     final_database_size: 20
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: False
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_port: -1
+                                     max_epochs: 1
+                                     max_output_length: 200
+                                     max_steps: 20000
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 64
+                                     n_embd2: 32
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 4
+                                     n_nodes: 1
+                                     n_tokens: 100
+                                     nb_local_searches: 300
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 80
+                                     num_workers: 8
+                                     sample_only: 10000
+                                     seed: -1
+                                     target_db_size: 20
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 07/19/25 17:18:09 - 0:00:00 - The experiment will be stored in C:/Users/123li/Downloads/Project/dim9_run\run1\r2m0jolmhq
+                                     
+INFO - 07/19/25 17:18:09 - 0:00:00 - Running command: python fc_loop.py --exp_name=run1 --dump_path=C:/Users/123li/Downloads/Project/dim9_run --num_initial_empty_objects=80 --final_database_size=20 --target_db_size=20 --nb_local_searches=300 --sample-only=10000 --max_epochs=1 --type=transformer --cpu true --max-output-length=200
+
+INFO - 07/19/25 17:18:09 - 0:00:00 - seed: 857072257
+INFO - 07/19/25 17:18:09 - 0:00:00 - JULIA_NUM_THREADS is set to 1
+INFO - 07/19/25 17:18:44 - 0:00:35 - Created C:/Users/123li/Downloads/Project/dim9_run\run1\r2m0jolmhq/temp.txt and training tokenizer...
+INFO - 07/19/25 17:18:44 - 0:00:35 - Directory 'C:/Users/123li/Downloads/Project/dim9_run\run1\r2m0jolmhq/tokenizer_data' created.
+INFO - 07/19/25 17:18:44 - 0:00:35 - File 'C:/Users/123li/Downloads/Project/dim9_run\run1\r2m0jolmhq/temp.txt' has been deleted.
+INFO - 07/19/25 17:18:44 - 0:00:35 - 0 / 20
+INFO - 07/19/25 17:18:44 - 0:00:35 - initializing at generation: 1
+INFO - 07/19/25 17:18:44 - 0:00:35 - number of examples in the dataset: 20
+INFO - 07/19/25 17:18:44 - 0:00:35 - max word length: 161
+INFO - 07/19/25 17:18:44 - 0:00:35 - number of unique characters in the vocabulary: 3
+INFO - 07/19/25 17:18:44 - 0:00:35 - vocabulary:
+INFO - 07/19/25 17:18:44 - 0:00:35 - ['V0', 'V1', 'V2']
+INFO - 07/19/25 17:18:44 - 0:00:35 - split up the dataset into 18 training examples and 2 test examples
+INFO - 07/19/25 17:18:44 - 0:00:35 - dataset determined that: vocab_size=101, block_size=201
+INFO - 07/19/25 17:18:44 - 0:00:35 - model #params: 225856
+INFO - 07/19/25 17:18:44 - 0:00:35 - ============ Start of generation 1 ============
+INFO - 07/19/25 17:18:44 - 0:00:35 - Memory allocated:  0.00MB, reserved: 0.00MB
+INFO - 07/19/25 17:18:44 - 0:00:35 - training
+INFO - 07/19/25 17:19:43 - 0:01:34 - step 0 | loss 4.7819 | step time 609.44ms
+INFO - 07/19/25 17:20:19 - 0:02:10 - step 100 | loss 0.4541 | step time 336.83ms
+INFO - 07/19/25 17:20:55 - 0:02:46 - step 200 | loss 0.3613 | step time 397.39ms
+INFO - 07/19/25 17:21:32 - 0:03:22 - step 300 | loss 0.3437 | step time 360.36ms
+INFO - 07/19/25 17:22:14 - 0:04:05 - step 400 | loss 0.2994 | step time 426.50ms
+INFO - 07/19/25 17:22:52 - 0:04:43 - step 500 | loss 0.2122 | step time 348.91ms
+INFO - 07/19/25 17:22:52 - 0:04:43 - step 500 train loss: 0.20660316944122314 test loss: 0.6158494353294373
+INFO - 07/19/25 17:22:52 - 0:04:43 - test loss 0.6158494353294373 is the best so far, saving model to C:/Users/123li/Downloads/Project/dim9_run\run1\r2m0jolmhq\model.pt
+INFO - 07/19/25 17:23:28 - 0:05:19 - step 600 | loss 0.1507 | step time 363.69ms
+INFO - 07/19/25 17:24:05 - 0:05:56 - step 700 | loss 0.0918 | step time 349.08ms
+INFO - 07/19/25 17:24:41 - 0:06:32 - step 800 | loss 0.0681 | step time 372.34ms
+INFO - 07/19/25 17:25:17 - 0:07:08 - step 900 | loss 0.0389 | step time 349.32ms
+INFO - 07/19/25 17:25:53 - 0:07:43 - step 1000 | loss 0.0239 | step time 353.99ms
+INFO - 07/19/25 17:25:53 - 0:07:43 - step 1000 train loss: 0.024246972054243088 test loss: 1.435064673423767
+INFO - 07/19/25 17:26:29 - 0:08:20 - step 1100 | loss 0.0211 | step time 379.80ms
+INFO - 07/19/25 17:27:07 - 0:08:58 - step 1200 | loss 0.0188 | step time 401.63ms
+INFO - 07/19/25 17:27:49 - 0:09:39 - step 1300 | loss 0.0185 | step time 394.31ms
+INFO - 07/19/25 17:28:29 - 0:10:20 - step 1400 | loss 0.0186 | step time 393.70ms
+INFO - 07/19/25 17:29:07 - 0:10:58 - step 1500 | loss 0.0185 | step time 369.38ms
+INFO - 07/19/25 17:29:07 - 0:10:58 - step 1500 train loss: 0.018709169700741768 test loss: 1.6595797538757324
+INFO - 07/19/25 17:29:45 - 0:11:36 - step 1600 | loss 0.0186 | step time 362.46ms
+INFO - 07/19/25 17:30:22 - 0:12:12 - step 1700 | loss 0.0198 | step time 387.21ms
+INFO - 07/19/25 17:30:58 - 0:12:49 - step 1800 | loss 0.0181 | step time 357.48ms
+INFO - 07/19/25 17:31:35 - 0:13:25 - step 1900 | loss 0.0179 | step time 348.37ms
+INFO - 07/19/25 17:32:11 - 0:14:02 - step 2000 | loss 0.0182 | step time 344.77ms
+INFO - 07/19/25 17:32:11 - 0:14:02 - step 2000 train loss: 0.01829729601740837 test loss: 1.660658836364746
+INFO - 07/19/25 17:32:48 - 0:14:38 - step 2100 | loss 0.0223 | step time 358.81ms
+INFO - 07/19/25 17:33:24 - 0:15:14 - step 2200 | loss 0.0185 | step time 374.33ms
+INFO - 07/19/25 17:34:01 - 0:15:51 - step 2300 | loss 0.0183 | step time 359.54ms
+INFO - 07/19/25 17:34:37 - 0:16:27 - step 2400 | loss 0.0181 | step time 392.43ms
+INFO - 07/19/25 17:35:13 - 0:17:04 - step 2500 | loss 0.0181 | step time 385.32ms
+INFO - 07/19/25 17:35:13 - 0:17:04 - step 2500 train loss: 0.018062306568026543 test loss: 1.8071460723876953
+INFO - 07/19/25 17:35:52 - 0:17:43 - step 2600 | loss 0.0194 | step time 348.80ms
+INFO - 07/19/25 17:36:30 - 0:18:20 - step 2700 | loss 0.0181 | step time 357.91ms
+INFO - 07/19/25 17:37:07 - 0:18:57 - step 2800 | loss 0.0177 | step time 352.77ms
+INFO - 07/19/25 17:37:43 - 0:19:34 - step 2900 | loss 0.0178 | step time 372.61ms
+INFO - 07/19/25 17:38:19 - 0:20:10 - step 3000 | loss 0.0181 | step time 353.19ms
+INFO - 07/19/25 17:38:20 - 0:20:10 - step 3000 train loss: 0.01802230067551136 test loss: 1.8785685300827026
+INFO - 07/19/25 17:38:56 - 0:20:47 - step 3100 | loss 0.0183 | step time 354.63ms
+INFO - 07/19/25 17:39:33 - 0:21:24 - step 3200 | loss 0.0180 | step time 368.61ms
+INFO - 07/19/25 17:40:09 - 0:22:00 - step 3300 | loss 0.0181 | step time 347.52ms
+INFO - 07/19/25 17:40:46 - 0:22:37 - step 3400 | loss 0.0179 | step time 363.19ms
+INFO - 07/19/25 17:41:23 - 0:23:14 - step 3500 | loss 0.0185 | step time 347.23ms
+INFO - 07/19/25 17:41:23 - 0:23:14 - step 3500 train loss: 0.018078647553920746 test loss: 2.1176469326019287

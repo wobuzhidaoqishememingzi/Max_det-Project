@@ -1,0 +1,96 @@
+INFO - 08/20/25 02:47:53 - 0:00:00 - ============ Initialized logger ============
+INFO - 08/20/25 02:47:53 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=cycle_run1 --dump_path=C:/Users/123li/Downloads/Project/cycle_run --num_initial_empty_objects=100 --final_database_size=30 --target_db_size=30 --nb_local_searches=150 --sample-only=1000 --max_epochs=1 --type=transformer --cpu true --max-steps=500 --exp_id "4ugsoqdznd"
+                                     cpu: True
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: C:/Users/123li/Downloads/Project/cycle_run\cycle_run1\4ugsoqdznd
+                                     exp_id: 4ugsoqdznd
+                                     exp_name: cycle_run1
+                                     final_database_size: 30
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: False
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_port: -1
+                                     max_epochs: 1
+                                     max_output_length: 160
+                                     max_steps: 500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 64
+                                     n_embd2: 32
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 4
+                                     n_nodes: 1
+                                     n_tokens: 100
+                                     nb_local_searches: 150
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 100
+                                     num_workers: 8
+                                     sample_only: 1000
+                                     seed: -1
+                                     target_db_size: 30
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 08/20/25 02:47:53 - 0:00:00 - The experiment will be stored in C:/Users/123li/Downloads/Project/cycle_run\cycle_run1\4ugsoqdznd
+                                     
+INFO - 08/20/25 02:47:53 - 0:00:00 - Running command: python fc_loop.py --exp_name=cycle_run1 --dump_path=C:/Users/123li/Downloads/Project/cycle_run --num_initial_empty_objects=100 --final_database_size=30 --target_db_size=30 --nb_local_searches=150 --sample-only=1000 --max_epochs=1 --type=transformer --cpu true --max-steps=500
+
+INFO - 08/20/25 02:47:53 - 0:00:00 - seed: 711569344
+INFO - 08/20/25 02:47:53 - 0:00:00 - JULIA_NUM_THREADS is set to 1
+INFO - 08/20/25 02:48:33 - 0:00:40 - Created C:/Users/123li/Downloads/Project/cycle_run\cycle_run1\4ugsoqdznd/temp.txt and training tokenizer...
+INFO - 08/20/25 02:48:33 - 0:00:40 - Directory 'C:/Users/123li/Downloads/Project/cycle_run\cycle_run1\4ugsoqdznd/tokenizer_data' created.
+INFO - 08/20/25 02:48:33 - 0:00:41 - File 'C:/Users/123li/Downloads/Project/cycle_run\cycle_run1\4ugsoqdznd/temp.txt' has been deleted.
+INFO - 08/20/25 02:48:33 - 0:00:41 - 0 / 30
+INFO - 08/20/25 02:48:33 - 0:00:41 - initializing at generation: 1
+INFO - 08/20/25 02:48:33 - 0:00:41 - number of examples in the dataset: 30
+INFO - 08/20/25 02:48:33 - 0:00:41 - max word length: 119
+INFO - 08/20/25 02:48:33 - 0:00:41 - number of unique characters in the vocabulary: 100
+INFO - 08/20/25 02:48:33 - 0:00:41 - vocabulary:
+INFO - 08/20/25 02:48:33 - 0:00:41 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'V29', 'V30', 'V31', 'V32', 'V33', 'V34', 'V35', 'V36', 'V37', 'V38', 'V39', 'V40', 'V41', 'V42', 'V43', 'V44', 'V45', 'V46', 'V47', 'V48', 'V49', 'V50', 'V51', 'V52', 'V53', 'V54', 'V55', 'V56', 'V57', 'V58', 'V59', 'V60', 'V61', 'V62', 'V63', 'V64', 'V65', 'V66', 'V67', 'V68', 'V69', 'V70', 'V71', 'V72', 'V73', 'V74', 'V75', 'V76', 'V77', 'V78', 'V79', 'V80', 'V81', 'V82', 'V83', 'V84', 'V85', 'V86', 'V87', 'V88', 'V89', 'V90', 'V91', 'V92', 'V93', 'V94', 'V95', 'V96', 'V97', 'V98', 'V99']
+INFO - 08/20/25 02:48:33 - 0:00:41 - split up the dataset into 27 training examples and 3 test examples
+INFO - 08/20/25 02:48:33 - 0:00:41 - dataset determined that: vocab_size=101, block_size=161
+INFO - 08/20/25 02:48:34 - 0:00:41 - model #params: 223296
+INFO - 08/20/25 02:48:34 - 0:00:41 - ============ Start of generation 1 ============
+INFO - 08/20/25 02:48:34 - 0:00:41 - Memory allocated:  0.00MB, reserved: 0.00MB
+INFO - 08/20/25 02:48:34 - 0:00:41 - training
+INFO - 08/20/25 02:49:52 - 0:01:59 - step 0 | loss 4.7894 | step time 509.92ms
+INFO - 08/20/25 02:50:21 - 0:02:28 - step 100 | loss 2.8783 | step time 285.07ms
+INFO - 08/20/25 02:50:50 - 0:02:58 - step 200 | loss 1.6507 | step time 279.35ms
+INFO - 08/20/25 02:51:19 - 0:03:26 - step 300 | loss 0.3164 | step time 278.64ms
+INFO - 08/20/25 02:51:47 - 0:03:55 - step 400 | loss 0.0732 | step time 296.69ms
+INFO - 08/20/25 02:52:17 - 0:04:24 - Memory allocated:  0.00MB, reserved: 0.00MB
+INFO - 08/20/25 02:52:17 - 0:04:24 - generating
+INFO - 08/20/25 02:56:38 - 0:08:45 - distribution of sample lengths: average: 366.694 max: 559
+INFO - 08/20/25 02:56:38 - 0:08:45 - decoding
+INFO - 08/20/25 02:56:38 - 0:08:45 - Decoding complete. Check the output in C:/Users/123li/Downloads/Project/cycle_run\cycle_run1\4ugsoqdznd/transformer-output-decoded.txt
+INFO - 08/20/25 02:56:38 - 0:08:45 - Memory allocated:  0.00MB, reserved: 0.00MB
+INFO - 08/20/25 02:56:38 - 0:08:45 - ============ End of generation 1 ============
+INFO - 08/20/25 02:56:38 - 0:08:45 - launching search.jl
+INFO - 08/20/25 02:56:38 - 0:08:45 - JULIA_NUM_THREADS is set to 1
+INFO - 08/20/25 02:56:57 - 0:09:04 - distribution of scores
+INFO - 08/20/25 02:56:57 - 0:09:04 - Score: 86.0, Count: 1
+INFO - 08/20/25 02:56:57 - 0:09:04 - Score: 85.0, Count: 1
+INFO - 08/20/25 02:56:57 - 0:09:04 - Score: 84.0, Count: 5
+INFO - 08/20/25 02:56:57 - 0:09:04 - Score: 83.0, Count: 4
+INFO - 08/20/25 02:56:57 - 0:09:04 - Score: 82.0, Count: 30
+INFO - 08/20/25 02:56:57 - 0:09:04 - Score: 81.0, Count: 5
+INFO - 08/20/25 02:56:57 - 0:09:04 - Score: 80.0, Count: 2
+INFO - 08/20/25 02:56:57 - 0:09:04 - Score: 79.0, Count: 3
+INFO - 08/20/25 02:56:57 - 0:09:04 - tokenizing
+INFO - 08/20/25 02:56:57 - 0:09:04 - Loading tokenizer from C:/Users/123li/Downloads/Project/cycle_run\cycle_run1\4ugsoqdznd/tokenizer_data/tokenizer.json...
+INFO - 08/20/25 02:56:57 - 0:09:04 - 0 / 30
+INFO - 08/20/25 02:56:57 - 0:09:04 - number of examples in the dataset: 30
+INFO - 08/20/25 02:56:57 - 0:09:04 - max word length: 119
+INFO - 08/20/25 02:56:57 - 0:09:04 - number of unique characters in the vocabulary: 100
+INFO - 08/20/25 02:56:57 - 0:09:04 - vocabulary:
+INFO - 08/20/25 02:56:57 - 0:09:04 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'V29', 'V30', 'V31', 'V32', 'V33', 'V34', 'V35', 'V36', 'V37', 'V38', 'V39', 'V40', 'V41', 'V42', 'V43', 'V44', 'V45', 'V46', 'V47', 'V48', 'V49', 'V50', 'V51', 'V52', 'V53', 'V54', 'V55', 'V56', 'V57', 'V58', 'V59', 'V60', 'V61', 'V62', 'V63', 'V64', 'V65', 'V66', 'V67', 'V68', 'V69', 'V70', 'V71', 'V72', 'V73', 'V74', 'V75', 'V76', 'V77', 'V78', 'V79', 'V80', 'V81', 'V82', 'V83', 'V84', 'V85', 'V86', 'V87', 'V88', 'V89', 'V90', 'V91', 'V92', 'V93', 'V94', 'V95', 'V96', 'V97', 'V98', 'V99']
+INFO - 08/20/25 02:56:57 - 0:09:04 - split up the dataset into 27 training examples and 3 test examples

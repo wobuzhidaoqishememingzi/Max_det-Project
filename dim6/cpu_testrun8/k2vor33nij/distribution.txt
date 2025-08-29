@@ -1,0 +1,4 @@
+Score: 9.0, Count: 10
+Score: 6.0, Count: 1
+Score: 4.0, Count: 1
+Score: 0.0, Count: 1

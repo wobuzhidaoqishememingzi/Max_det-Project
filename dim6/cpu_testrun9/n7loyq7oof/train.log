@@ -1,0 +1,87 @@
+INFO - 08/28/25 03:06:37 - 0:00:00 - ============ Initialized logger ============
+INFO - 08/28/25 03:06:37 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=cpu_testrun9 --dump_path=C:/Users/123li/Downloads/Project/dim6 --num_initial_empty_objects=30 --final_database_size=10 --target_db_size=10 --nb_local_searches=50 --max_epochs=1 --type=transformer --sample-only=1000 --max-output-length=100 --max-steps=300 --cpu true --n_tokens=3 --exp_id "n7loyq7oof"
+                                     cpu: True
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: C:/Users/123li/Downloads/Project/dim6\cpu_testrun9\n7loyq7oof
+                                     exp_id: n7loyq7oof
+                                     exp_name: cpu_testrun9
+                                     final_database_size: 10
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: False
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_port: -1
+                                     max_epochs: 1
+                                     max_output_length: 100
+                                     max_steps: 300
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 64
+                                     n_embd2: 32
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 4
+                                     n_nodes: 1
+                                     n_tokens: 3
+                                     nb_local_searches: 50
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 30
+                                     num_workers: 8
+                                     sample_only: 1000
+                                     seed: -1
+                                     target_db_size: 10
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 08/28/25 03:06:37 - 0:00:00 - The experiment will be stored in C:/Users/123li/Downloads/Project/dim6\cpu_testrun9\n7loyq7oof
+                                     
+INFO - 08/28/25 03:06:37 - 0:00:00 - Running command: python fc_loop.py --exp_name=cpu_testrun9 --dump_path=C:/Users/123li/Downloads/Project/dim6 --num_initial_empty_objects=30 --final_database_size=10 --target_db_size=10 --nb_local_searches=50 --max_epochs=1 --type=transformer --sample-only=1000 --max-output-length=100 --max-steps=300 --cpu true --n_tokens=3
+
+INFO - 08/28/25 03:06:37 - 0:00:00 - seed: 988135722
+INFO - 08/28/25 03:06:37 - 0:00:00 - JULIA_NUM_THREADS is set to 1
+INFO - 08/28/25 03:07:09 - 0:00:33 - Created C:/Users/123li/Downloads/Project/dim6\cpu_testrun9\n7loyq7oof/temp.txt and training tokenizer...
+INFO - 08/28/25 03:07:09 - 0:00:33 - Directory 'C:/Users/123li/Downloads/Project/dim6\cpu_testrun9\n7loyq7oof/tokenizer_data' created.
+INFO - 08/28/25 03:07:09 - 0:00:33 - File 'C:/Users/123li/Downloads/Project/dim6\cpu_testrun9\n7loyq7oof/temp.txt' has been deleted.
+INFO - 08/28/25 03:07:09 - 0:00:33 - 0 / 10
+INFO - 08/28/25 03:07:09 - 0:00:33 - initializing at generation: 1
+INFO - 08/28/25 03:07:10 - 0:00:33 - number of examples in the dataset: 10
+INFO - 08/28/25 03:07:10 - 0:00:33 - max word length: 41
+INFO - 08/28/25 03:07:10 - 0:00:33 - number of unique characters in the vocabulary: 3
+INFO - 08/28/25 03:07:10 - 0:00:33 - vocabulary:
+INFO - 08/28/25 03:07:10 - 0:00:33 - ['V0', 'V1', 'V2']
+INFO - 08/28/25 03:07:10 - 0:00:33 - split up the dataset into 9 training examples and 1 test examples
+INFO - 08/28/25 03:07:10 - 0:00:33 - dataset determined that: vocab_size=4, block_size=101
+INFO - 08/28/25 03:07:10 - 0:00:33 - model #params: 207040
+INFO - 08/28/25 03:07:10 - 0:00:33 - ============ Start of generation 1 ============
+INFO - 08/28/25 03:07:10 - 0:00:33 - Memory allocated:  0.00MB, reserved: 0.00MB
+INFO - 08/28/25 03:07:10 - 0:00:33 - training
+INFO - 08/28/25 03:07:37 - 0:01:00 - step 0 | loss 1.4508 | step time 12074.16ms
+INFO - 08/28/25 03:07:49 - 0:01:12 - step 100 | loss 0.2398 | step time 125.00ms
+INFO - 08/28/25 03:08:02 - 0:01:25 - step 200 | loss 0.0553 | step time 123.01ms
+INFO - 08/28/25 03:08:15 - 0:01:38 - Memory allocated:  0.00MB, reserved: 0.00MB
+INFO - 08/28/25 03:08:15 - 0:01:38 - generating
+INFO - 08/28/25 03:09:21 - 0:02:45 - distribution of sample lengths: average: 121.607 max: 299
+INFO - 08/28/25 03:09:21 - 0:02:45 - decoding
+INFO - 08/28/25 03:09:22 - 0:02:45 - Decoding complete. Check the output in C:/Users/123li/Downloads/Project/dim6\cpu_testrun9\n7loyq7oof/transformer-output-decoded.txt
+INFO - 08/28/25 03:09:22 - 0:02:45 - Memory allocated:  0.00MB, reserved: 0.00MB
+INFO - 08/28/25 03:09:22 - 0:02:45 - ============ End of generation 1 ============
+INFO - 08/28/25 03:09:22 - 0:02:45 - launching search.jl
+INFO - 08/28/25 03:09:22 - 0:02:45 - JULIA_NUM_THREADS is set to 1
+INFO - 08/28/25 03:09:38 - 0:03:01 - distribution of scores
+INFO - 08/28/25 03:09:38 - 0:03:01 - Score: 9.0, Count: 10
+INFO - 08/28/25 03:09:38 - 0:03:01 - tokenizing
+INFO - 08/28/25 03:09:38 - 0:03:01 - Loading tokenizer from C:/Users/123li/Downloads/Project/dim6\cpu_testrun9\n7loyq7oof/tokenizer_data/tokenizer.json...
+INFO - 08/28/25 03:09:38 - 0:03:01 - 0 / 10
+INFO - 08/28/25 03:09:38 - 0:03:01 - number of examples in the dataset: 10
+INFO - 08/28/25 03:09:38 - 0:03:01 - max word length: 41
+INFO - 08/28/25 03:09:38 - 0:03:01 - number of unique characters in the vocabulary: 3
+INFO - 08/28/25 03:09:38 - 0:03:01 - vocabulary:
+INFO - 08/28/25 03:09:38 - 0:03:01 - ['V0', 'V1', 'V2']
+INFO - 08/28/25 03:09:38 - 0:03:01 - split up the dataset into 9 training examples and 1 test examples

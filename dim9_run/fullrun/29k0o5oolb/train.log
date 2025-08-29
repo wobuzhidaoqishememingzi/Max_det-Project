@@ -1,0 +1,79 @@
+INFO - 07/25/25 02:03:16 - 0:00:00 - ============ Initialized logger ============
+INFO - 07/25/25 02:03:16 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=fullrun --dump_path=C:/Users/123li/Downloads/Project/dim9_run --num_initial_empty_objects=80 --final_database_size=20 --target_db_size=20 --nb_local_searches=300 --max_epochs=1 --type=transformer --cpu true --max-output-length=200 --exp_id "29k0o5oolb"
+                                     cpu: True
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: C:/Users/123li/Downloads/Project/dim9_run\fullrun\29k0o5oolb
+                                     exp_id: 29k0o5oolb
+                                     exp_name: fullrun
+                                     final_database_size: 20
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: False
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_port: -1
+                                     max_epochs: 1
+                                     max_output_length: 200
+                                     max_steps: 20000
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 64
+                                     n_embd2: 32
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 4
+                                     n_nodes: 1
+                                     n_tokens: 100
+                                     nb_local_searches: 300
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 80
+                                     num_workers: 8
+                                     sample_only: 500000
+                                     seed: -1
+                                     target_db_size: 20
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 07/25/25 02:03:16 - 0:00:00 - The experiment will be stored in C:/Users/123li/Downloads/Project/dim9_run\fullrun\29k0o5oolb
+                                     
+INFO - 07/25/25 02:03:16 - 0:00:00 - Running command: python fc_loop.py --exp_name=fullrun --dump_path=C:/Users/123li/Downloads/Project/dim9_run --num_initial_empty_objects=80 --final_database_size=20 --target_db_size=20 --nb_local_searches=300 --max_epochs=1 --type=transformer --cpu true --max-output-length=200
+
+INFO - 07/25/25 02:03:16 - 0:00:00 - seed: 318389458
+INFO - 07/25/25 02:03:16 - 0:00:00 - JULIA_NUM_THREADS is set to 1
+INFO - 07/25/25 02:03:30 - 0:00:13 - Created C:/Users/123li/Downloads/Project/dim9_run\fullrun\29k0o5oolb/temp.txt and training tokenizer...
+INFO - 07/25/25 02:03:30 - 0:00:13 - Directory 'C:/Users/123li/Downloads/Project/dim9_run\fullrun\29k0o5oolb/tokenizer_data' created.
+INFO - 07/25/25 02:03:30 - 0:00:13 - File 'C:/Users/123li/Downloads/Project/dim9_run\fullrun\29k0o5oolb/temp.txt' has been deleted.
+INFO - 07/25/25 02:03:30 - 0:00:13 - 0 / 20
+INFO - 07/25/25 02:03:30 - 0:00:13 - initializing at generation: 1
+INFO - 07/25/25 02:03:30 - 0:00:13 - number of examples in the dataset: 20
+INFO - 07/25/25 02:03:30 - 0:00:13 - max word length: 161
+INFO - 07/25/25 02:03:30 - 0:00:13 - number of unique characters in the vocabulary: 3
+INFO - 07/25/25 02:03:30 - 0:00:13 - vocabulary:
+INFO - 07/25/25 02:03:30 - 0:00:13 - ['V0', 'V1', 'V2']
+INFO - 07/25/25 02:03:30 - 0:00:13 - split up the dataset into 18 training examples and 2 test examples
+INFO - 07/25/25 02:03:30 - 0:00:13 - dataset determined that: vocab_size=101, block_size=201
+INFO - 07/25/25 02:03:30 - 0:00:13 - model #params: 225856
+INFO - 07/25/25 02:03:30 - 0:00:13 - ============ Start of generation 1 ============
+INFO - 07/25/25 02:03:30 - 0:00:13 - Memory allocated:  0.00MB, reserved: 0.00MB
+INFO - 07/25/25 02:03:30 - 0:00:13 - training
+INFO - 07/25/25 02:04:17 - 0:01:01 - step 0 | loss 5.1163 | step time 490.88ms
+INFO - 07/25/25 02:04:52 - 0:01:35 - step 100 | loss 0.4511 | step time 345.44ms
+INFO - 07/25/25 02:05:27 - 0:02:11 - step 200 | loss 0.3613 | step time 352.55ms
+INFO - 07/25/25 02:06:03 - 0:02:46 - step 300 | loss 0.3323 | step time 355.38ms
+INFO - 07/25/25 02:06:39 - 0:03:22 - step 400 | loss 0.2896 | step time 361.01ms
+INFO - 07/25/25 02:07:15 - 0:03:59 - step 500 | loss 0.1940 | step time 349.85ms
+INFO - 07/25/25 02:07:15 - 0:03:59 - step 500 train loss: 0.18557249009609222 test loss: 0.7365244626998901
+INFO - 07/25/25 02:07:15 - 0:03:59 - test loss 0.7365244626998901 is the best so far, saving model to C:/Users/123li/Downloads/Project/dim9_run\fullrun\29k0o5oolb\model.pt
+INFO - 07/25/25 02:07:51 - 0:04:35 - step 600 | loss 0.1441 | step time 369.40ms
+INFO - 07/25/25 02:08:27 - 0:05:10 - step 700 | loss 0.1305 | step time 358.94ms
+INFO - 07/25/25 02:09:03 - 0:05:46 - step 800 | loss 0.0578 | step time 349.79ms
+INFO - 07/25/25 02:09:39 - 0:06:22 - step 900 | loss 0.0346 | step time 346.12ms
+INFO - 07/25/25 02:10:15 - 0:06:59 - step 1000 | loss 0.0202 | step time 369.85ms
+INFO - 07/25/25 02:10:15 - 0:06:59 - step 1000 train loss: 0.01987978257238865 test loss: 1.844994306564331
+INFO - 07/25/25 02:10:52 - 0:07:36 - step 1100 | loss 0.0192 | step time 387.44ms
