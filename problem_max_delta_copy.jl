@@ -1,4 +1,4 @@
-const N = 6 # Size of the matrix (N x N)
+const N = 9 # Size of the matrix (N x N)
 
 using LinearAlgebra
 using Combinatorics
@@ -113,7 +113,7 @@ function greedy_search_from_startpoint(db, obj::String)::Union{Nothing, Vector{S
     # add randomness: flip some random elements in the matrix to be 1
     # using a threshold p to decide whether to flip an element or not,
     # loop over every element, if larger than p, flip it; if not, keep it as 0.
-    p = 0.4  # Probability of flipping an element
+    p = 0.5  # Probability of flipping an element
     for i in 1:N, j in 1:N
         if rand() >= p
             A[i, j] = 1
