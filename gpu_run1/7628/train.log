@@ -1,0 +1,215 @@
+INFO - 08/29/25 01:55:01 - 0:00:00 - ============ Initialized logger ============
+INFO - 08/29/25 01:55:01 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=gpu_run1 --dump_path=/home/yuebi/Project/dim9_run --num_initial_empty_objects=100 --final_database_size=20 --target_db_size=20 --nb_local_searches=300 --max_epochs=5 --type=transformer --sample-only=5000 --max-output-length=450 --max-steps=500 --n_tokens=3 --exp_id "7628"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim9_run/gpu_run1/7628
+                                     exp_id: 7628
+                                     exp_name: gpu_run1
+                                     final_database_size: 20
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 5
+                                     max_output_length: 450
+                                     max_steps: 500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 64
+                                     n_embd2: 32
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 4
+                                     n_nodes: 1
+                                     n_tokens: 3
+                                     nb_local_searches: 300
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 100
+                                     num_workers: 8
+                                     sample_only: 5000
+                                     seed: -1
+                                     target_db_size: 20
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 08/29/25 01:55:01 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim9_run/gpu_run1/7628
+                                     
+INFO - 08/29/25 01:55:01 - 0:00:00 - Running command: python fc_loop.py --exp_name=gpu_run1 --dump_path=/home/yuebi/Project/dim9_run --num_initial_empty_objects=100 --final_database_size=20 --target_db_size=20 --nb_local_searches=300 --max_epochs=5 --type=transformer --sample-only=5000 --max-output-length=450 --max-steps=500 --n_tokens=3
+
+WARNING - 08/29/25 01:55:01 - 0:00:00 - Signal handler installed.
+INFO - 08/29/25 01:55:01 - 0:00:00 - seed: 936613696
+INFO - 08/29/25 01:55:01 - 0:00:00 - JULIA_NUM_THREADS is set to 1
+INFO - 08/29/25 01:55:06 - 0:00:06 - Created /home/yuebi/Project/dim9_run/gpu_run1/7628/temp.txt and training tokenizer...
+INFO - 08/29/25 01:55:06 - 0:00:06 - Directory '/home/yuebi/Project/dim9_run/gpu_run1/7628/tokenizer_data' created.
+INFO - 08/29/25 01:55:06 - 0:00:06 - File '/home/yuebi/Project/dim9_run/gpu_run1/7628/temp.txt' has been deleted.
+INFO - 08/29/25 01:55:06 - 0:00:06 - 0 / 20
+INFO - 08/29/25 01:55:06 - 0:00:06 - initializing at generation: 1
+INFO - 08/29/25 01:55:06 - 0:00:06 - number of examples in the dataset: 20
+INFO - 08/29/25 01:55:06 - 0:00:06 - max word length: 89
+INFO - 08/29/25 01:55:06 - 0:00:06 - number of unique characters in the vocabulary: 3
+INFO - 08/29/25 01:55:06 - 0:00:06 - vocabulary:
+INFO - 08/29/25 01:55:06 - 0:00:06 - ['V0', 'V1', 'V2']
+INFO - 08/29/25 01:55:06 - 0:00:06 - split up the dataset into 18 training examples and 2 test examples
+INFO - 08/29/25 01:55:06 - 0:00:06 - dataset determined that: vocab_size=4, block_size=451
+INFO - 08/29/25 01:55:06 - 0:00:06 - model #params: 229440
+INFO - 08/29/25 01:55:06 - 0:00:06 - ============ Start of generation 1 ============
+INFO - 08/29/25 01:55:06 - 0:00:06 - Memory allocated:  3.99MB, reserved: 4.00MB
+INFO - 08/29/25 01:55:06 - 0:00:06 - training
+INFO - 08/29/25 01:55:11 - 0:00:10 - step 0 | loss 1.3422 | step time 475.96ms
+INFO - 08/29/25 01:55:18 - 0:00:18 - step 100 | loss 0.5764 | step time 75.94ms
+INFO - 08/29/25 01:55:26 - 0:00:25 - step 200 | loss 0.2926 | step time 75.91ms
+INFO - 08/29/25 01:55:34 - 0:00:33 - step 300 | loss 0.0764 | step time 75.93ms
+INFO - 08/29/25 01:55:41 - 0:00:41 - step 400 | loss 0.0426 | step time 75.98ms
+INFO - 08/29/25 01:55:49 - 0:00:48 - Memory allocated:  23.33MB, reserved: 1864.00MB
+INFO - 08/29/25 01:55:49 - 0:00:48 - generating
+INFO - 08/29/25 02:05:54 - 0:10:54 - distribution of sample lengths: average: 264.9322 max: 1349
+INFO - 08/29/25 02:05:54 - 0:10:54 - decoding
+INFO - 08/29/25 02:05:54 - 0:10:54 - Decoding complete. Check the output in /home/yuebi/Project/dim9_run/gpu_run1/7628/transformer-output-decoded.txt
+INFO - 08/29/25 02:05:54 - 0:10:54 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:05:54 - 0:10:54 - ============ End of generation 1 ============
+INFO - 08/29/25 02:05:54 - 0:10:54 - launching search.jl
+INFO - 08/29/25 02:05:54 - 0:10:54 - JULIA_NUM_THREADS is set to 1
+INFO - 08/29/25 02:06:06 - 0:11:06 - distribution of scores
+INFO - 08/29/25 02:06:06 - 0:11:06 - Score: 144.0, Count: 4
+INFO - 08/29/25 02:06:06 - 0:11:06 - Score: 128.0, Count: 3
+INFO - 08/29/25 02:06:06 - 0:11:06 - Score: 125.0, Count: 8
+INFO - 08/29/25 02:06:06 - 0:11:06 - Score: 120.0, Count: 5
+INFO - 08/29/25 02:06:06 - 0:11:06 - tokenizing
+INFO - 08/29/25 02:06:06 - 0:11:06 - Loading tokenizer from /home/yuebi/Project/dim9_run/gpu_run1/7628/tokenizer_data/tokenizer.json...
+INFO - 08/29/25 02:06:06 - 0:11:06 - 0 / 20
+INFO - 08/29/25 02:06:06 - 0:11:06 - number of examples in the dataset: 20
+INFO - 08/29/25 02:06:06 - 0:11:06 - max word length: 89
+INFO - 08/29/25 02:06:06 - 0:11:06 - number of unique characters in the vocabulary: 3
+INFO - 08/29/25 02:06:06 - 0:11:06 - vocabulary:
+INFO - 08/29/25 02:06:06 - 0:11:06 - ['V0', 'V1', 'V2']
+INFO - 08/29/25 02:06:06 - 0:11:06 - split up the dataset into 18 training examples and 2 test examples
+INFO - 08/29/25 02:06:06 - 0:11:06 - ============ Start of generation 2 ============
+INFO - 08/29/25 02:06:06 - 0:11:06 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:06:06 - 0:11:06 - training
+INFO - 08/29/25 02:06:06 - 0:11:06 - step 0 | loss 2.4435 | step time 84.16ms
+INFO - 08/29/25 02:06:14 - 0:11:13 - step 100 | loss 0.4262 | step time 76.09ms
+INFO - 08/29/25 02:06:22 - 0:11:21 - step 200 | loss 0.0867 | step time 76.09ms
+INFO - 08/29/25 02:06:29 - 0:11:29 - step 300 | loss 0.0564 | step time 76.06ms
+INFO - 08/29/25 02:06:37 - 0:11:36 - step 400 | loss 0.0368 | step time 76.08ms
+INFO - 08/29/25 02:06:44 - 0:11:44 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:06:44 - 0:11:44 - generating
+INFO - 08/29/25 02:16:29 - 0:21:28 - distribution of sample lengths: average: 265.9022 max: 1349
+INFO - 08/29/25 02:16:29 - 0:21:28 - decoding
+INFO - 08/29/25 02:16:29 - 0:21:29 - Decoding complete. Check the output in /home/yuebi/Project/dim9_run/gpu_run1/7628/transformer-output-decoded.txt
+INFO - 08/29/25 02:16:29 - 0:21:29 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:16:29 - 0:21:29 - ============ End of generation 2 ============
+INFO - 08/29/25 02:16:29 - 0:21:29 - launching search.jl
+INFO - 08/29/25 02:16:29 - 0:21:29 - JULIA_NUM_THREADS is set to 1
+INFO - 08/29/25 02:16:41 - 0:21:41 - distribution of scores
+INFO - 08/29/25 02:16:41 - 0:21:41 - Score: 128.0, Count: 9
+INFO - 08/29/25 02:16:41 - 0:21:41 - Score: 120.0, Count: 11
+INFO - 08/29/25 02:16:41 - 0:21:41 - tokenizing
+INFO - 08/29/25 02:16:41 - 0:21:41 - Loading tokenizer from /home/yuebi/Project/dim9_run/gpu_run1/7628/tokenizer_data/tokenizer.json...
+INFO - 08/29/25 02:16:41 - 0:21:41 - 0 / 20
+INFO - 08/29/25 02:16:41 - 0:21:41 - number of examples in the dataset: 20
+INFO - 08/29/25 02:16:41 - 0:21:41 - max word length: 89
+INFO - 08/29/25 02:16:41 - 0:21:41 - number of unique characters in the vocabulary: 3
+INFO - 08/29/25 02:16:41 - 0:21:41 - vocabulary:
+INFO - 08/29/25 02:16:41 - 0:21:41 - ['V0', 'V1', 'V2']
+INFO - 08/29/25 02:16:41 - 0:21:41 - split up the dataset into 18 training examples and 2 test examples
+INFO - 08/29/25 02:16:41 - 0:21:41 - ============ Start of generation 3 ============
+INFO - 08/29/25 02:16:41 - 0:21:41 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:16:41 - 0:21:41 - training
+INFO - 08/29/25 02:16:41 - 0:21:41 - step 0 | loss 1.9310 | step time 80.53ms
+INFO - 08/29/25 02:16:49 - 0:21:49 - step 100 | loss 0.2712 | step time 76.12ms
+INFO - 08/29/25 02:16:57 - 0:21:56 - step 200 | loss 0.0830 | step time 76.13ms
+INFO - 08/29/25 02:17:04 - 0:22:04 - step 300 | loss 0.0369 | step time 76.13ms
+INFO - 08/29/25 02:17:12 - 0:22:11 - step 400 | loss 0.0327 | step time 76.12ms
+INFO - 08/29/25 02:17:19 - 0:22:19 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:17:19 - 0:22:19 - generating
+INFO - 08/29/25 02:27:04 - 0:32:04 - distribution of sample lengths: average: 265.6456 max: 266
+INFO - 08/29/25 02:27:04 - 0:32:04 - decoding
+INFO - 08/29/25 02:27:04 - 0:32:04 - Decoding complete. Check the output in /home/yuebi/Project/dim9_run/gpu_run1/7628/transformer-output-decoded.txt
+INFO - 08/29/25 02:27:04 - 0:32:04 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:27:04 - 0:32:04 - ============ End of generation 3 ============
+INFO - 08/29/25 02:27:04 - 0:32:04 - launching search.jl
+INFO - 08/29/25 02:27:04 - 0:32:04 - JULIA_NUM_THREADS is set to 1
+INFO - 08/29/25 02:27:17 - 0:32:16 - distribution of scores
+INFO - 08/29/25 02:27:17 - 0:32:16 - Score: 144.0, Count: 4
+INFO - 08/29/25 02:27:17 - 0:32:16 - Score: 128.0, Count: 6
+INFO - 08/29/25 02:27:17 - 0:32:16 - Score: 125.0, Count: 1
+INFO - 08/29/25 02:27:17 - 0:32:16 - Score: 120.0, Count: 9
+INFO - 08/29/25 02:27:17 - 0:32:16 - tokenizing
+INFO - 08/29/25 02:27:17 - 0:32:16 - Loading tokenizer from /home/yuebi/Project/dim9_run/gpu_run1/7628/tokenizer_data/tokenizer.json...
+INFO - 08/29/25 02:27:17 - 0:32:16 - 0 / 20
+INFO - 08/29/25 02:27:17 - 0:32:16 - number of examples in the dataset: 20
+INFO - 08/29/25 02:27:17 - 0:32:16 - max word length: 89
+INFO - 08/29/25 02:27:17 - 0:32:16 - number of unique characters in the vocabulary: 3
+INFO - 08/29/25 02:27:17 - 0:32:16 - vocabulary:
+INFO - 08/29/25 02:27:17 - 0:32:16 - ['V0', 'V1', 'V2']
+INFO - 08/29/25 02:27:17 - 0:32:16 - split up the dataset into 18 training examples and 2 test examples
+INFO - 08/29/25 02:27:17 - 0:32:16 - ============ Start of generation 4 ============
+INFO - 08/29/25 02:27:17 - 0:32:16 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:27:17 - 0:32:16 - training
+INFO - 08/29/25 02:27:17 - 0:32:16 - step 0 | loss 2.0771 | step time 80.59ms
+INFO - 08/29/25 02:27:24 - 0:32:24 - step 100 | loss 0.2393 | step time 76.22ms
+INFO - 08/29/25 02:27:32 - 0:32:31 - step 200 | loss 0.0555 | step time 76.11ms
+INFO - 08/29/25 02:27:40 - 0:32:39 - step 300 | loss 0.0350 | step time 76.13ms
+INFO - 08/29/25 02:27:47 - 0:32:47 - step 400 | loss 0.0344 | step time 76.15ms
+INFO - 08/29/25 02:27:55 - 0:32:54 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:27:55 - 0:32:54 - generating
+INFO - 08/29/25 02:37:39 - 0:42:39 - distribution of sample lengths: average: 265.5542 max: 266
+INFO - 08/29/25 02:37:39 - 0:42:39 - decoding
+INFO - 08/29/25 02:37:40 - 0:42:39 - Decoding complete. Check the output in /home/yuebi/Project/dim9_run/gpu_run1/7628/transformer-output-decoded.txt
+INFO - 08/29/25 02:37:40 - 0:42:39 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:37:40 - 0:42:39 - ============ End of generation 4 ============
+INFO - 08/29/25 02:37:40 - 0:42:39 - launching search.jl
+INFO - 08/29/25 02:37:40 - 0:42:39 - JULIA_NUM_THREADS is set to 1
+INFO - 08/29/25 02:37:52 - 0:42:51 - distribution of scores
+INFO - 08/29/25 02:37:52 - 0:42:51 - Score: 144.0, Count: 2
+INFO - 08/29/25 02:37:52 - 0:42:51 - Score: 128.0, Count: 2
+INFO - 08/29/25 02:37:52 - 0:42:51 - Score: 120.0, Count: 16
+INFO - 08/29/25 02:37:52 - 0:42:51 - tokenizing
+INFO - 08/29/25 02:37:52 - 0:42:51 - Loading tokenizer from /home/yuebi/Project/dim9_run/gpu_run1/7628/tokenizer_data/tokenizer.json...
+INFO - 08/29/25 02:37:52 - 0:42:51 - 0 / 20
+INFO - 08/29/25 02:37:52 - 0:42:51 - number of examples in the dataset: 20
+INFO - 08/29/25 02:37:52 - 0:42:51 - max word length: 89
+INFO - 08/29/25 02:37:52 - 0:42:51 - number of unique characters in the vocabulary: 3
+INFO - 08/29/25 02:37:52 - 0:42:51 - vocabulary:
+INFO - 08/29/25 02:37:52 - 0:42:51 - ['V0', 'V1', 'V2']
+INFO - 08/29/25 02:37:52 - 0:42:51 - split up the dataset into 18 training examples and 2 test examples
+INFO - 08/29/25 02:37:52 - 0:42:51 - ============ Start of generation 5 ============
+INFO - 08/29/25 02:37:52 - 0:42:51 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:37:52 - 0:42:51 - training
+INFO - 08/29/25 02:37:52 - 0:42:52 - step 0 | loss 2.0543 | step time 82.00ms
+INFO - 08/29/25 02:38:00 - 0:42:59 - step 100 | loss 0.1037 | step time 76.10ms
+INFO - 08/29/25 02:38:07 - 0:43:07 - step 200 | loss 0.1409 | step time 76.10ms
+INFO - 08/29/25 02:38:15 - 0:43:14 - step 300 | loss 0.0340 | step time 76.08ms
+INFO - 08/29/25 02:38:22 - 0:43:22 - step 400 | loss 0.0338 | step time 76.04ms
+INFO - 08/29/25 02:38:30 - 0:43:29 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:38:30 - 0:43:29 - generating
+INFO - 08/29/25 02:48:15 - 0:53:14 - distribution of sample lengths: average: 265.9802 max: 266
+INFO - 08/29/25 02:48:15 - 0:53:14 - decoding
+INFO - 08/29/25 02:48:15 - 0:53:14 - Decoding complete. Check the output in /home/yuebi/Project/dim9_run/gpu_run1/7628/transformer-output-decoded.txt
+INFO - 08/29/25 02:48:15 - 0:53:14 - Memory allocated:  23.33MB, reserved: 14208.00MB
+INFO - 08/29/25 02:48:15 - 0:53:14 - ============ End of generation 5 ============
+INFO - 08/29/25 02:48:15 - 0:53:14 - launching search.jl
+INFO - 08/29/25 02:48:15 - 0:53:14 - JULIA_NUM_THREADS is set to 1
+INFO - 08/29/25 02:48:27 - 0:53:27 - distribution of scores
+INFO - 08/29/25 02:48:27 - 0:53:27 - Score: 144.0, Count: 5
+INFO - 08/29/25 02:48:27 - 0:53:27 - Score: 128.0, Count: 6
+INFO - 08/29/25 02:48:27 - 0:53:27 - Score: 125.0, Count: 3
+INFO - 08/29/25 02:48:27 - 0:53:27 - Score: 120.0, Count: 6
+INFO - 08/29/25 02:48:27 - 0:53:27 - tokenizing
+INFO - 08/29/25 02:48:27 - 0:53:27 - Loading tokenizer from /home/yuebi/Project/dim9_run/gpu_run1/7628/tokenizer_data/tokenizer.json...
+INFO - 08/29/25 02:48:27 - 0:53:27 - 0 / 20
+INFO - 08/29/25 02:48:27 - 0:53:27 - number of examples in the dataset: 20
+INFO - 08/29/25 02:48:27 - 0:53:27 - max word length: 89
+INFO - 08/29/25 02:48:27 - 0:53:27 - number of unique characters in the vocabulary: 3
+INFO - 08/29/25 02:48:27 - 0:53:27 - vocabulary:
+INFO - 08/29/25 02:48:27 - 0:53:27 - ['V0', 'V1', 'V2']
+INFO - 08/29/25 02:48:27 - 0:53:27 - split up the dataset into 18 training examples and 2 test examples

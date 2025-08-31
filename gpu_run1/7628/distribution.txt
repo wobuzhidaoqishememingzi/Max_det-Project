@@ -1,0 +1,4 @@
+Score: 144.0, Count: 5
+Score: 128.0, Count: 6
+Score: 125.0, Count: 3
+Score: 120.0, Count: 6
