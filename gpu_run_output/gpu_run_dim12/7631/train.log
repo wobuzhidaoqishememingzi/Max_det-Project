@@ -1,0 +1,182 @@
+INFO - 08/30/25 17:50:52 - 0:00:00 - ============ Initialized logger ============
+INFO - 08/30/25 17:50:52 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=gpu_run_dim12 --dump_path=/home/yuebi/Project/dim12_run --num_initial_empty_objects=150 --final_database_size=30 --target_db_size=30 --nb_local_searches=300 --max_epochs=5 --type=transformer --sample-only=5000 --max-output-length=400 --max-steps=500 --n_tokens=3 --exp_id "7631"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim12_run/gpu_run_dim12/7631
+                                     exp_id: 7631
+                                     exp_name: gpu_run_dim12
+                                     final_database_size: 30
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 5
+                                     max_output_length: 400
+                                     max_steps: 500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 64
+                                     n_embd2: 32
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 4
+                                     n_nodes: 1
+                                     n_tokens: 3
+                                     nb_local_searches: 300
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 150
+                                     num_workers: 8
+                                     sample_only: 5000
+                                     seed: -1
+                                     target_db_size: 30
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 08/30/25 17:50:52 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim12_run/gpu_run_dim12/7631
+                                     
+INFO - 08/30/25 17:50:52 - 0:00:00 - Running command: python fc_loop.py --exp_name=gpu_run_dim12 --dump_path=/home/yuebi/Project/dim12_run --num_initial_empty_objects=150 --final_database_size=30 --target_db_size=30 --nb_local_searches=300 --max_epochs=5 --type=transformer --sample-only=5000 --max-output-length=400 --max-steps=500 --n_tokens=3
+
+WARNING - 08/30/25 17:50:52 - 0:00:00 - Signal handler installed.
+INFO - 08/30/25 17:50:52 - 0:00:00 - seed: 386420517
+INFO - 08/30/25 17:50:52 - 0:00:00 - JULIA_NUM_THREADS is set to 1
+INFO - 08/30/25 17:50:57 - 0:00:06 - Created /home/yuebi/Project/dim12_run/gpu_run_dim12/7631/temp.txt and training tokenizer...
+INFO - 08/30/25 17:50:57 - 0:00:06 - Directory '/home/yuebi/Project/dim12_run/gpu_run_dim12/7631/tokenizer_data' created.
+INFO - 08/30/25 17:50:57 - 0:00:06 - File '/home/yuebi/Project/dim12_run/gpu_run_dim12/7631/temp.txt' has been deleted.
+INFO - 08/30/25 17:50:57 - 0:00:06 - 0 / 30
+INFO - 08/30/25 17:50:57 - 0:00:06 - initializing at generation: 1
+INFO - 08/30/25 17:50:57 - 0:00:06 - number of examples in the dataset: 30
+INFO - 08/30/25 17:50:57 - 0:00:06 - max word length: 155
+INFO - 08/30/25 17:50:57 - 0:00:06 - number of unique characters in the vocabulary: 3
+INFO - 08/30/25 17:50:57 - 0:00:06 - vocabulary:
+INFO - 08/30/25 17:50:57 - 0:00:06 - ['V0', 'V1', 'V2']
+INFO - 08/30/25 17:50:57 - 0:00:06 - split up the dataset into 27 training examples and 3 test examples
+INFO - 08/30/25 17:50:57 - 0:00:06 - dataset determined that: vocab_size=4, block_size=401
+INFO - 08/30/25 17:50:57 - 0:00:06 - model #params: 226240
+INFO - 08/30/25 17:50:57 - 0:00:06 - ============ Start of generation 1 ============
+INFO - 08/30/25 17:50:57 - 0:00:06 - Memory allocated:  3.33MB, reserved: 4.00MB
+INFO - 08/30/25 17:50:57 - 0:00:06 - training
+INFO - 08/30/25 17:51:02 - 0:00:11 - step 0 | loss 1.5046 | step time 483.11ms
+INFO - 08/30/25 17:51:19 - 0:00:27 - step 100 | loss 0.6279 | step time 165.73ms
+INFO - 08/30/25 17:51:35 - 0:00:44 - step 200 | loss 0.5836 | step time 165.75ms
+INFO - 08/30/25 17:51:52 - 0:01:00 - step 300 | loss 0.4249 | step time 165.77ms
+INFO - 08/30/25 17:52:08 - 0:01:17 - step 400 | loss 0.2617 | step time 165.82ms
+INFO - 08/30/25 17:52:25 - 0:01:33 - Memory allocated:  22.58MB, reserved: 1630.00MB
+INFO - 08/30/25 17:52:25 - 0:01:33 - generating
+INFO - 08/30/25 18:11:47 - 0:20:55 - distribution of sample lengths: average: 454.6174 max: 1199
+INFO - 08/30/25 18:11:47 - 0:20:55 - decoding
+INFO - 08/30/25 18:11:47 - 0:20:55 - Decoding complete. Check the output in /home/yuebi/Project/dim12_run/gpu_run_dim12/7631/transformer-output-decoded.txt
+INFO - 08/30/25 18:11:47 - 0:20:55 - Memory allocated:  22.58MB, reserved: 11002.00MB
+INFO - 08/30/25 18:11:47 - 0:20:55 - ============ End of generation 1 ============
+INFO - 08/30/25 18:11:47 - 0:20:55 - launching search.jl
+INFO - 08/30/25 18:11:47 - 0:20:55 - JULIA_NUM_THREADS is set to 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - distribution of scores
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 2133.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 2010.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1984.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1892.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1890.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1883.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1874.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1855.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1852.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1848.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1840.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1839.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1836.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1830.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1821.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1806.0, Count: 2
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1792.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1788.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1782.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1776.0, Count: 2
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1765.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1758.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1752.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1748.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1738.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1735.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1734.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - Score: 1729.0, Count: 1
+INFO - 08/30/25 18:12:05 - 0:21:14 - tokenizing
+INFO - 08/30/25 18:12:05 - 0:21:14 - Loading tokenizer from /home/yuebi/Project/dim12_run/gpu_run_dim12/7631/tokenizer_data/tokenizer.json...
+INFO - 08/30/25 18:12:05 - 0:21:14 - 0 / 30
+INFO - 08/30/25 18:12:05 - 0:21:14 - number of examples in the dataset: 30
+INFO - 08/30/25 18:12:05 - 0:21:14 - max word length: 155
+INFO - 08/30/25 18:12:05 - 0:21:14 - number of unique characters in the vocabulary: 3
+INFO - 08/30/25 18:12:05 - 0:21:14 - vocabulary:
+INFO - 08/30/25 18:12:05 - 0:21:14 - ['V0', 'V1', 'V2']
+INFO - 08/30/25 18:12:05 - 0:21:14 - split up the dataset into 27 training examples and 3 test examples
+INFO - 08/30/25 18:12:05 - 0:21:14 - ============ Start of generation 2 ============
+INFO - 08/30/25 18:12:05 - 0:21:14 - Memory allocated:  22.58MB, reserved: 11002.00MB
+INFO - 08/30/25 18:12:05 - 0:21:14 - training
+INFO - 08/30/25 18:12:06 - 0:21:14 - step 0 | loss 1.5569 | step time 173.91ms
+INFO - 08/30/25 18:12:22 - 0:21:31 - step 100 | loss 0.5749 | step time 166.12ms
+INFO - 08/30/25 18:12:39 - 0:21:47 - step 200 | loss 0.3415 | step time 166.12ms
+INFO - 08/30/25 18:12:56 - 0:22:04 - step 300 | loss 0.1764 | step time 166.25ms
+INFO - 08/30/25 18:13:12 - 0:22:21 - step 400 | loss 0.0898 | step time 166.14ms
+INFO - 08/30/25 18:13:29 - 0:22:37 - Memory allocated:  22.58MB, reserved: 11002.00MB
+INFO - 08/30/25 18:13:29 - 0:22:37 - generating
+INFO - 08/30/25 18:32:26 - 0:41:35 - distribution of sample lengths: average: 476.129 max: 1199
+INFO - 08/30/25 18:32:26 - 0:41:35 - decoding
+INFO - 08/30/25 18:32:26 - 0:41:35 - Decoding complete. Check the output in /home/yuebi/Project/dim12_run/gpu_run_dim12/7631/transformer-output-decoded.txt
+INFO - 08/30/25 18:32:26 - 0:41:35 - Memory allocated:  22.58MB, reserved: 11002.00MB
+INFO - 08/30/25 18:32:26 - 0:41:35 - ============ End of generation 2 ============
+INFO - 08/30/25 18:32:26 - 0:41:35 - launching search.jl
+INFO - 08/30/25 18:32:26 - 0:41:35 - JULIA_NUM_THREADS is set to 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - distribution of scores
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 2080.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1980.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1930.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1846.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1820.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1809.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1776.0, Count: 2
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1773.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1770.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1768.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1760.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1758.0, Count: 2
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1755.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1750.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1742.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1736.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1725.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1713.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1712.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1710.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1706.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1696.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1692.0, Count: 2
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1685.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1684.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1674.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - Score: 1672.0, Count: 1
+INFO - 08/30/25 18:32:45 - 0:41:53 - tokenizing
+INFO - 08/30/25 18:32:45 - 0:41:53 - Loading tokenizer from /home/yuebi/Project/dim12_run/gpu_run_dim12/7631/tokenizer_data/tokenizer.json...
+INFO - 08/30/25 18:32:45 - 0:41:53 - 0 / 30
+INFO - 08/30/25 18:32:45 - 0:41:53 - number of examples in the dataset: 30
+INFO - 08/30/25 18:32:45 - 0:41:53 - max word length: 155
+INFO - 08/30/25 18:32:45 - 0:41:53 - number of unique characters in the vocabulary: 3
+INFO - 08/30/25 18:32:45 - 0:41:53 - vocabulary:
+INFO - 08/30/25 18:32:45 - 0:41:53 - ['V0', 'V1', 'V2']
+INFO - 08/30/25 18:32:45 - 0:41:53 - split up the dataset into 27 training examples and 3 test examples
+INFO - 08/30/25 18:32:45 - 0:41:53 - ============ Start of generation 3 ============
+INFO - 08/30/25 18:32:45 - 0:41:53 - Memory allocated:  22.58MB, reserved: 11002.00MB
+INFO - 08/30/25 18:32:45 - 0:41:53 - training
+INFO - 08/30/25 18:32:45 - 0:41:53 - step 0 | loss 1.0540 | step time 171.87ms
+INFO - 08/30/25 18:33:01 - 0:42:10 - step 100 | loss 0.5127 | step time 166.30ms
+INFO - 08/30/25 18:33:18 - 0:42:26 - step 200 | loss 0.1066 | step time 166.26ms
+INFO - 08/30/25 18:33:35 - 0:42:43 - step 300 | loss 0.0342 | step time 166.26ms
+INFO - 08/30/25 18:33:51 - 0:43:00 - step 400 | loss 0.0265 | step time 166.30ms
+INFO - 08/30/25 18:34:08 - 0:43:16 - Memory allocated:  22.58MB, reserved: 11002.00MB
+INFO - 08/30/25 18:34:08 - 0:43:16 - generating
