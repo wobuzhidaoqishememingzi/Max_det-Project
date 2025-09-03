@@ -1,0 +1,1325 @@
+INFO - 09/02/25 16:32:57 - 0:00:00 - ============ Initialized logger ============
+INFO - 09/02/25 16:32:57 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=dim11_run_2 --dump_path=/home/yuebi/Project/dim11_run --num_initial_empty_objects=300 --final_database_size=50 --target_db_size=50 --nb_local_searches=600 --max_epochs=20 --type=transformer --max-output-length=250 --sample-only=20000 --max-steps=1000 --n_tokens=3 --exp_id "7648"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim11_run/dim11_run_2/7648
+                                     exp_id: 7648
+                                     exp_name: dim11_run_2
+                                     final_database_size: 50
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 20
+                                     max_output_length: 250
+                                     max_steps: 1000
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 64
+                                     n_embd2: 32
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 4
+                                     n_nodes: 1
+                                     n_tokens: 3
+                                     nb_local_searches: 600
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 300
+                                     num_workers: 8
+                                     sample_only: 20000
+                                     seed: -1
+                                     target_db_size: 50
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 09/02/25 16:32:57 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim11_run/dim11_run_2/7648
+                                     
+INFO - 09/02/25 16:32:57 - 0:00:00 - Running command: python fc_loop.py --exp_name=dim11_run_2 --dump_path=/home/yuebi/Project/dim11_run --num_initial_empty_objects=300 --final_database_size=50 --target_db_size=50 --nb_local_searches=600 --max_epochs=20 --type=transformer --max-output-length=250 --sample-only=20000 --max-steps=1000 --n_tokens=3
+
+WARNING - 09/02/25 16:32:57 - 0:00:00 - Signal handler installed.
+INFO - 09/02/25 16:32:57 - 0:00:00 - seed: 238175323
+INFO - 09/02/25 16:32:57 - 0:00:00 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 16:33:03 - 0:00:06 - Created /home/yuebi/Project/dim11_run/dim11_run_2/7648/temp.txt and training tokenizer...
+INFO - 09/02/25 16:33:03 - 0:00:06 - Directory '/home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data' created.
+INFO - 09/02/25 16:33:03 - 0:00:06 - File '/home/yuebi/Project/dim11_run/dim11_run_2/7648/temp.txt' has been deleted.
+INFO - 09/02/25 16:33:03 - 0:00:06 - 0 / 50
+INFO - 09/02/25 16:33:03 - 0:00:06 - initializing at generation: 1
+INFO - 09/02/25 16:33:03 - 0:00:06 - number of examples in the dataset: 50
+INFO - 09/02/25 16:33:03 - 0:00:06 - max word length: 131
+INFO - 09/02/25 16:33:03 - 0:00:06 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 16:33:03 - 0:00:06 - vocabulary:
+INFO - 09/02/25 16:33:03 - 0:00:06 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 16:33:03 - 0:00:06 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 16:33:03 - 0:00:06 - dataset determined that: vocab_size=4, block_size=251
+INFO - 09/02/25 16:33:03 - 0:00:06 - model #params: 216640
+INFO - 09/02/25 16:33:03 - 0:00:06 - ============ Start of generation 1 ============
+INFO - 09/02/25 16:33:03 - 0:00:06 - Memory allocated:  1.80MB, reserved: 2.00MB
+INFO - 09/02/25 16:33:03 - 0:00:06 - training
+INFO - 09/02/25 16:33:08 - 0:00:11 - step 0 | loss 1.4959 | step time 360.13ms
+INFO - 09/02/25 16:33:11 - 0:00:14 - step 100 | loss 0.6256 | step time 30.40ms
+INFO - 09/02/25 16:33:14 - 0:00:17 - step 200 | loss 0.5932 | step time 30.31ms
+INFO - 09/02/25 16:33:17 - 0:00:20 - step 300 | loss 0.5223 | step time 30.38ms
+INFO - 09/02/25 16:33:20 - 0:00:23 - step 400 | loss 0.3421 | step time 30.25ms
+INFO - 09/02/25 16:33:23 - 0:00:26 - step 500 | loss 0.1659 | step time 30.46ms
+INFO - 09/02/25 16:33:23 - 0:00:26 - step 500 train loss: 0.16808128356933594 test loss: 1.9149914979934692
+INFO - 09/02/25 16:33:23 - 0:00:26 - test loss 1.9149914979934692 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 16:33:26 - 0:00:29 - step 600 | loss 0.0900 | step time 30.33ms
+INFO - 09/02/25 16:33:29 - 0:00:32 - step 700 | loss 0.0489 | step time 30.30ms
+INFO - 09/02/25 16:33:32 - 0:00:35 - step 800 | loss 0.1354 | step time 30.37ms
+INFO - 09/02/25 16:33:35 - 0:00:38 - step 900 | loss 0.0413 | step time 30.34ms
+INFO - 09/02/25 16:33:38 - 0:00:41 - Memory allocated:  20.90MB, reserved: 908.00MB
+INFO - 09/02/25 16:33:38 - 0:00:41 - generating
+INFO - 09/02/25 16:41:59 - 0:09:02 - distribution of sample lengths: average: 391.96885 max: 749
+INFO - 09/02/25 16:41:59 - 0:09:02 - decoding
+INFO - 09/02/25 16:41:59 - 0:09:02 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 16:41:59 - 0:09:02 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 16:41:59 - 0:09:02 - ============ End of generation 1 ============
+INFO - 09/02/25 16:41:59 - 0:09:02 - launching search.jl
+INFO - 09/02/25 16:41:59 - 0:09:02 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - distribution of scores
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 1053.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 1024.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 800.0, Count: 2
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 798.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 792.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 789.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 786.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 785.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 780.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 776.0, Count: 2
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 769.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 768.0, Count: 3
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 767.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 760.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 756.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 752.0, Count: 2
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 750.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 747.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 746.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 744.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 736.0, Count: 3
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 735.0, Count: 3
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 731.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 729.0, Count: 3
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 728.0, Count: 3
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 726.0, Count: 1
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 724.0, Count: 2
+INFO - 09/02/25 16:42:52 - 0:09:55 - Score: 720.0, Count: 9
+INFO - 09/02/25 16:42:52 - 0:09:55 - tokenizing
+INFO - 09/02/25 16:42:52 - 0:09:55 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 16:42:52 - 0:09:55 - 0 / 50
+INFO - 09/02/25 16:42:52 - 0:09:55 - number of examples in the dataset: 50
+INFO - 09/02/25 16:42:52 - 0:09:55 - max word length: 131
+INFO - 09/02/25 16:42:52 - 0:09:55 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 16:42:52 - 0:09:55 - vocabulary:
+INFO - 09/02/25 16:42:52 - 0:09:55 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 16:42:52 - 0:09:55 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 16:42:52 - 0:09:55 - ============ Start of generation 2 ============
+INFO - 09/02/25 16:42:52 - 0:09:55 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 16:42:52 - 0:09:55 - training
+INFO - 09/02/25 16:42:52 - 0:09:55 - step 0 | loss 2.6102 | step time 36.64ms
+INFO - 09/02/25 16:42:55 - 0:09:58 - step 100 | loss 0.5720 | step time 30.37ms
+INFO - 09/02/25 16:42:58 - 0:10:01 - step 200 | loss 0.3330 | step time 30.44ms
+INFO - 09/02/25 16:43:01 - 0:10:04 - step 300 | loss 0.0968 | step time 30.47ms
+INFO - 09/02/25 16:43:04 - 0:10:07 - step 400 | loss 0.0639 | step time 30.40ms
+INFO - 09/02/25 16:43:07 - 0:10:10 - step 500 | loss 0.1098 | step time 30.60ms
+INFO - 09/02/25 16:43:07 - 0:10:10 - step 500 train loss: 0.08079597353935242 test loss: 2.3284413814544678
+INFO - 09/02/25 16:43:07 - 0:10:10 - test loss 2.3284413814544678 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 16:43:10 - 0:10:13 - step 600 | loss 0.0413 | step time 30.48ms
+INFO - 09/02/25 16:43:13 - 0:10:16 - step 700 | loss 0.0513 | step time 30.29ms
+INFO - 09/02/25 16:43:16 - 0:10:20 - step 800 | loss 0.0353 | step time 30.31ms
+INFO - 09/02/25 16:43:19 - 0:10:23 - step 900 | loss 0.0316 | step time 30.53ms
+INFO - 09/02/25 16:43:22 - 0:10:26 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 16:43:22 - 0:10:26 - generating
+INFO - 09/02/25 16:51:42 - 0:18:45 - distribution of sample lengths: average: 391.32515 max: 749
+INFO - 09/02/25 16:51:42 - 0:18:45 - decoding
+INFO - 09/02/25 16:51:43 - 0:18:46 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 16:51:43 - 0:18:46 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 16:51:43 - 0:18:46 - ============ End of generation 2 ============
+INFO - 09/02/25 16:51:43 - 0:18:46 - launching search.jl
+INFO - 09/02/25 16:51:43 - 0:18:46 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - distribution of scores
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 789.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 783.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 777.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 768.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 760.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 756.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 752.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 750.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 749.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 741.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 736.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 735.0, Count: 2
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 729.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 728.0, Count: 2
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 724.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 720.0, Count: 2
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 716.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 712.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 710.0, Count: 2
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 706.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 705.0, Count: 2
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 704.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 702.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 700.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 699.0, Count: 3
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 696.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 695.0, Count: 2
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 694.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 690.0, Count: 2
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 688.0, Count: 3
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 687.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 686.0, Count: 1
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 684.0, Count: 2
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 681.0, Count: 2
+INFO - 09/02/25 16:52:33 - 0:19:36 - Score: 680.0, Count: 3
+INFO - 09/02/25 16:52:33 - 0:19:36 - tokenizing
+INFO - 09/02/25 16:52:33 - 0:19:36 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 16:52:33 - 0:19:36 - 0 / 50
+INFO - 09/02/25 16:52:33 - 0:19:36 - number of examples in the dataset: 50
+INFO - 09/02/25 16:52:33 - 0:19:36 - max word length: 131
+INFO - 09/02/25 16:52:33 - 0:19:36 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 16:52:33 - 0:19:36 - vocabulary:
+INFO - 09/02/25 16:52:33 - 0:19:36 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 16:52:33 - 0:19:36 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 16:52:33 - 0:19:36 - ============ Start of generation 3 ============
+INFO - 09/02/25 16:52:33 - 0:19:36 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 16:52:33 - 0:19:36 - training
+INFO - 09/02/25 16:52:33 - 0:19:36 - step 0 | loss 2.9210 | step time 35.66ms
+INFO - 09/02/25 16:52:36 - 0:19:39 - step 100 | loss 0.5898 | step time 30.55ms
+INFO - 09/02/25 16:52:39 - 0:19:43 - step 200 | loss 0.4267 | step time 30.39ms
+INFO - 09/02/25 16:52:42 - 0:19:46 - step 300 | loss 0.1116 | step time 30.43ms
+INFO - 09/02/25 16:52:45 - 0:19:49 - step 400 | loss 0.0585 | step time 30.53ms
+INFO - 09/02/25 16:52:48 - 0:19:52 - step 500 | loss 0.2776 | step time 30.42ms
+INFO - 09/02/25 16:52:48 - 0:19:52 - step 500 train loss: 0.26842179894447327 test loss: 2.57735538482666
+INFO - 09/02/25 16:52:48 - 0:19:52 - test loss 2.57735538482666 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 16:52:52 - 0:19:55 - step 600 | loss 0.0382 | step time 30.44ms
+INFO - 09/02/25 16:52:55 - 0:19:58 - step 700 | loss 0.0318 | step time 30.49ms
+INFO - 09/02/25 16:52:58 - 0:20:01 - step 800 | loss 0.0355 | step time 30.34ms
+INFO - 09/02/25 16:53:01 - 0:20:04 - step 900 | loss 0.0345 | step time 30.51ms
+INFO - 09/02/25 16:53:04 - 0:20:07 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 16:53:04 - 0:20:07 - generating
+INFO - 09/02/25 17:01:23 - 0:28:27 - distribution of sample lengths: average: 391.75985 max: 749
+INFO - 09/02/25 17:01:23 - 0:28:27 - decoding
+INFO - 09/02/25 17:01:24 - 0:28:27 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 17:01:24 - 0:28:27 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:01:24 - 0:28:27 - ============ End of generation 3 ============
+INFO - 09/02/25 17:01:24 - 0:28:27 - launching search.jl
+INFO - 09/02/25 17:01:24 - 0:28:27 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - distribution of scores
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 800.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 798.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 795.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 783.0, Count: 2
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 772.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 768.0, Count: 3
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 765.0, Count: 2
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 760.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 758.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 756.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 754.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 753.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 750.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 747.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 745.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 740.0, Count: 2
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 738.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 735.0, Count: 2
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 729.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 723.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 720.0, Count: 9
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 714.0, Count: 2
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 711.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 708.0, Count: 2
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 707.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 706.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 704.0, Count: 2
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 702.0, Count: 4
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 700.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - Score: 698.0, Count: 1
+INFO - 09/02/25 17:02:17 - 0:29:20 - tokenizing
+INFO - 09/02/25 17:02:17 - 0:29:20 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 17:02:17 - 0:29:20 - 0 / 50
+INFO - 09/02/25 17:02:17 - 0:29:20 - number of examples in the dataset: 50
+INFO - 09/02/25 17:02:17 - 0:29:20 - max word length: 131
+INFO - 09/02/25 17:02:17 - 0:29:20 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 17:02:17 - 0:29:20 - vocabulary:
+INFO - 09/02/25 17:02:17 - 0:29:20 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 17:02:17 - 0:29:20 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 17:02:17 - 0:29:20 - ============ Start of generation 4 ============
+INFO - 09/02/25 17:02:17 - 0:29:20 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:02:17 - 0:29:20 - training
+INFO - 09/02/25 17:02:17 - 0:29:20 - step 0 | loss 2.4945 | step time 34.80ms
+INFO - 09/02/25 17:02:20 - 0:29:23 - step 100 | loss 0.5182 | step time 30.61ms
+INFO - 09/02/25 17:02:23 - 0:29:26 - step 200 | loss 0.1307 | step time 30.52ms
+INFO - 09/02/25 17:02:26 - 0:29:29 - step 300 | loss 0.0450 | step time 30.49ms
+INFO - 09/02/25 17:02:29 - 0:29:32 - step 400 | loss 0.0344 | step time 30.40ms
+INFO - 09/02/25 17:02:32 - 0:29:36 - step 500 | loss 0.0344 | step time 30.44ms
+INFO - 09/02/25 17:02:32 - 0:29:36 - step 500 train loss: 0.0324377566576004 test loss: 3.1984124183654785
+INFO - 09/02/25 17:02:32 - 0:29:36 - test loss 3.1984124183654785 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 17:02:35 - 0:29:39 - step 600 | loss 0.0318 | step time 30.37ms
+INFO - 09/02/25 17:02:38 - 0:29:42 - step 700 | loss 0.0298 | step time 30.43ms
+INFO - 09/02/25 17:02:42 - 0:29:45 - step 800 | loss 0.0307 | step time 30.34ms
+INFO - 09/02/25 17:02:45 - 0:29:48 - step 900 | loss 0.0297 | step time 30.40ms
+INFO - 09/02/25 17:02:48 - 0:29:51 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:02:48 - 0:29:51 - generating
+INFO - 09/02/25 17:11:07 - 0:38:10 - distribution of sample lengths: average: 391.77455 max: 749
+INFO - 09/02/25 17:11:07 - 0:38:10 - decoding
+INFO - 09/02/25 17:11:08 - 0:38:11 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 17:11:08 - 0:38:11 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:11:08 - 0:38:11 - ============ End of generation 4 ============
+INFO - 09/02/25 17:11:08 - 0:38:11 - launching search.jl
+INFO - 09/02/25 17:11:08 - 0:38:11 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - distribution of scores
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 819.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 800.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 798.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 788.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 768.0, Count: 2
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 760.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 756.0, Count: 4
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 750.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 747.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 742.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 741.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 740.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 736.0, Count: 4
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 735.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 732.0, Count: 2
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 729.0, Count: 2
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 726.0, Count: 2
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 724.0, Count: 2
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 723.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 720.0, Count: 5
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 718.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 716.0, Count: 2
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 715.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 712.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 711.0, Count: 2
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 710.0, Count: 4
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 708.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 705.0, Count: 1
+INFO - 09/02/25 17:12:01 - 0:39:05 - Score: 704.0, Count: 2
+INFO - 09/02/25 17:12:01 - 0:39:05 - tokenizing
+INFO - 09/02/25 17:12:01 - 0:39:05 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 17:12:01 - 0:39:05 - 0 / 50
+INFO - 09/02/25 17:12:01 - 0:39:05 - number of examples in the dataset: 50
+INFO - 09/02/25 17:12:01 - 0:39:05 - max word length: 131
+INFO - 09/02/25 17:12:01 - 0:39:05 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 17:12:01 - 0:39:05 - vocabulary:
+INFO - 09/02/25 17:12:01 - 0:39:05 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 17:12:01 - 0:39:05 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 17:12:01 - 0:39:05 - ============ Start of generation 5 ============
+INFO - 09/02/25 17:12:01 - 0:39:05 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:12:01 - 0:39:05 - training
+INFO - 09/02/25 17:12:02 - 0:39:05 - step 0 | loss 2.4384 | step time 35.31ms
+INFO - 09/02/25 17:12:05 - 0:39:08 - step 100 | loss 0.4395 | step time 30.52ms
+INFO - 09/02/25 17:12:08 - 0:39:11 - step 200 | loss 0.0683 | step time 30.51ms
+INFO - 09/02/25 17:12:11 - 0:39:14 - step 300 | loss 0.0788 | step time 30.58ms
+INFO - 09/02/25 17:12:14 - 0:39:17 - step 400 | loss 0.0337 | step time 30.69ms
+INFO - 09/02/25 17:12:17 - 0:39:20 - step 500 | loss 0.0323 | step time 30.63ms
+INFO - 09/02/25 17:12:17 - 0:39:20 - step 500 train loss: 0.0320674404501915 test loss: 2.9905149936676025
+INFO - 09/02/25 17:12:17 - 0:39:20 - test loss 2.9905149936676025 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 17:12:20 - 0:39:23 - step 600 | loss 0.0324 | step time 30.53ms
+INFO - 09/02/25 17:12:23 - 0:39:26 - step 700 | loss 0.0301 | step time 30.56ms
+INFO - 09/02/25 17:12:26 - 0:39:29 - step 800 | loss 0.0309 | step time 30.59ms
+INFO - 09/02/25 17:12:29 - 0:39:32 - step 900 | loss 0.0305 | step time 30.50ms
+INFO - 09/02/25 17:12:32 - 0:39:35 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:12:32 - 0:39:35 - generating
+INFO - 09/02/25 17:20:52 - 0:47:55 - distribution of sample lengths: average: 391.86245 max: 491
+INFO - 09/02/25 17:20:52 - 0:47:55 - decoding
+INFO - 09/02/25 17:20:52 - 0:47:55 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 17:20:52 - 0:47:55 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:20:52 - 0:47:55 - ============ End of generation 5 ============
+INFO - 09/02/25 17:20:52 - 0:47:55 - launching search.jl
+INFO - 09/02/25 17:20:52 - 0:47:55 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - distribution of scores
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 837.0, Count: 2
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 819.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 807.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 801.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 789.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 788.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 783.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 780.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 768.0, Count: 3
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 765.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 762.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 756.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 752.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 750.0, Count: 2
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 740.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 738.0, Count: 2
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 736.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 735.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 732.0, Count: 2
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 730.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 728.0, Count: 3
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 726.0, Count: 2
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 725.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 723.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 721.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 720.0, Count: 5
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 717.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 715.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 714.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 712.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 711.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 708.0, Count: 2
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 707.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 705.0, Count: 2
+INFO - 09/02/25 17:21:47 - 0:48:50 - Score: 704.0, Count: 1
+INFO - 09/02/25 17:21:47 - 0:48:50 - tokenizing
+INFO - 09/02/25 17:21:47 - 0:48:50 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 17:21:47 - 0:48:50 - 0 / 50
+INFO - 09/02/25 17:21:47 - 0:48:50 - number of examples in the dataset: 50
+INFO - 09/02/25 17:21:47 - 0:48:50 - max word length: 131
+INFO - 09/02/25 17:21:47 - 0:48:50 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 17:21:47 - 0:48:50 - vocabulary:
+INFO - 09/02/25 17:21:47 - 0:48:50 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 17:21:47 - 0:48:50 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 17:21:47 - 0:48:50 - ============ Start of generation 6 ============
+INFO - 09/02/25 17:21:47 - 0:48:50 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:21:47 - 0:48:50 - training
+INFO - 09/02/25 17:21:47 - 0:48:50 - step 0 | loss 2.7765 | step time 34.80ms
+INFO - 09/02/25 17:21:50 - 0:48:53 - step 100 | loss 0.4798 | step time 30.38ms
+INFO - 09/02/25 17:21:53 - 0:48:56 - step 200 | loss 0.0642 | step time 30.49ms
+INFO - 09/02/25 17:21:56 - 0:48:59 - step 300 | loss 0.0354 | step time 30.57ms
+INFO - 09/02/25 17:21:59 - 0:49:02 - step 400 | loss 0.0316 | step time 30.51ms
+INFO - 09/02/25 17:22:02 - 0:49:05 - step 500 | loss 0.0316 | step time 30.46ms
+INFO - 09/02/25 17:22:02 - 0:49:05 - step 500 train loss: 0.03256498649716377 test loss: 2.8455944061279297
+INFO - 09/02/25 17:22:02 - 0:49:05 - test loss 2.8455944061279297 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 17:22:05 - 0:49:08 - step 600 | loss 0.0324 | step time 30.31ms
+INFO - 09/02/25 17:22:08 - 0:49:12 - step 700 | loss 0.0783 | step time 30.34ms
+INFO - 09/02/25 17:22:11 - 0:49:15 - step 800 | loss 0.0312 | step time 30.55ms
+INFO - 09/02/25 17:22:14 - 0:49:18 - step 900 | loss 0.0307 | step time 30.55ms
+INFO - 09/02/25 17:22:17 - 0:49:21 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:22:17 - 0:49:21 - generating
+INFO - 09/02/25 17:30:37 - 0:57:40 - distribution of sample lengths: average: 391.89695 max: 392
+INFO - 09/02/25 17:30:37 - 0:57:40 - decoding
+INFO - 09/02/25 17:30:38 - 0:57:41 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 17:30:38 - 0:57:41 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:30:38 - 0:57:41 - ============ End of generation 6 ============
+INFO - 09/02/25 17:30:38 - 0:57:41 - launching search.jl
+INFO - 09/02/25 17:30:38 - 0:57:41 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - distribution of scores
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 882.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 832.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 819.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 805.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 795.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 774.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 767.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 765.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 760.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 747.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 736.0, Count: 2
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 730.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 729.0, Count: 2
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 728.0, Count: 4
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 726.0, Count: 2
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 720.0, Count: 3
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 718.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 713.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 712.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 708.0, Count: 6
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 705.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 704.0, Count: 2
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 703.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 702.0, Count: 2
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 699.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 696.0, Count: 5
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 695.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 694.0, Count: 1
+INFO - 09/02/25 17:31:31 - 0:58:35 - Score: 690.0, Count: 3
+INFO - 09/02/25 17:31:31 - 0:58:35 - tokenizing
+INFO - 09/02/25 17:31:31 - 0:58:35 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 17:31:31 - 0:58:35 - 0 / 50
+INFO - 09/02/25 17:31:31 - 0:58:35 - number of examples in the dataset: 50
+INFO - 09/02/25 17:31:31 - 0:58:35 - max word length: 131
+INFO - 09/02/25 17:31:31 - 0:58:35 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 17:31:31 - 0:58:35 - vocabulary:
+INFO - 09/02/25 17:31:31 - 0:58:35 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 17:31:31 - 0:58:35 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 17:31:31 - 0:58:35 - ============ Start of generation 7 ============
+INFO - 09/02/25 17:31:31 - 0:58:35 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:31:31 - 0:58:35 - training
+INFO - 09/02/25 17:31:32 - 0:58:35 - step 0 | loss 2.8880 | step time 35.02ms
+INFO - 09/02/25 17:31:35 - 0:58:38 - step 100 | loss 0.4421 | step time 30.48ms
+INFO - 09/02/25 17:31:38 - 0:58:41 - step 200 | loss 0.0543 | step time 30.46ms
+INFO - 09/02/25 17:31:41 - 0:58:44 - step 300 | loss 0.0382 | step time 30.48ms
+INFO - 09/02/25 17:31:44 - 0:58:47 - step 400 | loss 0.0355 | step time 30.41ms
+INFO - 09/02/25 17:31:47 - 0:58:50 - step 500 | loss 0.0319 | step time 30.42ms
+INFO - 09/02/25 17:31:47 - 0:58:50 - step 500 train loss: 0.032109081745147705 test loss: 2.779280424118042
+INFO - 09/02/25 17:31:47 - 0:58:50 - test loss 2.779280424118042 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 17:31:50 - 0:58:53 - step 600 | loss 0.0327 | step time 30.32ms
+INFO - 09/02/25 17:31:53 - 0:58:56 - step 700 | loss 0.0323 | step time 30.52ms
+INFO - 09/02/25 17:31:56 - 0:58:59 - step 800 | loss 0.1172 | step time 30.57ms
+INFO - 09/02/25 17:31:59 - 0:59:02 - step 900 | loss 0.0289 | step time 30.38ms
+INFO - 09/02/25 17:32:02 - 0:59:05 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:32:02 - 0:59:05 - generating
+INFO - 09/02/25 17:40:22 - 1:07:25 - distribution of sample lengths: average: 391.95875 max: 392
+INFO - 09/02/25 17:40:22 - 1:07:25 - decoding
+INFO - 09/02/25 17:40:22 - 1:07:25 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 17:40:22 - 1:07:25 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:40:22 - 1:07:25 - ============ End of generation 7 ============
+INFO - 09/02/25 17:40:22 - 1:07:25 - launching search.jl
+INFO - 09/02/25 17:40:22 - 1:07:25 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - distribution of scores
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 819.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 805.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 779.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 768.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 760.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 750.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 747.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 744.0, Count: 2
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 740.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 735.0, Count: 3
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 732.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 729.0, Count: 2
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 728.0, Count: 3
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 727.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 726.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 721.0, Count: 3
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 720.0, Count: 9
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 716.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 712.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 711.0, Count: 2
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 708.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 705.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 704.0, Count: 2
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 702.0, Count: 2
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 701.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 700.0, Count: 5
+INFO - 09/02/25 17:41:16 - 1:08:19 - Score: 697.0, Count: 1
+INFO - 09/02/25 17:41:16 - 1:08:19 - tokenizing
+INFO - 09/02/25 17:41:16 - 1:08:19 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 17:41:16 - 1:08:19 - 0 / 50
+INFO - 09/02/25 17:41:16 - 1:08:19 - number of examples in the dataset: 50
+INFO - 09/02/25 17:41:16 - 1:08:19 - max word length: 131
+INFO - 09/02/25 17:41:16 - 1:08:19 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 17:41:16 - 1:08:19 - vocabulary:
+INFO - 09/02/25 17:41:16 - 1:08:19 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 17:41:16 - 1:08:19 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 17:41:16 - 1:08:19 - ============ Start of generation 8 ============
+INFO - 09/02/25 17:41:16 - 1:08:19 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:41:16 - 1:08:19 - training
+INFO - 09/02/25 17:41:16 - 1:08:19 - step 0 | loss 3.1374 | step time 35.27ms
+INFO - 09/02/25 17:41:19 - 1:08:22 - step 100 | loss 0.4836 | step time 30.53ms
+INFO - 09/02/25 17:41:22 - 1:08:25 - step 200 | loss 0.0693 | step time 30.46ms
+INFO - 09/02/25 17:41:25 - 1:08:28 - step 300 | loss 0.0328 | step time 30.49ms
+INFO - 09/02/25 17:41:28 - 1:08:31 - step 400 | loss 0.0300 | step time 30.39ms
+INFO - 09/02/25 17:41:31 - 1:08:34 - step 500 | loss 0.0299 | step time 30.51ms
+INFO - 09/02/25 17:41:31 - 1:08:34 - step 500 train loss: 0.03169643506407738 test loss: 3.271423816680908
+INFO - 09/02/25 17:41:31 - 1:08:34 - test loss 3.271423816680908 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 17:41:34 - 1:08:37 - step 600 | loss 0.0316 | step time 30.51ms
+INFO - 09/02/25 17:41:37 - 1:08:40 - step 700 | loss 0.0311 | step time 30.37ms
+INFO - 09/02/25 17:41:40 - 1:08:43 - step 800 | loss 0.0298 | step time 30.57ms
+INFO - 09/02/25 17:41:43 - 1:08:46 - step 900 | loss 0.0306 | step time 30.41ms
+INFO - 09/02/25 17:41:46 - 1:08:49 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:41:46 - 1:08:49 - generating
+INFO - 09/02/25 17:50:06 - 1:17:09 - distribution of sample lengths: average: 392.05355 max: 749
+INFO - 09/02/25 17:50:06 - 1:17:09 - decoding
+INFO - 09/02/25 17:50:06 - 1:17:10 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 17:50:06 - 1:17:10 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:50:06 - 1:17:10 - ============ End of generation 8 ============
+INFO - 09/02/25 17:50:06 - 1:17:10 - launching search.jl
+INFO - 09/02/25 17:50:06 - 1:17:10 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - distribution of scores
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 848.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 810.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 807.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 769.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 756.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 753.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 744.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 738.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 734.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 732.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 729.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 724.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 723.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 722.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 720.0, Count: 10
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 719.0, Count: 2
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 715.0, Count: 3
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 714.0, Count: 2
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 712.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 711.0, Count: 2
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 710.0, Count: 2
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 708.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 705.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 704.0, Count: 4
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 702.0, Count: 3
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 699.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 696.0, Count: 3
+INFO - 09/02/25 17:51:00 - 1:18:03 - Score: 695.0, Count: 1
+INFO - 09/02/25 17:51:00 - 1:18:03 - tokenizing
+INFO - 09/02/25 17:51:00 - 1:18:03 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 17:51:00 - 1:18:03 - 0 / 50
+INFO - 09/02/25 17:51:00 - 1:18:03 - number of examples in the dataset: 50
+INFO - 09/02/25 17:51:00 - 1:18:03 - max word length: 131
+INFO - 09/02/25 17:51:00 - 1:18:03 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 17:51:00 - 1:18:03 - vocabulary:
+INFO - 09/02/25 17:51:00 - 1:18:03 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 17:51:00 - 1:18:03 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 17:51:00 - 1:18:03 - ============ Start of generation 9 ============
+INFO - 09/02/25 17:51:00 - 1:18:03 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:51:00 - 1:18:03 - training
+INFO - 09/02/25 17:51:00 - 1:18:04 - step 0 | loss 2.3825 | step time 35.13ms
+INFO - 09/02/25 17:51:03 - 1:18:07 - step 100 | loss 0.3755 | step time 30.49ms
+INFO - 09/02/25 17:51:07 - 1:18:10 - step 200 | loss 0.0396 | step time 30.48ms
+INFO - 09/02/25 17:51:10 - 1:18:13 - step 300 | loss 0.0322 | step time 30.51ms
+INFO - 09/02/25 17:51:13 - 1:18:16 - step 400 | loss 0.0478 | step time 30.44ms
+INFO - 09/02/25 17:51:16 - 1:18:19 - step 500 | loss 0.0308 | step time 30.59ms
+INFO - 09/02/25 17:51:16 - 1:18:19 - step 500 train loss: 0.030380934476852417 test loss: 2.4775989055633545
+INFO - 09/02/25 17:51:16 - 1:18:19 - test loss 2.4775989055633545 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 17:51:19 - 1:18:22 - step 600 | loss 0.0312 | step time 30.42ms
+INFO - 09/02/25 17:51:22 - 1:18:25 - step 700 | loss 0.0297 | step time 30.52ms
+INFO - 09/02/25 17:51:25 - 1:18:28 - step 800 | loss 0.0303 | step time 30.47ms
+INFO - 09/02/25 17:51:28 - 1:18:31 - step 900 | loss 0.0303 | step time 30.48ms
+INFO - 09/02/25 17:51:31 - 1:18:34 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:51:31 - 1:18:34 - generating
+INFO - 09/02/25 17:59:51 - 1:26:54 - distribution of sample lengths: average: 392.0204 max: 749
+INFO - 09/02/25 17:59:51 - 1:26:54 - decoding
+INFO - 09/02/25 17:59:51 - 1:26:54 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 17:59:51 - 1:26:54 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 17:59:51 - 1:26:54 - ============ End of generation 9 ============
+INFO - 09/02/25 17:59:51 - 1:26:54 - launching search.jl
+INFO - 09/02/25 17:59:51 - 1:26:54 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - distribution of scores
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 837.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 816.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 786.0, Count: 2
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 784.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 772.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 768.0, Count: 5
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 765.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 760.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 757.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 756.0, Count: 2
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 741.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 740.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 738.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 736.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 735.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 734.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 733.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 732.0, Count: 2
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 730.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 726.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 725.0, Count: 2
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 724.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 723.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 721.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 720.0, Count: 7
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 718.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 713.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 710.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 708.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 706.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 704.0, Count: 3
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 702.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 700.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - Score: 696.0, Count: 1
+INFO - 09/02/25 18:00:45 - 1:27:48 - tokenizing
+INFO - 09/02/25 18:00:45 - 1:27:48 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 18:00:45 - 1:27:48 - 0 / 50
+INFO - 09/02/25 18:00:45 - 1:27:48 - number of examples in the dataset: 50
+INFO - 09/02/25 18:00:45 - 1:27:48 - max word length: 131
+INFO - 09/02/25 18:00:45 - 1:27:48 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 18:00:45 - 1:27:48 - vocabulary:
+INFO - 09/02/25 18:00:45 - 1:27:48 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 18:00:45 - 1:27:48 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 18:00:45 - 1:27:48 - ============ Start of generation 10 ============
+INFO - 09/02/25 18:00:45 - 1:27:48 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:00:45 - 1:27:48 - training
+INFO - 09/02/25 18:00:45 - 1:27:48 - step 0 | loss 2.3521 | step time 34.87ms
+INFO - 09/02/25 18:00:48 - 1:27:51 - step 100 | loss 0.2951 | step time 30.33ms
+INFO - 09/02/25 18:00:51 - 1:27:54 - step 200 | loss 0.0575 | step time 30.48ms
+INFO - 09/02/25 18:00:54 - 1:27:57 - step 300 | loss 0.0338 | step time 30.56ms
+INFO - 09/02/25 18:00:57 - 1:28:00 - step 400 | loss 0.0325 | step time 30.41ms
+INFO - 09/02/25 18:01:00 - 1:28:03 - step 500 | loss 0.0452 | step time 30.44ms
+INFO - 09/02/25 18:01:00 - 1:28:03 - step 500 train loss: 0.04137099161744118 test loss: 2.276184558868408
+INFO - 09/02/25 18:01:00 - 1:28:03 - test loss 2.276184558868408 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 18:01:03 - 1:28:06 - step 600 | loss 0.0301 | step time 30.67ms
+INFO - 09/02/25 18:01:06 - 1:28:10 - step 700 | loss 0.0306 | step time 30.52ms
+INFO - 09/02/25 18:01:09 - 1:28:13 - step 800 | loss 0.0307 | step time 30.32ms
+INFO - 09/02/25 18:01:12 - 1:28:16 - step 900 | loss 0.0316 | step time 30.46ms
+INFO - 09/02/25 18:01:15 - 1:28:19 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:01:15 - 1:28:19 - generating
+INFO - 09/02/25 18:09:35 - 1:36:38 - distribution of sample lengths: average: 392.0357 max: 749
+INFO - 09/02/25 18:09:35 - 1:36:38 - decoding
+INFO - 09/02/25 18:09:36 - 1:36:39 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 18:09:36 - 1:36:39 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:09:36 - 1:36:39 - ============ End of generation 10 ============
+INFO - 09/02/25 18:09:36 - 1:36:39 - launching search.jl
+INFO - 09/02/25 18:09:36 - 1:36:39 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 18:10:29 - 1:37:33 - distribution of scores
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 762.0, Count: 1
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 736.0, Count: 1
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 735.0, Count: 1
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 730.0, Count: 1
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 728.0, Count: 3
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 724.0, Count: 1
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 720.0, Count: 5
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 717.0, Count: 1
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 716.0, Count: 1
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 708.0, Count: 2
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 704.0, Count: 4
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 702.0, Count: 3
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 701.0, Count: 1
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 700.0, Count: 4
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 699.0, Count: 1
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 696.0, Count: 5
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 693.0, Count: 1
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 692.0, Count: 2
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 690.0, Count: 3
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 688.0, Count: 3
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 686.0, Count: 1
+INFO - 09/02/25 18:10:29 - 1:37:33 - Score: 684.0, Count: 5
+INFO - 09/02/25 18:10:29 - 1:37:33 - tokenizing
+INFO - 09/02/25 18:10:29 - 1:37:33 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 18:10:29 - 1:37:33 - 0 / 50
+INFO - 09/02/25 18:10:29 - 1:37:33 - number of examples in the dataset: 50
+INFO - 09/02/25 18:10:29 - 1:37:33 - max word length: 131
+INFO - 09/02/25 18:10:29 - 1:37:33 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 18:10:29 - 1:37:33 - vocabulary:
+INFO - 09/02/25 18:10:29 - 1:37:33 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 18:10:29 - 1:37:33 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 18:10:29 - 1:37:33 - ============ Start of generation 11 ============
+INFO - 09/02/25 18:10:29 - 1:37:33 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:10:29 - 1:37:33 - training
+INFO - 09/02/25 18:10:30 - 1:37:33 - step 0 | loss 2.2556 | step time 36.14ms
+INFO - 09/02/25 18:10:33 - 1:37:36 - step 100 | loss 0.3067 | step time 30.39ms
+INFO - 09/02/25 18:10:36 - 1:37:39 - step 200 | loss 0.0566 | step time 30.47ms
+INFO - 09/02/25 18:10:39 - 1:37:42 - step 300 | loss 0.0333 | step time 30.41ms
+INFO - 09/02/25 18:10:42 - 1:37:45 - step 400 | loss 0.0319 | step time 30.50ms
+INFO - 09/02/25 18:10:45 - 1:37:48 - step 500 | loss 0.0310 | step time 30.43ms
+INFO - 09/02/25 18:10:45 - 1:37:48 - step 500 train loss: 0.032871000468730927 test loss: 3.189664363861084
+INFO - 09/02/25 18:10:45 - 1:37:48 - test loss 3.189664363861084 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 18:10:48 - 1:37:51 - step 600 | loss 0.0363 | step time 30.46ms
+INFO - 09/02/25 18:10:51 - 1:37:54 - step 700 | loss 0.0301 | step time 30.39ms
+INFO - 09/02/25 18:10:54 - 1:37:57 - step 800 | loss 0.0295 | step time 30.45ms
+INFO - 09/02/25 18:10:57 - 1:38:00 - step 900 | loss 0.0307 | step time 30.35ms
+INFO - 09/02/25 18:11:00 - 1:38:03 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:11:00 - 1:38:03 - generating
+INFO - 09/02/25 18:19:20 - 1:46:23 - distribution of sample lengths: average: 392.0 max: 392
+INFO - 09/02/25 18:19:20 - 1:46:23 - decoding
+INFO - 09/02/25 18:19:20 - 1:46:23 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 18:19:20 - 1:46:23 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:19:20 - 1:46:23 - ============ End of generation 11 ============
+INFO - 09/02/25 18:19:20 - 1:46:23 - launching search.jl
+INFO - 09/02/25 18:19:20 - 1:46:23 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - distribution of scores
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 798.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 789.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 768.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 765.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 764.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 758.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 756.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 747.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 740.0, Count: 3
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 738.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 736.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 728.0, Count: 3
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 727.0, Count: 2
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 724.0, Count: 2
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 723.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 720.0, Count: 10
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 714.0, Count: 2
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 711.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 710.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 709.0, Count: 3
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 708.0, Count: 3
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 706.0, Count: 1
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 705.0, Count: 2
+INFO - 09/02/25 18:20:14 - 1:47:17 - Score: 704.0, Count: 6
+INFO - 09/02/25 18:20:14 - 1:47:17 - tokenizing
+INFO - 09/02/25 18:20:14 - 1:47:17 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 18:20:14 - 1:47:17 - 0 / 50
+INFO - 09/02/25 18:20:14 - 1:47:17 - number of examples in the dataset: 50
+INFO - 09/02/25 18:20:14 - 1:47:17 - max word length: 131
+INFO - 09/02/25 18:20:14 - 1:47:17 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 18:20:14 - 1:47:17 - vocabulary:
+INFO - 09/02/25 18:20:14 - 1:47:17 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 18:20:14 - 1:47:17 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 18:20:14 - 1:47:17 - ============ Start of generation 12 ============
+INFO - 09/02/25 18:20:14 - 1:47:17 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:20:14 - 1:47:17 - training
+INFO - 09/02/25 18:20:14 - 1:47:17 - step 0 | loss 3.0451 | step time 35.06ms
+INFO - 09/02/25 18:20:17 - 1:47:20 - step 100 | loss 0.3705 | step time 30.41ms
+INFO - 09/02/25 18:20:20 - 1:47:23 - step 200 | loss 0.0868 | step time 30.30ms
+INFO - 09/02/25 18:20:23 - 1:47:26 - step 300 | loss 0.0327 | step time 30.47ms
+INFO - 09/02/25 18:20:26 - 1:47:29 - step 400 | loss 0.0295 | step time 30.38ms
+INFO - 09/02/25 18:20:29 - 1:47:33 - step 500 | loss 0.0426 | step time 30.35ms
+INFO - 09/02/25 18:20:29 - 1:47:33 - step 500 train loss: 0.0401199534535408 test loss: 2.2964072227478027
+INFO - 09/02/25 18:20:29 - 1:47:33 - test loss 2.2964072227478027 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 18:20:32 - 1:47:36 - step 600 | loss 0.0313 | step time 30.41ms
+INFO - 09/02/25 18:20:35 - 1:47:39 - step 700 | loss 0.0315 | step time 30.40ms
+INFO - 09/02/25 18:20:38 - 1:47:42 - step 800 | loss 0.0321 | step time 30.40ms
+INFO - 09/02/25 18:20:42 - 1:47:45 - step 900 | loss 0.0341 | step time 30.44ms
+INFO - 09/02/25 18:20:45 - 1:47:48 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:20:45 - 1:47:48 - generating
+INFO - 09/02/25 18:29:04 - 1:56:07 - distribution of sample lengths: average: 392.0063 max: 749
+INFO - 09/02/25 18:29:04 - 1:56:07 - decoding
+INFO - 09/02/25 18:29:05 - 1:56:08 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 18:29:05 - 1:56:08 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:29:05 - 1:56:08 - ============ End of generation 12 ============
+INFO - 09/02/25 18:29:05 - 1:56:08 - launching search.jl
+INFO - 09/02/25 18:29:05 - 1:56:08 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - distribution of scores
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 882.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 784.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 760.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 752.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 750.0, Count: 2
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 738.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 736.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 732.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 728.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 720.0, Count: 3
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 712.0, Count: 2
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 711.0, Count: 2
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 706.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 705.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 702.0, Count: 2
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 696.0, Count: 4
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 694.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 693.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 691.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 690.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 688.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 687.0, Count: 3
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 686.0, Count: 3
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 684.0, Count: 3
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 683.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 680.0, Count: 3
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 678.0, Count: 2
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 676.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 675.0, Count: 1
+INFO - 09/02/25 18:29:58 - 1:57:01 - Score: 672.0, Count: 3
+INFO - 09/02/25 18:29:58 - 1:57:01 - tokenizing
+INFO - 09/02/25 18:29:58 - 1:57:01 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 18:29:58 - 1:57:01 - 0 / 50
+INFO - 09/02/25 18:29:58 - 1:57:01 - number of examples in the dataset: 50
+INFO - 09/02/25 18:29:58 - 1:57:01 - max word length: 131
+INFO - 09/02/25 18:29:58 - 1:57:01 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 18:29:58 - 1:57:01 - vocabulary:
+INFO - 09/02/25 18:29:58 - 1:57:01 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 18:29:58 - 1:57:01 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 18:29:58 - 1:57:01 - ============ Start of generation 13 ============
+INFO - 09/02/25 18:29:58 - 1:57:01 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:29:58 - 1:57:01 - training
+INFO - 09/02/25 18:29:58 - 1:57:01 - step 0 | loss 2.9688 | step time 35.08ms
+INFO - 09/02/25 18:30:01 - 1:57:04 - step 100 | loss 0.4107 | step time 30.51ms
+INFO - 09/02/25 18:30:04 - 1:57:07 - step 200 | loss 0.0529 | step time 30.43ms
+INFO - 09/02/25 18:30:07 - 1:57:10 - step 300 | loss 0.0342 | step time 30.45ms
+INFO - 09/02/25 18:30:10 - 1:57:13 - step 400 | loss 0.0385 | step time 30.61ms
+INFO - 09/02/25 18:30:13 - 1:57:16 - step 500 | loss 0.0310 | step time 30.34ms
+INFO - 09/02/25 18:30:13 - 1:57:16 - step 500 train loss: 0.030955273658037186 test loss: 2.7100586891174316
+INFO - 09/02/25 18:30:13 - 1:57:16 - test loss 2.7100586891174316 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 18:30:16 - 1:57:19 - step 600 | loss 0.0299 | step time 30.46ms
+INFO - 09/02/25 18:30:19 - 1:57:22 - step 700 | loss 0.0311 | step time 30.36ms
+INFO - 09/02/25 18:30:22 - 1:57:25 - step 800 | loss 0.0320 | step time 30.42ms
+INFO - 09/02/25 18:30:25 - 1:57:28 - step 900 | loss 0.0483 | step time 30.40ms
+INFO - 09/02/25 18:30:28 - 1:57:31 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:30:28 - 1:57:31 - generating
+INFO - 09/02/25 18:38:48 - 2:05:51 - distribution of sample lengths: average: 391.9631 max: 392
+INFO - 09/02/25 18:38:48 - 2:05:51 - decoding
+INFO - 09/02/25 18:38:48 - 2:05:52 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 18:38:48 - 2:05:52 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:38:48 - 2:05:52 - ============ End of generation 13 ============
+INFO - 09/02/25 18:38:48 - 2:05:52 - launching search.jl
+INFO - 09/02/25 18:38:48 - 2:05:52 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - distribution of scores
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 783.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 777.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 765.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 762.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 759.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 752.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 747.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 744.0, Count: 2
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 740.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 738.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 736.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 735.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 730.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 729.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 728.0, Count: 2
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 723.0, Count: 2
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 722.0, Count: 2
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 721.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 720.0, Count: 9
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 716.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 715.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 712.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 708.0, Count: 2
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 706.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 705.0, Count: 3
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 704.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 702.0, Count: 3
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 701.0, Count: 1
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 700.0, Count: 2
+INFO - 09/02/25 18:39:42 - 2:06:45 - Score: 696.0, Count: 3
+INFO - 09/02/25 18:39:42 - 2:06:45 - tokenizing
+INFO - 09/02/25 18:39:42 - 2:06:45 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 18:39:42 - 2:06:45 - 0 / 50
+INFO - 09/02/25 18:39:42 - 2:06:45 - number of examples in the dataset: 50
+INFO - 09/02/25 18:39:42 - 2:06:45 - max word length: 131
+INFO - 09/02/25 18:39:42 - 2:06:45 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 18:39:42 - 2:06:45 - vocabulary:
+INFO - 09/02/25 18:39:42 - 2:06:45 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 18:39:42 - 2:06:45 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 18:39:42 - 2:06:45 - ============ Start of generation 14 ============
+INFO - 09/02/25 18:39:42 - 2:06:45 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:39:42 - 2:06:45 - training
+INFO - 09/02/25 18:39:42 - 2:06:46 - step 0 | loss 2.9793 | step time 36.10ms
+INFO - 09/02/25 18:39:45 - 2:06:49 - step 100 | loss 0.3165 | step time 30.58ms
+INFO - 09/02/25 18:39:48 - 2:06:52 - step 200 | loss 0.0405 | step time 30.52ms
+INFO - 09/02/25 18:39:52 - 2:06:55 - step 300 | loss 0.0320 | step time 30.42ms
+INFO - 09/02/25 18:39:55 - 2:06:58 - step 400 | loss 0.0316 | step time 30.45ms
+INFO - 09/02/25 18:39:58 - 2:07:01 - step 500 | loss 0.0709 | step time 30.40ms
+INFO - 09/02/25 18:39:58 - 2:07:01 - step 500 train loss: 0.07031466066837311 test loss: 3.2284317016601562
+INFO - 09/02/25 18:39:58 - 2:07:01 - test loss 3.2284317016601562 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 18:40:01 - 2:07:04 - step 600 | loss 0.0301 | step time 30.81ms
+INFO - 09/02/25 18:40:04 - 2:07:07 - step 700 | loss 0.0297 | step time 30.53ms
+INFO - 09/02/25 18:40:07 - 2:07:10 - step 800 | loss 0.0298 | step time 30.43ms
+INFO - 09/02/25 18:40:10 - 2:07:13 - step 900 | loss 0.0294 | step time 30.54ms
+INFO - 09/02/25 18:40:13 - 2:07:16 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:40:13 - 2:07:16 - generating
+INFO - 09/02/25 18:48:33 - 2:15:36 - distribution of sample lengths: average: 391.97075 max: 392
+INFO - 09/02/25 18:48:33 - 2:15:36 - decoding
+INFO - 09/02/25 18:48:33 - 2:15:36 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 18:48:33 - 2:15:36 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:48:33 - 2:15:36 - ============ End of generation 14 ============
+INFO - 09/02/25 18:48:33 - 2:15:36 - launching search.jl
+INFO - 09/02/25 18:48:33 - 2:15:36 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - distribution of scores
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 882.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 789.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 760.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 753.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 750.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 740.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 733.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 732.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 729.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 728.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 725.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 720.0, Count: 6
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 716.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 714.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 710.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 709.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 708.0, Count: 2
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 705.0, Count: 2
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 704.0, Count: 2
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 703.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 702.0, Count: 3
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 701.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 700.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 699.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 696.0, Count: 2
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 695.0, Count: 2
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 690.0, Count: 2
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 688.0, Count: 2
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 687.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 686.0, Count: 2
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 685.0, Count: 1
+INFO - 09/02/25 18:49:25 - 2:16:28 - Score: 684.0, Count: 4
+INFO - 09/02/25 18:49:25 - 2:16:28 - tokenizing
+INFO - 09/02/25 18:49:25 - 2:16:28 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 18:49:25 - 2:16:28 - 0 / 50
+INFO - 09/02/25 18:49:25 - 2:16:28 - number of examples in the dataset: 50
+INFO - 09/02/25 18:49:25 - 2:16:28 - max word length: 131
+INFO - 09/02/25 18:49:25 - 2:16:28 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 18:49:25 - 2:16:28 - vocabulary:
+INFO - 09/02/25 18:49:25 - 2:16:28 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 18:49:25 - 2:16:28 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 18:49:25 - 2:16:28 - ============ Start of generation 15 ============
+INFO - 09/02/25 18:49:25 - 2:16:28 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:49:25 - 2:16:28 - training
+INFO - 09/02/25 18:49:25 - 2:16:28 - step 0 | loss 2.6912 | step time 34.92ms
+INFO - 09/02/25 18:49:28 - 2:16:31 - step 100 | loss 0.2626 | step time 30.99ms
+INFO - 09/02/25 18:49:31 - 2:16:34 - step 200 | loss 0.0351 | step time 30.43ms
+INFO - 09/02/25 18:49:34 - 2:16:37 - step 300 | loss 0.0333 | step time 30.42ms
+INFO - 09/02/25 18:49:37 - 2:16:40 - step 400 | loss 0.0643 | step time 30.44ms
+INFO - 09/02/25 18:49:40 - 2:16:43 - step 500 | loss 0.0308 | step time 30.47ms
+INFO - 09/02/25 18:49:40 - 2:16:43 - step 500 train loss: 0.030677905306220055 test loss: 3.089266777038574
+INFO - 09/02/25 18:49:40 - 2:16:43 - test loss 3.089266777038574 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 18:49:43 - 2:16:46 - step 600 | loss 0.0295 | step time 30.41ms
+INFO - 09/02/25 18:49:46 - 2:16:49 - step 700 | loss 0.0416 | step time 30.40ms
+INFO - 09/02/25 18:49:49 - 2:16:52 - step 800 | loss 0.0309 | step time 30.50ms
+INFO - 09/02/25 18:49:52 - 2:16:55 - step 900 | loss 0.0303 | step time 30.34ms
+INFO - 09/02/25 18:49:55 - 2:16:58 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:49:55 - 2:16:58 - generating
+INFO - 09/02/25 18:58:15 - 2:25:18 - distribution of sample lengths: average: 391.9823 max: 392
+INFO - 09/02/25 18:58:15 - 2:25:18 - decoding
+INFO - 09/02/25 18:58:15 - 2:25:19 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 18:58:15 - 2:25:19 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:58:15 - 2:25:19 - ============ End of generation 15 ============
+INFO - 09/02/25 18:58:15 - 2:25:19 - launching search.jl
+INFO - 09/02/25 18:58:15 - 2:25:19 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - distribution of scores
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 882.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 786.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 783.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 776.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 768.0, Count: 2
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 756.0, Count: 2
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 752.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 750.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 747.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 744.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 740.0, Count: 2
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 738.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 732.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 730.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 729.0, Count: 2
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 728.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 723.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 720.0, Count: 7
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 717.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 715.0, Count: 2
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 714.0, Count: 4
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 706.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 704.0, Count: 5
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 701.0, Count: 2
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 700.0, Count: 3
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 699.0, Count: 3
+INFO - 09/02/25 18:59:09 - 2:26:12 - Score: 696.0, Count: 1
+INFO - 09/02/25 18:59:09 - 2:26:12 - tokenizing
+INFO - 09/02/25 18:59:09 - 2:26:12 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 18:59:09 - 2:26:12 - 0 / 50
+INFO - 09/02/25 18:59:09 - 2:26:12 - number of examples in the dataset: 50
+INFO - 09/02/25 18:59:09 - 2:26:12 - max word length: 131
+INFO - 09/02/25 18:59:09 - 2:26:12 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 18:59:09 - 2:26:12 - vocabulary:
+INFO - 09/02/25 18:59:09 - 2:26:12 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 18:59:09 - 2:26:12 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 18:59:09 - 2:26:12 - ============ Start of generation 16 ============
+INFO - 09/02/25 18:59:09 - 2:26:12 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:59:09 - 2:26:12 - training
+INFO - 09/02/25 18:59:09 - 2:26:12 - step 0 | loss 3.1722 | step time 34.86ms
+INFO - 09/02/25 18:59:12 - 2:26:16 - step 100 | loss 0.2612 | step time 30.34ms
+INFO - 09/02/25 18:59:15 - 2:26:19 - step 200 | loss 0.0476 | step time 30.41ms
+INFO - 09/02/25 18:59:18 - 2:26:22 - step 300 | loss 0.0357 | step time 30.34ms
+INFO - 09/02/25 18:59:21 - 2:26:25 - step 400 | loss 0.0312 | step time 30.47ms
+INFO - 09/02/25 18:59:25 - 2:26:28 - step 500 | loss 0.0302 | step time 30.57ms
+INFO - 09/02/25 18:59:25 - 2:26:28 - step 500 train loss: 0.03293602541089058 test loss: 3.1519997119903564
+INFO - 09/02/25 18:59:25 - 2:26:28 - test loss 3.1519997119903564 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 18:59:28 - 2:26:31 - step 600 | loss 0.0309 | step time 30.37ms
+INFO - 09/02/25 18:59:31 - 2:26:34 - step 700 | loss 0.0310 | step time 30.34ms
+INFO - 09/02/25 18:59:34 - 2:26:37 - step 800 | loss 0.0323 | step time 30.47ms
+INFO - 09/02/25 18:59:37 - 2:26:40 - step 900 | loss 0.0289 | step time 30.51ms
+INFO - 09/02/25 18:59:40 - 2:26:43 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 18:59:40 - 2:26:43 - generating
+INFO - 09/02/25 19:07:59 - 2:35:03 - distribution of sample lengths: average: 391.94645 max: 392
+INFO - 09/02/25 19:07:59 - 2:35:03 - decoding
+INFO - 09/02/25 19:08:00 - 2:35:03 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 19:08:00 - 2:35:03 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:08:00 - 2:35:03 - ============ End of generation 16 ============
+INFO - 09/02/25 19:08:00 - 2:35:03 - launching search.jl
+INFO - 09/02/25 19:08:00 - 2:35:03 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - distribution of scores
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 832.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 784.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 783.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 768.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 760.0, Count: 2
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 753.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 750.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 729.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 728.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 725.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 723.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 721.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 720.0, Count: 12
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 717.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 716.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 715.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 714.0, Count: 3
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 713.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 712.0, Count: 2
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 708.0, Count: 2
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 705.0, Count: 2
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 704.0, Count: 3
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 702.0, Count: 4
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 700.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 699.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 698.0, Count: 1
+INFO - 09/02/25 19:08:53 - 2:35:57 - Score: 696.0, Count: 2
+INFO - 09/02/25 19:08:53 - 2:35:57 - tokenizing
+INFO - 09/02/25 19:08:53 - 2:35:57 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 19:08:53 - 2:35:57 - 0 / 50
+INFO - 09/02/25 19:08:53 - 2:35:57 - number of examples in the dataset: 50
+INFO - 09/02/25 19:08:53 - 2:35:57 - max word length: 131
+INFO - 09/02/25 19:08:53 - 2:35:57 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 19:08:53 - 2:35:57 - vocabulary:
+INFO - 09/02/25 19:08:53 - 2:35:57 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 19:08:53 - 2:35:57 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 19:08:53 - 2:35:57 - ============ Start of generation 17 ============
+INFO - 09/02/25 19:08:53 - 2:35:57 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:08:53 - 2:35:57 - training
+INFO - 09/02/25 19:08:54 - 2:35:57 - step 0 | loss 3.2642 | step time 35.21ms
+INFO - 09/02/25 19:08:57 - 2:36:00 - step 100 | loss 0.2773 | step time 30.51ms
+INFO - 09/02/25 19:09:00 - 2:36:03 - step 200 | loss 0.0361 | step time 30.38ms
+INFO - 09/02/25 19:09:03 - 2:36:06 - step 300 | loss 0.0313 | step time 30.48ms
+INFO - 09/02/25 19:09:06 - 2:36:09 - step 400 | loss 0.0342 | step time 30.43ms
+INFO - 09/02/25 19:09:09 - 2:36:12 - step 500 | loss 0.0308 | step time 30.62ms
+INFO - 09/02/25 19:09:09 - 2:36:12 - step 500 train loss: 0.03042425587773323 test loss: 2.972735643386841
+INFO - 09/02/25 19:09:09 - 2:36:12 - test loss 2.972735643386841 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 19:09:12 - 2:36:15 - step 600 | loss 0.0322 | step time 30.54ms
+INFO - 09/02/25 19:09:15 - 2:36:18 - step 700 | loss 0.0312 | step time 30.33ms
+INFO - 09/02/25 19:09:18 - 2:36:21 - step 800 | loss 0.0649 | step time 30.53ms
+INFO - 09/02/25 19:09:21 - 2:36:24 - step 900 | loss 0.0298 | step time 30.41ms
+INFO - 09/02/25 19:09:24 - 2:36:27 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:09:24 - 2:36:27 - generating
+INFO - 09/02/25 19:17:44 - 2:44:47 - distribution of sample lengths: average: 391.997 max: 392
+INFO - 09/02/25 19:17:44 - 2:44:47 - decoding
+INFO - 09/02/25 19:17:44 - 2:44:47 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 19:17:44 - 2:44:47 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:17:44 - 2:44:47 - ============ End of generation 17 ============
+INFO - 09/02/25 19:17:44 - 2:44:47 - launching search.jl
+INFO - 09/02/25 19:17:44 - 2:44:47 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - distribution of scores
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 837.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 777.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 756.0, Count: 2
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 753.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 742.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 740.0, Count: 2
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 738.0, Count: 2
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 728.0, Count: 2
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 724.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 720.0, Count: 5
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 718.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 716.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 714.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 711.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 708.0, Count: 3
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 704.0, Count: 4
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 702.0, Count: 3
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 699.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 696.0, Count: 2
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 694.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 692.0, Count: 2
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 688.0, Count: 4
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 687.0, Count: 4
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 686.0, Count: 2
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 685.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - Score: 684.0, Count: 1
+INFO - 09/02/25 19:18:38 - 2:45:41 - tokenizing
+INFO - 09/02/25 19:18:38 - 2:45:41 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 19:18:38 - 2:45:41 - 0 / 50
+INFO - 09/02/25 19:18:38 - 2:45:41 - number of examples in the dataset: 50
+INFO - 09/02/25 19:18:38 - 2:45:41 - max word length: 131
+INFO - 09/02/25 19:18:38 - 2:45:41 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 19:18:38 - 2:45:41 - vocabulary:
+INFO - 09/02/25 19:18:38 - 2:45:41 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 19:18:38 - 2:45:41 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 19:18:38 - 2:45:41 - ============ Start of generation 18 ============
+INFO - 09/02/25 19:18:38 - 2:45:41 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:18:38 - 2:45:41 - training
+INFO - 09/02/25 19:18:38 - 2:45:41 - step 0 | loss 2.6952 | step time 35.09ms
+INFO - 09/02/25 19:18:41 - 2:45:44 - step 100 | loss 0.1240 | step time 30.72ms
+INFO - 09/02/25 19:18:44 - 2:45:48 - step 200 | loss 0.0339 | step time 30.42ms
+INFO - 09/02/25 19:18:47 - 2:45:51 - step 300 | loss 0.0347 | step time 30.53ms
+INFO - 09/02/25 19:18:50 - 2:45:54 - step 400 | loss 0.0304 | step time 30.49ms
+INFO - 09/02/25 19:18:53 - 2:45:57 - step 500 | loss 0.0331 | step time 30.48ms
+INFO - 09/02/25 19:18:54 - 2:45:57 - step 500 train loss: 0.03219017758965492 test loss: 3.0149011611938477
+INFO - 09/02/25 19:18:54 - 2:45:57 - test loss 3.0149011611938477 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 19:18:57 - 2:46:00 - step 600 | loss 0.0309 | step time 30.55ms
+INFO - 09/02/25 19:19:00 - 2:46:03 - step 700 | loss 0.0328 | step time 30.39ms
+INFO - 09/02/25 19:19:03 - 2:46:06 - step 800 | loss 0.0298 | step time 30.47ms
+INFO - 09/02/25 19:19:06 - 2:46:09 - step 900 | loss 0.0297 | step time 30.53ms
+INFO - 09/02/25 19:19:09 - 2:46:12 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:19:09 - 2:46:12 - generating
+INFO - 09/02/25 19:27:28 - 2:54:32 - distribution of sample lengths: average: 391.97495 max: 749
+INFO - 09/02/25 19:27:28 - 2:54:32 - decoding
+INFO - 09/02/25 19:27:29 - 2:54:32 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 19:27:29 - 2:54:32 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:27:29 - 2:54:32 - ============ End of generation 18 ============
+INFO - 09/02/25 19:27:29 - 2:54:32 - launching search.jl
+INFO - 09/02/25 19:27:29 - 2:54:32 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - distribution of scores
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 832.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 800.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 798.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 795.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 780.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 779.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 768.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 765.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 759.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 741.0, Count: 2
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 740.0, Count: 2
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 738.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 737.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 736.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 728.0, Count: 3
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 727.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 726.0, Count: 3
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 725.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 724.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 721.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 720.0, Count: 4
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 717.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 715.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 714.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 712.0, Count: 2
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 710.0, Count: 3
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 709.0, Count: 2
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 708.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 705.0, Count: 2
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 704.0, Count: 2
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 702.0, Count: 3
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 700.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - Score: 699.0, Count: 1
+INFO - 09/02/25 19:28:23 - 2:55:26 - tokenizing
+INFO - 09/02/25 19:28:23 - 2:55:26 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 19:28:23 - 2:55:26 - 0 / 50
+INFO - 09/02/25 19:28:23 - 2:55:26 - number of examples in the dataset: 50
+INFO - 09/02/25 19:28:23 - 2:55:26 - max word length: 131
+INFO - 09/02/25 19:28:23 - 2:55:26 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 19:28:23 - 2:55:26 - vocabulary:
+INFO - 09/02/25 19:28:23 - 2:55:26 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 19:28:23 - 2:55:26 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 19:28:23 - 2:55:26 - ============ Start of generation 19 ============
+INFO - 09/02/25 19:28:23 - 2:55:26 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:28:23 - 2:55:26 - training
+INFO - 09/02/25 19:28:23 - 2:55:26 - step 0 | loss 2.7698 | step time 35.00ms
+INFO - 09/02/25 19:28:26 - 2:55:29 - step 100 | loss 0.1644 | step time 30.42ms
+INFO - 09/02/25 19:28:29 - 2:55:32 - step 200 | loss 0.0351 | step time 30.38ms
+INFO - 09/02/25 19:28:32 - 2:55:35 - step 300 | loss 0.0443 | step time 30.52ms
+INFO - 09/02/25 19:28:35 - 2:55:38 - step 400 | loss 0.0310 | step time 30.31ms
+INFO - 09/02/25 19:28:38 - 2:55:41 - step 500 | loss 0.0310 | step time 30.42ms
+INFO - 09/02/25 19:28:38 - 2:55:41 - step 500 train loss: 0.03151845186948776 test loss: 2.8360953330993652
+INFO - 09/02/25 19:28:38 - 2:55:41 - test loss 2.8360953330993652 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 19:28:41 - 2:55:44 - step 600 | loss 0.0307 | step time 30.50ms
+INFO - 09/02/25 19:28:44 - 2:55:47 - step 700 | loss 0.0379 | step time 30.49ms
+INFO - 09/02/25 19:28:47 - 2:55:50 - step 800 | loss 0.0305 | step time 30.47ms
+INFO - 09/02/25 19:28:50 - 2:55:53 - step 900 | loss 0.0308 | step time 30.40ms
+INFO - 09/02/25 19:28:53 - 2:55:56 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:28:53 - 2:55:56 - generating
+INFO - 09/02/25 19:37:13 - 3:04:16 - distribution of sample lengths: average: 391.92845 max: 392
+INFO - 09/02/25 19:37:13 - 3:04:16 - decoding
+INFO - 09/02/25 19:37:13 - 3:04:17 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 19:37:13 - 3:04:17 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:37:13 - 3:04:17 - ============ End of generation 19 ============
+INFO - 09/02/25 19:37:13 - 3:04:17 - launching search.jl
+INFO - 09/02/25 19:37:13 - 3:04:17 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - distribution of scores
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 768.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 756.0, Count: 2
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 750.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 744.0, Count: 2
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 742.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 741.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 740.0, Count: 2
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 732.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 730.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 729.0, Count: 2
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 728.0, Count: 2
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 726.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 722.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 720.0, Count: 6
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 716.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 715.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 714.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 712.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 711.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 708.0, Count: 2
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 706.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 704.0, Count: 2
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 702.0, Count: 2
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 701.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 700.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 698.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 696.0, Count: 6
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 694.0, Count: 1
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 693.0, Count: 2
+INFO - 09/02/25 19:38:07 - 3:05:10 - Score: 692.0, Count: 2
+INFO - 09/02/25 19:38:07 - 3:05:10 - tokenizing
+INFO - 09/02/25 19:38:07 - 3:05:10 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 19:38:07 - 3:05:10 - 0 / 50
+INFO - 09/02/25 19:38:07 - 3:05:10 - number of examples in the dataset: 50
+INFO - 09/02/25 19:38:07 - 3:05:10 - max word length: 131
+INFO - 09/02/25 19:38:07 - 3:05:10 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 19:38:07 - 3:05:10 - vocabulary:
+INFO - 09/02/25 19:38:07 - 3:05:10 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 19:38:07 - 3:05:10 - split up the dataset into 45 training examples and 5 test examples
+INFO - 09/02/25 19:38:07 - 3:05:10 - ============ Start of generation 20 ============
+INFO - 09/02/25 19:38:07 - 3:05:10 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:38:07 - 3:05:10 - training
+INFO - 09/02/25 19:38:07 - 3:05:10 - step 0 | loss 3.1661 | step time 35.28ms
+INFO - 09/02/25 19:38:10 - 3:05:13 - step 100 | loss 0.2001 | step time 30.46ms
+INFO - 09/02/25 19:38:13 - 3:05:16 - step 200 | loss 0.0609 | step time 30.73ms
+INFO - 09/02/25 19:38:16 - 3:05:19 - step 300 | loss 0.0347 | step time 30.51ms
+INFO - 09/02/25 19:38:19 - 3:05:23 - step 400 | loss 0.0311 | step time 30.44ms
+INFO - 09/02/25 19:38:22 - 3:05:26 - step 500 | loss 0.1123 | step time 30.38ms
+INFO - 09/02/25 19:38:22 - 3:05:26 - step 500 train loss: 0.10544078052043915 test loss: 3.0143392086029053
+INFO - 09/02/25 19:38:22 - 3:05:26 - test loss 3.0143392086029053 is the best so far, saving model to /home/yuebi/Project/dim11_run/dim11_run_2/7648/model.pt
+INFO - 09/02/25 19:38:25 - 3:05:29 - step 600 | loss 0.0303 | step time 30.33ms
+INFO - 09/02/25 19:38:28 - 3:05:32 - step 700 | loss 0.0309 | step time 30.47ms
+INFO - 09/02/25 19:38:32 - 3:05:35 - step 800 | loss 0.0315 | step time 30.42ms
+INFO - 09/02/25 19:38:35 - 3:05:38 - step 900 | loss 0.0307 | step time 30.55ms
+INFO - 09/02/25 19:38:38 - 3:05:41 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:38:38 - 3:05:41 - generating
+INFO - 09/02/25 19:46:57 - 3:14:00 - distribution of sample lengths: average: 392.0 max: 392
+INFO - 09/02/25 19:46:57 - 3:14:00 - decoding
+INFO - 09/02/25 19:46:58 - 3:14:01 - Decoding complete. Check the output in /home/yuebi/Project/dim11_run/dim11_run_2/7648/transformer-output-decoded.txt
+INFO - 09/02/25 19:46:58 - 3:14:01 - Memory allocated:  20.90MB, reserved: 15892.00MB
+INFO - 09/02/25 19:46:58 - 3:14:01 - ============ End of generation 20 ============
+INFO - 09/02/25 19:46:58 - 3:14:01 - launching search.jl
+INFO - 09/02/25 19:46:58 - 3:14:01 - JULIA_NUM_THREADS is set to 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - distribution of scores
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 768.0, Count: 3
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 760.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 752.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 744.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 740.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 736.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 732.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 728.0, Count: 2
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 727.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 720.0, Count: 4
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 718.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 712.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 708.0, Count: 2
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 707.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 702.0, Count: 4
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 695.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 690.0, Count: 2
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 688.0, Count: 4
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 687.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 684.0, Count: 3
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 681.0, Count: 1
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 680.0, Count: 2
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 678.0, Count: 2
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 676.0, Count: 2
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 675.0, Count: 4
+INFO - 09/02/25 19:47:51 - 3:14:54 - Score: 672.0, Count: 3
+INFO - 09/02/25 19:47:51 - 3:14:54 - tokenizing
+INFO - 09/02/25 19:47:51 - 3:14:54 - Loading tokenizer from /home/yuebi/Project/dim11_run/dim11_run_2/7648/tokenizer_data/tokenizer.json...
+INFO - 09/02/25 19:47:51 - 3:14:54 - 0 / 50
+INFO - 09/02/25 19:47:51 - 3:14:54 - number of examples in the dataset: 50
+INFO - 09/02/25 19:47:51 - 3:14:54 - max word length: 131
+INFO - 09/02/25 19:47:51 - 3:14:54 - number of unique characters in the vocabulary: 3
+INFO - 09/02/25 19:47:51 - 3:14:54 - vocabulary:
+INFO - 09/02/25 19:47:51 - 3:14:54 - ['V0', 'V1', 'V2']
+INFO - 09/02/25 19:47:51 - 3:14:54 - split up the dataset into 45 training examples and 5 test examples
