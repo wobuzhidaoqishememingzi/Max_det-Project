@@ -449,6 +449,7 @@ if __name__ == '__main__':
         tot_sum+=sm
         tot_max = max(tot_max,mx)
         logger.info(f"distribution of sample lengths: average: {tot_sum/tot_n if tot_n != 0 else 0} max: {tot_max}")
+        logger.info(f"printed {tot_n} samples")
         logger.info('decoding')
         decode()
         logger.info(f"Memory allocated:  {torch.cuda.memory_allocated(0)/(1024*1024):.2f}MB, reserved: {torch.cuda.memory_reserved(0)/(1024*1024):.2f}MB")
