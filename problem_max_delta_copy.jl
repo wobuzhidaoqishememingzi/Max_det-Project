@@ -14,8 +14,6 @@ function decode_matrix(s::String)::Union{Matrix{Int}, Nothing}
     """
 
     s = replace(strip(s), r"[\s\r\n]+" => "") # Remove whitespace and newlines
-    
-    Threads.atomic_add!(total_count, 1)
 
     # valid format check
     # a valid matrix string should have N rows, each with N digits (0 or 1), separated by N-1 commas
@@ -105,6 +103,7 @@ function greedy_search_from_startpoint(db, obj::String)::Union{Nothing, Vector{S
     """
 
     A = decode_matrix(obj)
+    Threads.atomic_add!(total_count, 1)
     if A === nothing
         @warn "greedy_search_from_startpoint: invalid matrix string: '$obj'"
         return String[]

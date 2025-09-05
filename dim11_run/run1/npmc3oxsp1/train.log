@@ -1,0 +1,78 @@
+INFO - 07/25/25 01:48:51 - 0:00:00 - ============ Initialized logger ============
+INFO - 07/25/25 01:48:51 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=run1 --dump_path=C:/Users/123li/Downloads/Project/dim11_run --num_initial_empty_objects=80 --final_database_size=20 --target_db_size=20 --nb_local_searches=300 --max_epochs=5 --type=transformer --cpu true --max-output-length=300 --exp_id "npmc3oxsp1"
+                                     cpu: True
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: C:/Users/123li/Downloads/Project/dim11_run\run1\npmc3oxsp1
+                                     exp_id: npmc3oxsp1
+                                     exp_name: run1
+                                     final_database_size: 20
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: False
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_port: -1
+                                     max_epochs: 5
+                                     max_output_length: 300
+                                     max_steps: 20000
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 64
+                                     n_embd2: 32
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 4
+                                     n_nodes: 1
+                                     n_tokens: 100
+                                     nb_local_searches: 300
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 80
+                                     num_workers: 8
+                                     sample_only: 500000
+                                     seed: -1
+                                     target_db_size: 20
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 07/25/25 01:48:51 - 0:00:00 - The experiment will be stored in C:/Users/123li/Downloads/Project/dim11_run\run1\npmc3oxsp1
+                                     
+INFO - 07/25/25 01:48:51 - 0:00:00 - Running command: python fc_loop.py --exp_name=run1 --dump_path=C:/Users/123li/Downloads/Project/dim11_run --num_initial_empty_objects=80 --final_database_size=20 --target_db_size=20 --nb_local_searches=300 --max_epochs=5 --type=transformer --cpu true --max-output-length=300
+
+INFO - 07/25/25 01:48:51 - 0:00:00 - seed: 990482975
+INFO - 07/25/25 01:48:51 - 0:00:00 - JULIA_NUM_THREADS is set to 1
+INFO - 07/25/25 01:49:05 - 0:00:14 - Created C:/Users/123li/Downloads/Project/dim11_run\run1\npmc3oxsp1/temp.txt and training tokenizer...
+INFO - 07/25/25 01:49:05 - 0:00:14 - Directory 'C:/Users/123li/Downloads/Project/dim11_run\run1\npmc3oxsp1/tokenizer_data' created.
+INFO - 07/25/25 01:49:05 - 0:00:14 - File 'C:/Users/123li/Downloads/Project/dim11_run\run1\npmc3oxsp1/temp.txt' has been deleted.
+INFO - 07/25/25 01:49:05 - 0:00:14 - 0 / 20
+INFO - 07/25/25 01:49:05 - 0:00:14 - initializing at generation: 1
+INFO - 07/25/25 01:49:05 - 0:00:14 - number of examples in the dataset: 20
+INFO - 07/25/25 01:49:05 - 0:00:14 - max word length: 241
+INFO - 07/25/25 01:49:05 - 0:00:14 - number of unique characters in the vocabulary: 3
+INFO - 07/25/25 01:49:05 - 0:00:14 - vocabulary:
+INFO - 07/25/25 01:49:05 - 0:00:14 - ['V0', 'V1', 'V2']
+INFO - 07/25/25 01:49:05 - 0:00:14 - split up the dataset into 18 training examples and 2 test examples
+INFO - 07/25/25 01:49:05 - 0:00:14 - dataset determined that: vocab_size=101, block_size=301
+INFO - 07/25/25 01:49:05 - 0:00:14 - model #params: 232256
+INFO - 07/25/25 01:49:05 - 0:00:14 - ============ Start of generation 1 ============
+INFO - 07/25/25 01:49:05 - 0:00:14 - Memory allocated:  0.00MB, reserved: 0.00MB
+INFO - 07/25/25 01:49:05 - 0:00:14 - training
+INFO - 07/25/25 01:49:54 - 0:01:02 - step 0 | loss 4.1346 | step time 1010.43ms
+INFO - 07/25/25 01:51:02 - 0:02:10 - step 100 | loss 0.4302 | step time 650.64ms
+INFO - 07/25/25 01:52:09 - 0:03:18 - step 200 | loss 0.3548 | step time 697.29ms
+INFO - 07/25/25 01:53:19 - 0:04:27 - step 300 | loss 0.3262 | step time 677.71ms
+INFO - 07/25/25 01:54:29 - 0:05:37 - step 400 | loss 0.2831 | step time 718.18ms
+INFO - 07/25/25 01:55:39 - 0:06:47 - step 500 | loss 0.2294 | step time 676.89ms
+INFO - 07/25/25 01:55:39 - 0:06:47 - step 500 train loss: 0.2250114381313324 test loss: 0.463114857673645
+INFO - 07/25/25 01:55:39 - 0:06:47 - test loss 0.463114857673645 is the best so far, saving model to C:/Users/123li/Downloads/Project/dim11_run\run1\npmc3oxsp1\model.pt
+INFO - 07/25/25 01:56:49 - 0:07:58 - step 600 | loss 0.2065 | step time 697.92ms
+INFO - 07/25/25 01:58:00 - 0:09:08 - step 700 | loss 0.1828 | step time 719.57ms
+INFO - 07/25/25 01:59:11 - 0:10:19 - step 800 | loss 0.1357 | step time 696.02ms
+INFO - 07/25/25 02:00:23 - 0:11:32 - step 900 | loss 0.1073 | step time 760.60ms
+INFO - 07/25/25 02:01:34 - 0:12:43 - step 1000 | loss 0.0966 | step time 688.97ms
+INFO - 07/25/25 02:01:34 - 0:12:43 - step 1000 train loss: 0.1331339329481125 test loss: 1.0534229278564453
