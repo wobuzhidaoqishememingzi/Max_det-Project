@@ -458,7 +458,26 @@ if __name__ == '__main__':
         os.environ["JULIA_NUM_THREADS"] = str(args.nb_threads)  # Set the environment variable
         logger.info(f"JULIA_NUM_THREADS is set to {os.environ['JULIA_NUM_THREADS']}")
 
-        subprocess.run(["julia", "search_fc.jl", args.dump_path, str(args.nb_local_searches), str(args.num_initial_empty_objects), str(args.final_database_size), str(args.target_db_size), '-i', args.dump_path + '/transformer-output-decoded.txt'])
+        # Combine previous dataset to the output after each epoch
+        if generation > 1:
+            prev_file = f"{args.dump_path}/search_output_{generation}.txt"
+            curr_file = args.dump_path + '/transformer-output-decoded.txt'
+            combined_file = args.dump_path + f'/combined_input_{generation}.txt'
+
+            with open(combined_file, 'w') as fout:
+                # write the topN of the previous rounds
+                with open(prev_file, 'r') as fin:
+                    fout.writelines(fin.readlines())
+                # write the newly generated ones from this round
+                with open(curr_file, 'r') as fin:
+                    fout.writelines(fin.readlines())
+
+                input_for_search = combined_file
+        else:
+            # for the first generation, just use the decoded output
+            input_for_search = args.dump_path + '/transformer-output-decoded.txt'
+
+        subprocess.run(["julia", "search_fc.jl", args.dump_path, str(args.nb_local_searches), str(args.num_initial_empty_objects), str(args.final_database_size), str(args.target_db_size), '-i', input_for_search])
         if os.path.exists(args.dump_path+"/distribution.txt"):
             with open(args.dump_path+"/distribution.txt", 'r') as file:
                 d_lines = file.readlines()
