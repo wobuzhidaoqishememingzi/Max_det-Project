@@ -21,6 +21,8 @@ from typing import List
 from makemoretokens import ModelConfig, CharDataset, Transformer, Bigram, MLP, RNN, BoW, InfiniteDataLoader, evaluate, generate
 import os
 import argparse
+
+import collections
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def get_parser():
@@ -478,14 +480,43 @@ if __name__ == '__main__':
             input_for_search = args.dump_path + '/transformer-output-decoded.txt'
 
         subprocess.run(["julia", "search_fc.jl", args.dump_path, str(args.nb_local_searches), str(args.num_initial_empty_objects), str(args.final_database_size), str(args.target_db_size), '-i', input_for_search])
-        if os.path.exists(args.dump_path+"/distribution.txt"):
-            with open(args.dump_path+"/distribution.txt", 'r') as file:
-                d_lines = file.readlines()
-        logger.info("distribution of scores")
-        for l in d_lines:
-            logger.info(l[:-1])
-
         
+        dist_file = args.dump_path + "/distribution.txt"
+        dist_all_file = args.dump_path + "/distribution_all.txt"
+
+        # read the distribution of this round
+        cur_scores = collections.Counter() #dictionary, key: score (float), value: count (int)
+        if os.path.exists(dist_file):
+            with open(dist_file, 'r') as file:
+                for line in file:
+                    if "Score:" in line:
+                        parts = line.strip().split(",") # Split by comma
+                        score = float(parts[0].split(":")[1]) # extract score value as float
+                        count = int(parts[1].split(":")[1]) # extract count value as int, so that we can sum them
+                        cur_scores[score] += count
+        
+        # read the distribution of this round and the previous all rounds
+        all_scores = collections.Counter()
+        if os.path.exists(dist_all_file):
+            with open(dist_all_file, 'r') as file:
+                for line in file:
+                    if "Score:" in line:
+                        parts = line.strip().split(",")
+                        score = float(parts[0].split(":")[1])
+                        count = int(parts[1].split(":")[1])
+                        all_scores[score] += count
+
+        # combine the current scores with the previous all scores
+        all_scores.update(cur_scores)
+        with open(dist_all_file, 'w') as file:
+            for score, count in sorted(all_scores.items(), key=lambda x: -x[0])[:args.target_db_size]:
+                file.write(f"Score:{score}, Count:{count}\n")
+
+        # print out the distribution of all scores
+        logger.info("distribution of scores(all rounds)")
+        for score, count in sorted(all_scores.items(), key=lambda x: -x[0])[:args.target_db_size]:
+            logger.info(f"Score:{score}, Count:{count}")
+
         logger.info("tokenizing")
         tokenize(f"{args.dump_path}/search_output_{generation+1}.txt", args.n_tokens)
         input_file = args.dump_path + f"/search_output_{generation+1}-tokenized.txt"
