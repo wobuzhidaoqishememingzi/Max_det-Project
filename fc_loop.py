@@ -288,10 +288,11 @@ def write_samples(num=10, new_file=False, use_logger=False):
 
 
 def string_to_matrix(line, size):
-    """matrix row split by commas, n rows, size x size"""
-    rows = line.strip().split(',')
-    matrix = np.array([[int(num) for num in row.split()] for row in rows], dtype=int)
-    assert matrix.shape[0] == size and matrix.shape[1] == size, f"matrix shape {matrix.shape} does not match expected size {size}x{size}"
+    """matrix row split by commas, n (num of size) rows"""
+    elements = line.split(',')
+    if len(elements) != size:
+        raise ValueError(f"Expected {size} elements, got {len(elements)}")
+    matrix = np.array(elements, dtype=int).reshape((size, size))
     return matrix
 
 def det_of_line(line, size):
@@ -507,7 +508,7 @@ if __name__ == '__main__':
                     fout.write(matrix_line + "\n")
 
             input_for_search = combined_file
-            
+
         else:
             # for the first generation, just use the decoded output
             input_for_search = args.dump_path + '/transformer-output-decoded.txt'
