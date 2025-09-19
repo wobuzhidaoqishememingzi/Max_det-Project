@@ -543,13 +543,25 @@ if __name__ == '__main__':
         # combine the current scores with the previous all scores
         all_scores.update(cur_scores)
         with open(dist_all_file, 'w') as file:
-            for score, count in sorted(all_scores.items(), key=lambda x: -x[0])[:args.target_db_size]:
-                file.write(f"Score:{score}, Count:{count}\n")
+            num_count = 0
+            for score, count in sorted(all_scores.items(), key=lambda x: -x[0]):
+                num_count += count
+                if num_count > args.target_db_size:
+                    file.write(f"Score:{score}, Count:{args.target_db_size - (num_count - count)}\n")
+                    break
+                else:
+                    file.write(f"Score:{score}, Count:{count}\n")
 
         # print out the distribution of all scores
         logger.info("distribution of scores(all rounds)")
-        for score, count in sorted(all_scores.items(), key=lambda x: -x[0])[:args.target_db_size]:
-            logger.info(f"Score:{score}, Count:{count}")
+        num_count = 0
+        for score, count in sorted(all_scores.items(), key=lambda x: -x[0]):
+            num_count += count
+            if num_count > args.target_db_size:
+                logger.info(f"Score:{score}, Count:{args.target_db_size - (num_count - count)}\n")
+                break
+            else:
+                logger.info(f"Score:{score}, Count:{count}\n")
 
         logger.info("tokenizing")
         tokenize(f"{args.dump_path}/search_output_{generation+1}.txt", args.n_tokens)
