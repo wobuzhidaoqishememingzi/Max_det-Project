@@ -292,13 +292,13 @@ def string_to_matrix(line, size):
     elements = line.split(',')
     if len(elements) != size:
         raise ValueError(f"Expected {size} elements, got {len(elements)}")
-    matrix = np.array(elements, dtype=int).reshape((size, size))
+    matrix = np.array([[int(ch) for ch in row] for row in elements], dtype=int).reshape((size, size))
     return matrix
 
 def det_of_line(line, size):
     """determinant of matrix given in line"""
     matrix = string_to_matrix(line, size)
-    return np.linalg.det(matrix)
+    return abs(np.linalg.det(matrix))
 
 if __name__ == '__main__':
     parser = get_parser()
