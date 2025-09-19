@@ -23,6 +23,9 @@ import os
 import argparse
 
 import collections
+
+size = 11 # size of the matrix
+
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def get_parser():
@@ -284,6 +287,18 @@ def write_samples(num=10, new_file=False, use_logger=False):
     return n_samp, sum_samp, max_samp
 
 
+def string_to_matrix(line, size):
+    """matrix row split by commas, n rows, size x size"""
+    rows = line.strip().split(',')
+    matrix = np.array([[int(num) for num in row.split()] for row in rows], dtype=int)
+    assert matrix.shape[0] == size and matrix.shape[1] == size, f"matrix shape {matrix.shape} does not match expected size {size}x{size}"
+    return matrix
+
+def det_of_line(line, size):
+    """determinant of matrix given in line"""
+    matrix = string_to_matrix(line, size)
+    return np.linalg.det(matrix)
+
 if __name__ == '__main__':
     parser = get_parser()
     args = parser.parse_args()
@@ -466,15 +481,33 @@ if __name__ == '__main__':
             curr_file = args.dump_path + '/transformer-output-decoded.txt'
             combined_file = args.dump_path + f'/combined_input_{generation}.txt'
 
-            with open(combined_file, 'w') as fout:
-                # write the topN of the previous rounds
-                with open(prev_file, 'r') as fin:
-                    fout.writelines(fin.readlines())
-                # write the newly generated ones from this round
-                with open(curr_file, 'r') as fin:
-                    fout.writelines(fin.readlines())
+            all_lines = []
+            # read prev_file and curr_file
+            for fname in [prev_file, curr_file]:
+                if not os.path.exists(fname):
+                    continue
+                with open(fname, 'r') as f:
+                    all_lines.extend(f.readlines())
 
-                input_for_search = combined_file
+            # cal det for each line, skip illegal matrix lines
+            scored = []
+            for line in all_lines:
+                try:
+                    score = det_of_line(line.strip(), size=11)
+                    scored.append((score, line))
+                except Exception as e:
+                    logger.info(f"Skipping line due to error: {e}")
+
+            # sort by score and keep the top target_db_size
+            scored_sorted = sorted(scored, key=lambda x: -x[0])[:args.target_db_size]
+
+            # write into combined_file
+            with open(combined_file, 'w') as fout:
+                for score, matrix_line in scored_sorted:
+                    fout.write(matrix_line + "\n")
+
+            input_for_search = combined_file
+            
         else:
             # for the first generation, just use the decoded output
             input_for_search = args.dump_path + '/transformer-output-decoded.txt'
