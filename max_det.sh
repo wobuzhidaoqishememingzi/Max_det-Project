@@ -1,11 +1,11 @@
 #!/bin/bash -l
-# example.sh
+# max_det.sh
 
 # Request a GPU (1x 10gb)
-#SBATCH --gpus=1g.10gb:2
+#SBATCH --gpus=1g.20gb:2
 
 # Request a certain amount of time (1 minutes)
-#SBATCH --time=00:01:00
+#SBATCH --time=04:00:00
 
 # Request cpus
 #SBATCH --cpus-per-gpu=2
