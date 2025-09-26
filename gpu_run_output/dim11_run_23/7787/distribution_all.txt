@@ -1,0 +1,13 @@
+Score:891.0, Count:1
+Score:816.0, Count:2
+Score:807.0, Count:1
+Score:805.0, Count:1
+Score:801.0, Count:1
+Score:800.0, Count:1
+Score:798.0, Count:3
+Score:793.0, Count:1
+Score:780.0, Count:1
+Score:776.0, Count:1
+Score:774.0, Count:1
+Score:769.0, Count:1
+Score:700.0, Count:0

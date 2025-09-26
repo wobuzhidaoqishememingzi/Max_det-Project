@@ -1,0 +1,582 @@
+Using 1 thread(s)
+Input file: 
+No input file provided
+600
+1
+Using 1 threads
+ - Shrinking database to 15 best objects
+Data written to /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_1.txt
+An example of an object with maximum reward (771.0):
+01111001110,11000101111,10011110100,10110011101,00010010011,00101111010,01010111000,11111100001,01100110101,11100010010,11001011001
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_1.png
+Score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/distribution.txt
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_training_1.png
+Filtered score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/training_distribution.txt
+Total matrices processed: 600
+Invalid matrices encountered: 0
+Invalid ratio: 0.0
+
+
+
+SLURM job: True
+0 - SLURM_JOB_ID: 7787
+0 - SLURM_JOB_NODELIST: gpu-6
+0 - SLURM_JOB_NUM_NODES: 1
+0 - SLURM_NTASKS: 1
+0 - SLURM_TASKS_PER_NODE: 1
+0 - SLURM_MEM_PER_NODE: None
+0 - SLURM_MEM_PER_CPU: 2048
+0 - SLURM_NODEID: 0
+0 - SLURM_PROCID: 0
+0 - SLURM_LOCALID: 0
+0 - SLURM_TASK_PID: 162339
+0 - Master address: gpu-6
+0 - Master port   : -1
+0 - Number of nodes: 1
+0 - Node ID        : 0
+0 - Local rank     : 0
+0 - Global rank    : 0
+0 - World size     : 1
+0 - GPUs per node  : 1
+0 - Master         : True
+0 - Multi-node     : False
+0 - Multi-GPU      : False
+0 - Hostname       : gpu-6.msbc.ucdavis.edu
+Tokenizing training set...
+Token mapping for /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_1.txt :
+Showing first 10 tokens
+0 | ,
+1 | 0
+2 | 1
+3 | 10
+4 | 11
+5 | 100
+6 | 00
+7 | 110
+8 | 1100
+9 | 1010
+
+Train Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+
+Test Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+number of parameters: 1.61M
+Using 1 thread(s)
+Input file: /home/yuebi/Project/dim11_run/dim11_run_23/7787/transformer-output-decoded.txt
+Using input file
+29109
+97
+Using 1 threads
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+ - Shrinking database to 15 best objects
+Data written to /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_2.txt
+An example of an object with maximum reward (891.0):
+11110000101,00010110111,01110101110,11011111100,01001001111,10101100110,01111010010,00111101001,10010001010,11100111011,00100011100
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_2.png
+Score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/distribution.txt
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_training_2.png
+Filtered score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/training_distribution.txt
+Total matrices processed: 29109
+Invalid matrices encountered: 38
+Invalid ratio: 0.0013054381806314199
+Tokenizing training set...
+Token mapping for /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_2.txt :
+Showing first 10 tokens
+0 | ,
+1 | 0
+2 | 1
+3 | 10
+4 | 11
+5 | 100
+6 | 00
+7 | 110
+8 | 1100
+9 | 1010
+
+Train Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+
+Test Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+Using 1 thread(s)
+Input file: /home/yuebi/Project/dim11_run/dim11_run_23/7787/combined_input_2.txt
+Using input file
+15
+1
+Using 1 threads
+Data written to /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_3.txt
+An example of an object with maximum reward (531.0):
+11110101101,00110110111,01010111000,00101101110,10011001111,10111000110,01110001011,11001100011,10101111001,11000011110,01101010101
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_3.png
+Score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/distribution.txt
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_training_3.png
+Filtered score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/training_distribution.txt
+Total matrices processed: 15
+Invalid matrices encountered: 0
+Invalid ratio: 0.0
+Tokenizing training set...
+Token mapping for /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_3.txt :
+Showing first 10 tokens
+0 | ,
+1 | 0
+2 | 1
+3 | 10
+4 | 11
+5 | 100
+6 | 00
+7 | 110
+8 | 1100
+9 | 1010
+
+Train Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+
+Test Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+Using 1 thread(s)
+Input file: /home/yuebi/Project/dim11_run/dim11_run_23/7787/combined_input_3.txt
+Using input file
+15
+1
+Using 1 threads
+Data written to /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_4.txt
+An example of an object with maximum reward (513.0):
+01101001101,00111110010,01011001100,10100101100,00000111111,10011000111,11110011111,11000101011,10011011001,11001010110,11010110101
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_4.png
+Score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/distribution.txt
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_training_4.png
+Filtered score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/training_distribution.txt
+Total matrices processed: 15
+Invalid matrices encountered: 0
+Invalid ratio: 0.0
+Tokenizing training set...
+Token mapping for /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_4.txt :
+Showing first 10 tokens
+0 | ,
+1 | 0
+2 | 1
+3 | 10
+4 | 11
+5 | 100
+6 | 00
+7 | 110
+8 | 1100
+9 | 1010
+
+Train Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+
+Test Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+Using 1 thread(s)
+Input file: /home/yuebi/Project/dim11_run/dim11_run_23/7787/combined_input_4.txt
+Using input file
+15
+3
+Using 1 threads
+Data written to /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_5.txt
+An example of an object with maximum reward (654.0):
+00110010111,01110101010,01011001101,10100101100,01101110101,11111100110,10011111011,11000100111,11101001011,11000011110,11110010001
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_5.png
+Score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/distribution.txt
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_training_5.png
+Filtered score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/training_distribution.txt
+Total matrices processed: 15
+Invalid matrices encountered: 0
+Invalid ratio: 0.0
+Tokenizing training set...
+Token mapping for /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_5.txt :
+Showing first 10 tokens
+0 | ,
+1 | 0
+2 | 1
+3 | 10
+4 | 11
+5 | 100
+6 | 00
+7 | 110
+8 | 1100
+9 | 1010
+
+Train Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+
+Test Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+Using 1 thread(s)
+Input file: /home/yuebi/Project/dim11_run/dim11_run_23/7787/combined_input_5.txt
+Using input file
+15
+1
+Using 1 threads
+Data written to /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_6.txt
+An example of an object with maximum reward (576.0):
+10110011111,01110111011,10100110100,11010101101,01111010101,00111101100,00001110111,11110100110,11101001011,11011011010,10111100001
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_6.png
+Score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/distribution.txt
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_training_6.png
+Filtered score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/training_distribution.txt
+Total matrices processed: 15
+Invalid matrices encountered: 0
+Invalid ratio: 0.0
+Tokenizing training set...
+Token mapping for /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_6.txt :
+Showing first 10 tokens
+0 | ,
+1 | 0
+2 | 1
+3 | 10
+4 | 11
+5 | 100
+6 | 00
+7 | 110
+8 | 1100
+9 | 1010
+
+Train Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+
+Test Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+Using 1 thread(s)
+Input file: /home/yuebi/Project/dim11_run/dim11_run_23/7787/combined_input_6.txt
+Using input file
+15
+1
+Using 1 threads
+Data written to /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_7.txt
+An example of an object with maximum reward (434.0):
+10001111100,11100101111,10110010111,11011101101,01110011101,00111101100,01001110111,01010110110,00010111011,11111001010,11110110001
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_7.png
+Score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/distribution.txt
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_training_7.png
+Filtered score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/training_distribution.txt
+Total matrices processed: 15
+Invalid matrices encountered: 0
+Invalid ratio: 0.0
+Tokenizing training set...
+Token mapping for /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_7.txt :
+Showing first 10 tokens
+0 | ,
+1 | 0
+2 | 1
+3 | 10
+4 | 11
+5 | 100
+6 | 00
+7 | 110
+8 | 1100
+9 | 1010
+
+Train Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+
+Test Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+Using 1 thread(s)
+Input file: /home/yuebi/Project/dim11_run/dim11_run_23/7787/combined_input_7.txt
+Using input file
+15
+1
+Using 1 threads
+Data written to /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_8.txt
+An example of an object with maximum reward (434.0):
+10001011001,11100101110,10111100111,11011101001,00010111101,11101110100,11000110111,00011111010,01101101011,01011011110,11110010011
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_8.png
+Score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/distribution.txt
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_training_8.png
+Filtered score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/training_distribution.txt
+Total matrices processed: 15
+Invalid matrices encountered: 0
+Invalid ratio: 0.0
+Tokenizing training set...
+Token mapping for /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_8.txt :
+Showing first 10 tokens
+0 | ,
+1 | 0
+2 | 1
+3 | 10
+4 | 11
+5 | 100
+6 | 00
+7 | 110
+8 | 1100
+9 | 1010
+
+Train Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+
+Test Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+Using 1 thread(s)
+Input file: /home/yuebi/Project/dim11_run/dim11_run_23/7787/combined_input_8.txt
+Using input file
+15
+2
+Using 1 threads
+Data written to /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_9.txt
+An example of an object with maximum reward (447.0):
+11001011001,01100111100,11111100111,00001001111,10000101101,10101010100,00001110101,00111011001,10100111011,10011111110,11010010111
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_9.png
+Score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/distribution.txt
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_training_9.png
+Filtered score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/training_distribution.txt
+Total matrices processed: 15
+Invalid matrices encountered: 0
+Invalid ratio: 0.0
+Tokenizing training set...
+Token mapping for /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_9.txt :
+Showing first 10 tokens
+0 | ,
+1 | 0
+2 | 1
+3 | 10
+4 | 11
+5 | 100
+6 | 00
+7 | 110
+8 | 1100
+9 | 1010
+
+Train Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+
+Test Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+Using 1 thread(s)
+Input file: /home/yuebi/Project/dim11_run/dim11_run_23/7787/combined_input_9.txt
+Using input file
+15
+1
+Using 1 threads
+Data written to /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_10.txt
+An example of an object with maximum reward (578.0):
+00110111101,01101111110,00111000111,00011101010,11100101101,10101001100,10001110101,01111011001,10100011011,11110110000,11010011110
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_10.png
+Score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/distribution.txt
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_training_10.png
+Filtered score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/training_distribution.txt
+Total matrices processed: 15
+Invalid matrices encountered: 0
+Invalid ratio: 0.0
+Tokenizing training set...
+Token mapping for /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_10.txt :
+Showing first 10 tokens
+0 | ,
+1 | 0
+2 | 1
+3 | 10
+4 | 11
+5 | 100
+6 | 00
+7 | 110
+8 | 1100
+9 | 1010
+
+Train Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+
+Test Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+Using 1 thread(s)
+Input file: /home/yuebi/Project/dim11_run/dim11_run_23/7787/combined_input_10.txt
+Using input file
+15
+1
+Using 1 threads
+Data written to /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_11.txt
+An example of an object with maximum reward (540.0):
+00011111111,01100011111,11011000111,00111010110,11101110010,01111101010,10101101100,01011011001,10110011011,01110110101,11010111110
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_11.png
+Score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/distribution.txt
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_training_11.png
+Filtered score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/training_distribution.txt
+Total matrices processed: 15
+Invalid matrices encountered: 0
+Invalid ratio: 0.0
+Tokenizing training set...
+Token mapping for /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_11.txt :
+Showing first 10 tokens
+0 | ,
+1 | 0
+2 | 1
+3 | 10
+4 | 11
+5 | 100
+6 | 00
+7 | 110
+8 | 1100
+9 | 1010
+
+Train Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+
+Test Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+Using 1 thread(s)
+Input file: /home/yuebi/Project/dim11_run/dim11_run_23/7787/combined_input_11.txt
+Using input file
+15
+1
+Using 1 threads
+Data written to /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_12.txt
+An example of an object with maximum reward (700.0):
+10011111000,00010110011,11011000011,00101010110,11100011011,01110101010,10001101111,01011011101,10110001101,11101110101,11010010110
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_12.png
+Score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/distribution.txt
+Plot saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/plot_training_12.png
+Filtered score distribution saved to /home/yuebi/Project/dim11_run/dim11_run_23/7787/training_distribution.txt
+Total matrices processed: 15
+Invalid matrices encountered: 0
+Invalid ratio: 0.0
+Tokenizing training set...
+Token mapping for /home/yuebi/Project/dim11_run/dim11_run_23/7787/search_output_12.txt :
+Showing first 10 tokens
+0 | ,
+1 | 0
+2 | 1
+3 | 10
+4 | 11
+5 | 100
+6 | 00
+7 | 110
+8 | 1100
+9 | 1010
+
+Train Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
+
+Test Dataset Debug
+
+Vocab size: 15
+itos keys (first 20): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+stoi size: 15
+stoi items (first 20): [('V0', 1), ('V1', 2), ('V2', 3), ('V3', 4), ('V4', 5), ('V5', 6), ('V6', 7), ('V7', 8), ('V8', 9), ('V9', 10), ('V10', 11), ('V11', 12), ('V12', 13), ('V13', 14), ('V14', 15)]
