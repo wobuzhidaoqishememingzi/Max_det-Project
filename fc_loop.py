@@ -476,42 +476,7 @@ if __name__ == '__main__':
         os.environ["JULIA_NUM_THREADS"] = str(args.nb_threads)  # Set the environment variable
         logger.info(f"JULIA_NUM_THREADS is set to {os.environ['JULIA_NUM_THREADS']}")
 
-        # Combine previous dataset to the output after each epoch
-        if generation > 1:
-            prev_file = f"{args.dump_path}/search_output_{generation}.txt"
-            curr_file = args.dump_path + '/transformer-output-decoded.txt'
-            combined_file = args.dump_path + f'/combined_input_{generation}.txt'
-
-            all_lines = []
-            # read prev_file and curr_file
-            for fname in [prev_file, curr_file]:
-                if not os.path.exists(fname):
-                    continue
-                with open(fname, 'r') as f:
-                    all_lines.extend(f.readlines())
-
-            # cal det for each line, skip illegal matrix lines
-            scored = []
-            for line in all_lines:
-                try:
-                    score = det_of_line(line.strip(), size=11)
-                    scored.append((score, line))
-                except Exception as e:
-                    logger.info(f"Skipping line due to error: {e}")
-
-            # sort by score and keep the top target_db_size
-            scored_sorted = sorted(scored, key=lambda x: -x[0])[:args.target_db_size]
-
-            # write into combined_file
-            with open(combined_file, 'w') as fout:
-                for score, matrix_line in scored_sorted:
-                    fout.write(matrix_line + "\n")
-
-            input_for_search = combined_file
-
-        else:
-            # for the first generation, just use the decoded output
-            input_for_search = args.dump_path + '/transformer-output-decoded.txt'
+        input_for_search = args.dump_path + '/transformer-output-decoded.txt'
 
         subprocess.run(["julia", "search_fc.jl", args.dump_path, str(args.nb_local_searches), str(args.num_initial_empty_objects), str(args.final_database_size), str(args.target_db_size), '-i', input_for_search])
         
