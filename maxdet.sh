@@ -10,10 +10,10 @@
 # Request a GPU (1x 20gb)
 #SBATCH --gpus=1g.20gb:1
 
-# Request a certain amount of time (1 hour)
+# Request a certain amount of time (4 hour)
 #SBATCH --time=04:00:00
 
-# Request cpus (i want 4 for this job)
+# Request cpus
 #SBATCH --cpus-per-gpu=2
 
 # Request RAM (below = 8gb x4 cpu =32gb for the job)
@@ -24,4 +24,4 @@
 
 source ~/.bashrc
 conda activate pytorch
-python fc_loop.py --exp_name=dim11_run_23 --dump_path=/home/yuebi/Project/dim11_run --num_initial_empty_objects=600 --final_database_size=15 --target_db_size=15 --nb_local_searches=800 --max_epochs=20 --type=transformer --max-output-length=131 --sample-only=30000 --max-steps=1000 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128
+python fc_loop.py --exp_name=dim11_run_24 --dump_path=/home/yuebi/Project/dim11_run --num_initial_empty_objects=500 --final_database_size=15 --target_db_size=15 --nb_local_searches=800 --max_epochs=20 --type=transformer --max-output-length=131 --sample-only=30000 --max-steps=1000 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128
