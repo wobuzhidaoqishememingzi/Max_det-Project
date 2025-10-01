@@ -17,7 +17,7 @@
 #SBATCH --cpus-per-gpu=2
 
 # Request RAM (below = 8gb x4 cpu =32gb for the job)
-#SBATCH --mem-per-cpu=2gb
+#SBATCH --mem-per-cpu=8gb
 
 #SBATCH --array=1-3%1
 #SBATCH --dependency=singleton
