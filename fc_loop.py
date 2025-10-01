@@ -366,13 +366,15 @@ if __name__ == '__main__':
         logger.info("resuming from existing model")
         model.load_state_dict(torch.load(model_path))"""
     
-    checkpoint_path = os.path.join(args.dump_path, "checkpoint.pt")
+    # exp_name is not changed during the whole training process, so can load and save checkpoint here
+    checkpoint_path = os.path.join(args.exp_name, "checkpoint.pt")
     start_gen = 1
 
     # if there is a checkpoint, means already trained part of the model, now continue training
     if os.path.isfile(checkpoint_path):
         logger.info(f"Resuming from checkpoint at {checkpoint_path}")
         checkpoint = torch.load(checkpoint_path)
+        all_scores = checkpoint.get("all_scores", collections.Counter())
         model.load_state_dict(checkpoint["model_state_dict"]) #restore the weights/parameters of the model
         # re-init the optimizer
         optimizer = torch.optim.AdamW(model.parameters(), lr=args.learning_rate, weight_decay=args.weight_decay, betas=(0.9, 0.99), eps=1e-8)
@@ -494,8 +496,8 @@ if __name__ == '__main__':
 
         subprocess.run(["julia", "search_fc.jl", args.dump_path, str(args.nb_local_searches), str(args.num_initial_empty_objects), str(args.final_database_size), str(args.target_db_size), '-i', input_for_search])
         
-        dist_file = args.dump_path + "/distribution.txt"
-        dist_all_file = args.dump_path + "/distribution_all.txt"
+        dist_file = args.exp_name + "/distribution.txt" # exp_name is not changed during the whole training process
+        dist_all_file = args.exp_name + "/distribution_all.txt"
 
         # read the distribution of this round
         cur_scores = collections.Counter() #dictionary, key: score (float), value: count (int)
@@ -549,10 +551,11 @@ if __name__ == '__main__':
 
         # save checkpoint 
         torch.save({
-            "generation": generation,
-            "model_state_dict": model.state_dict(),
-            "optimizer_state_dict": optimizer.state_dict(),
-        }, os.path.join(args.dump_path, "checkpoint.pt"))
-        logger.info(f"checkpoint saved at generation {generation} to {os.path.join(args.dump_path, 'checkpoint.pt')}")
+            "generation": generation, # current generation number
+            "model_state_dict": model.state_dict(), # weights/parameters of the model
+            "optimizer_state_dict": optimizer.state_dict(), # state of the optimizer, like momentum, learning rate, etc
+            "all_scores": all_scores # distribution of all scores
+        }, checkpoint_path)
+        logger.info(f"checkpoint saved at generation {generation} to {checkpoint_path}")
 
 
