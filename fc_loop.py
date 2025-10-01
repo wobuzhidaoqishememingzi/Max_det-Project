@@ -361,13 +361,27 @@ if __name__ == '__main__':
         logger.error(f'model type {args.type} is not recognized')
     model.to(args.device)
     logger.info(f"model #params: {sum(p.numel() for p in model.parameters())}")
-    model_path = os.path.join(args.dump_path, "model.pt")
+    """model_path = os.path.join(args.dump_path, "model.pt")
     if os.path.isfile(model_path): # Note: if we sample-only then we also assume we are resuming
         logger.info("resuming from existing model")
-        model.load_state_dict(torch.load(model_path))
+        model.load_state_dict(torch.load(model_path))"""
+    
+    checkpoint_path = os.path.join(args.dump_path, "checkpoint.pt")
+    start_gen = 1
 
+    # if there is a checkpoint, means already trained part of the model, now continue training
+    if os.path.isfile(checkpoint_path):
+        logger.info(f"Resuming from checkpoint at {checkpoint_path}")
+        checkpoint = torch.load(checkpoint_path)
+        model.load_state_dict(checkpoint["model_state_dict"]) #restore the weights/parameters of the model
+        # re-init the optimizer
+        optimizer = torch.optim.AdamW(model.parameters(), lr=args.learning_rate, weight_decay=args.weight_decay, betas=(0.9, 0.99), eps=1e-8)
+        optimizer.load_state_dict(checkpoint["optimizer_state_dict"]) #restore the state of the optimizer, like momentum, learning rate, etc.
+        start_gen = checkpoint["generation"] + 1 #start from the next generation
+    else:
+        start_gen = initial_gen #if there is no checkpoint, start from 1
 
-    for generation in range(initial_gen,args.max_epochs + 1):
+    for generation in range(start_gen,args.max_epochs + 1):
         logger.info(f"============ Start of generation {generation} ============")
         logger.info(f"Memory allocated:  {torch.cuda.memory_allocated(0)/(1024*1024):.2f}MB, reserved: {torch.cuda.memory_reserved(0)/(1024*1024):.2f}MB")
 
@@ -532,5 +546,13 @@ if __name__ == '__main__':
         tokenize(f"{args.dump_path}/search_output_{generation+1}.txt", args.n_tokens)
         input_file = args.dump_path + f"/search_output_{generation+1}-tokenized.txt"
         train_dataset, test_dataset = create_datasets(input_file)
-        
+
+        # save checkpoint 
+        torch.save({
+            "generation": generation,
+            "model_state_dict": model.state_dict(),
+            "optimizer_state_dict": optimizer.state_dict(),
+        }, os.path.join(args.dump_path, "checkpoint.pt"))
+        logger.info(f"checkpoint saved at generation {generation} to {os.path.join(args.dump_path, 'checkpoint.pt')}")
+
 
