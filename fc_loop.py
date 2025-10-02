@@ -496,8 +496,9 @@ if __name__ == '__main__':
 
         subprocess.run(["julia", "search_fc.jl", args.dump_path, str(args.nb_local_searches), str(args.num_initial_empty_objects), str(args.final_database_size), str(args.target_db_size), '-i', input_for_search])
         
-        dist_file = args.exp_name + "/distribution.txt" # exp_name is not changed during the whole training process
-        dist_all_file = args.exp_name + "/distribution_all.txt"
+        dist_file = os.path.join(args.exp_name, "distribution.txt") # exp_name is not changed during the whole training process
+        dist_all_file = os.path.join(os.path.dirname(dist_file), "distribution_all.txt")
+        os.makedirs(os.path.dirname(dist_all_file), exist_ok=True)
 
         # read the distribution of this round
         cur_scores = collections.Counter() #dictionary, key: score (float), value: count (int)
