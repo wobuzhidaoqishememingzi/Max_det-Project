@@ -367,7 +367,7 @@ if __name__ == '__main__':
         model.load_state_dict(torch.load(model_path))"""
     
     # exp_name is not changed during the whole training process, so can load and save checkpoint here
-    checkpoint_path = os.path.join(args.exp_name, "checkpoint.pt")
+    """checkpoint_path = os.path.join(args.exp_name, "checkpoint.pt")
     start_gen = 1
 
     # if there is a checkpoint, means already trained part of the model, now continue training
@@ -381,7 +381,7 @@ if __name__ == '__main__':
         optimizer.load_state_dict(checkpoint["optimizer_state_dict"]) #restore the state of the optimizer, like momentum, learning rate, etc.
         start_gen = checkpoint["generation"] + 1 #start from the next generation
     else:
-        start_gen = initial_gen #if there is no checkpoint, start from 1
+        start_gen = initial_gen #if there is no checkpoint, start from 1"""
 
     for generation in range(start_gen,args.max_epochs + 1):
         logger.info(f"============ Start of generation {generation} ============")
@@ -551,12 +551,12 @@ if __name__ == '__main__':
         train_dataset, test_dataset = create_datasets(input_file)
 
         # save checkpoint 
-        torch.save({
+        """torch.save({
             "generation": generation, # current generation number
             "model_state_dict": model.state_dict(), # weights/parameters of the model
             "optimizer_state_dict": optimizer.state_dict(), # state of the optimizer, like momentum, learning rate, etc
             "all_scores": all_scores # distribution of all scores
         }, checkpoint_path)
-        logger.info(f"checkpoint saved at generation {generation} to {checkpoint_path}")
+        logger.info(f"checkpoint saved at generation {generation} to {checkpoint_path}")"""
 
 
