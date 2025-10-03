@@ -19,12 +19,10 @@
 # Request RAM (below = 8gb x4 cpu =32gb for the job)
 #SBATCH --mem-per-cpu=8gb
 
-#SBATCH --array=1-3%1
-#SBATCH --dependency=singleton
 
 # This will set the SLURM_NTASKS environment variable to "1"
 #SBATCH --ntasks=1
 
 source ~/.bashrc
 conda activate pytorch
-python fc_loop.py --exp_name=dim11_run_28 --dump_path=/home/yuebi/Project/dim11_run --num_initial_empty_objects=500 --final_database_size=20 --target_db_size=20 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=131 --sample-only=35000 --max-steps=1000 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128
+python fc_loop.py --exp_name=dim11_run_24 --dump_path=/home/yuebi/Project/dim11_run/dim11_run_24/7812 --num_initial_empty_objects=500 --final_database_size=20 --target_db_size=20 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=131 --sample-only=35000 --max-steps=1000 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128
