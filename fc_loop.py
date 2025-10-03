@@ -383,7 +383,7 @@ if __name__ == '__main__':
     else:
         start_gen = initial_gen #if there is no checkpoint, start from 1"""
 
-    for generation in range(start_gen,args.max_epochs + 1):
+    for generation in range(initial_gen,args.max_epochs + 1):
         logger.info(f"============ Start of generation {generation} ============")
         logger.info(f"Memory allocated:  {torch.cuda.memory_allocated(0)/(1024*1024):.2f}MB, reserved: {torch.cuda.memory_reserved(0)/(1024*1024):.2f}MB")
 
