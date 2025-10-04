@@ -361,10 +361,10 @@ if __name__ == '__main__':
         logger.error(f'model type {args.type} is not recognized')
     model.to(args.device)
     logger.info(f"model #params: {sum(p.numel() for p in model.parameters())}")
-    """model_path = os.path.join(args.dump_path, "model.pt")
+    model_path = os.path.join(args.dump_path, "model.pt")
     if os.path.isfile(model_path): # Note: if we sample-only then we also assume we are resuming
         logger.info("resuming from existing model")
-        model.load_state_dict(torch.load(model_path))"""
+        model.load_state_dict(torch.load(model_path))
     
     # exp_name is not changed during the whole training process, so can load and save checkpoint here
     """checkpoint_path = os.path.join(args.exp_name, "checkpoint.pt")
