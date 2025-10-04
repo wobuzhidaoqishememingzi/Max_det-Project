@@ -12,3 +12,4 @@ Score:810.0, Count:1
 Score:805.0, Count:1
 Score:801.0, Count:2
 Score:800.0, Count:0
+Score:744.0, Count:0
