@@ -4,8 +4,8 @@
 #SBATCH --mail-user=ybili@ucdavis.edu
 #SBATCH --mail-type=ALL
 
-#SBATCH --output=maxdet-%j_%a.out # %j is jobID, %a is the array index
-#SBATCH --error=maxdet-%j_%a.err
+#SBATCH --output=maxdet-%j.out
+#SBATCH --error=maxdet-%j.err
 
 # Request a GPU (1x 20gb)
 #SBATCH --gpus=1g.20gb:1
@@ -25,4 +25,4 @@
 
 source ~/.bashrc
 conda activate pytorch
-python fc_loop.py --exp_name=dim11_run_25 --dump_path=/home/yuebi/Project/dim11_run --num_initial_empty_objects=500 --final_database_size=20 --target_db_size=20 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=131 --sample-only=5000 --max-steps=1000 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=7986
+python fc_loop.py --exp_name=dim11_run_25 --dump_path=/home/yuebi/Project/dim11_run --num_initial_empty_objects=500 --final_database_size=20 --target_db_size=20 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=131 --sample-only=50000 --max-steps=1000 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=7985
