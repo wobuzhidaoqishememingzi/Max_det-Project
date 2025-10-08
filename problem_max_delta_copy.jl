@@ -70,9 +70,25 @@ function empty_starting_point()::String
 
     since we add randomness in the local search, here we can start with a fix all-zero matrix.
     """
-
-    mat = zeros(Int, N, N)
-    return encode_matrix(mat)
+    if rand() < 0.05
+        upper_bound_matrix = [
+        0 0 1 1 0 1 1 0 1 1 0;
+        0 0 1 0 1 1 0 1 1 0 1;
+        1 1 0 0 0 1 1 1 1 0 0;
+        1 0 0 0 1 1 1 0 0 1 1;
+        0 1 0 1 0 1 0 1 0 1 1;
+        1 1 1 1 1 1 0 0 0 0 0;
+        1 0 1 1 0 0 1 1 0 0 1;
+        0 1 1 0 1 0 1 1 0 1 0;
+        1 1 1 0 0 0 0 0 1 1 1;
+        1 0 0 1 1 0 0 1 1 1 0;
+        0 1 0 1 1 0 1 0 1 0 1
+    ]
+        return encode_matrix(upper_bound_matrix)
+    else
+        mat = zeros(Int, N, N)
+        return encode_matrix(mat)
+    end
 end
 
 
@@ -109,14 +125,19 @@ function greedy_search_from_startpoint(db, obj::String)::Union{Nothing, Vector{S
         return String[]
     end
 
-    # add randomness: flip some random elements in the matrix to be 1
-    # using a threshold p to decide whether to flip an element or not,
-    # loop over every element, if larger than p, flip it; if not, keep it as 0.
-    p = 0.5  # Probability of flipping an element
-    for i in 1:N, j in 1:N
-        if rand() >= p
-            A[i, j] = 1
+    det_A = abs(det(A))
+    if det_A < 1458 - 1e-6
+        # add randomness: flip some random elements in the matrix to be 1
+        # using a threshold p to decide whether to flip an element or not,
+        # loop over every element, if larger than p, flip it; if not, keep it as 0.
+        p = 0.5  # Probability of flipping an element
+        for i in 1:N, j in 1:N
+            if rand() >= p
+                A[i, j] = 1
+            end
         end
+    else
+        @info "reach upper bound, skip random flipping"
     end
 
     best_A = copy(A)
