@@ -7,6 +7,8 @@ using Combinatorics
 const invalid_count = Threads.Atomic{Int}(0)  # Count of invalid matrices encountered
 const total_count = Threads.Atomic{Int}(0)    # Total count of matrices processed
 
+const upper_bound_used = Ref(false)
+
 function decode_matrix(s::String)::Union{Matrix{Int}, Nothing}
     """
     Decoder: convert the string to a matrix.
@@ -70,7 +72,9 @@ function empty_starting_point()::String
 
     since we add randomness in the local search, here we can start with a fix all-zero matrix.
     """
-    if rand() < 0.05
+    if !upper_bound_used[] && rand() < 0.05
+        # only use once
+        # use the known upper bound matrix as a starting point with 5% probability
         upper_bound_matrix = [
         0 0 1 1 0 1 1 0 1 1 0;
         0 0 1 0 1 1 0 1 1 0 1;
@@ -84,6 +88,7 @@ function empty_starting_point()::String
         1 0 0 1 1 0 0 1 1 1 0;
         0 1 0 1 1 0 1 0 1 0 1
     ]
+        upper_bound_used[] = true
         return encode_matrix(upper_bound_matrix)
     else
         mat = zeros(Int, N, N)
