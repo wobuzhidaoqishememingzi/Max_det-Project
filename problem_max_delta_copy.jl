@@ -7,7 +7,6 @@ using Combinatorics
 const invalid_count = Threads.Atomic{Int}(0)  # Count of invalid matrices encountered
 const total_count = Threads.Atomic{Int}(0)    # Total count of matrices processed
 
-const upper_bound_used = Ref(false)
 
 function decode_matrix(s::String)::Union{Matrix{Int}, Nothing}
     """
@@ -72,7 +71,8 @@ function empty_starting_point()::String
 
     since we add randomness in the local search, here we can start with a fix all-zero matrix.
     """
-    if !upper_bound_used[] && rand() < 0.05
+    used_path = "upper_bound_used.flag"
+    if !isfile(used_path)
         # only use once
         # use the known upper bound matrix as a starting point with 5% probability
         upper_bound_matrix = [
@@ -88,8 +88,12 @@ function empty_starting_point()::String
         1 0 0 1 1 0 0 1 1 1 0;
         0 1 0 1 1 0 1 0 1 0 1
     ]
-        upper_bound_used[] = true
+    # write into a file to mark that we have used the upper bound matrix
+        open(used_path, "w") do f
+            write(f, "used")
+        end
         return encode_matrix(upper_bound_matrix)
+        
     else
         mat = zeros(Int, N, N)
         return encode_matrix(mat)
@@ -130,37 +134,27 @@ function greedy_search_from_startpoint(db, obj::String)::Union{Nothing, Vector{S
         return String[]
     end
 
-    det_A = abs(det(A))
-    if det_A < 1458 - 1e-6
-        # add randomness: flip some random elements in the matrix to be 1
-        # using a threshold p to decide whether to flip an element or not,
-        # loop over every element, if larger than p, flip it; if not, keep it as 0.
-        p = 0.5  # Probability of flipping an element
-        for i in 1:N, j in 1:N
-            if rand() >= p
-                A[i, j] = 1
-            end
-        end
-    else
-        @info "reach upper bound, skip random flipping"
-    end
-
     best_A = copy(A)
     best_delta = reward_calc(encode_matrix(best_A))
 
-    for i in 1:N, j in 1:N
-        for v in [0, 1]
-            if A[i, j] == v
-                continue  # Skip if no change
-            end
+    improve = true
+    while improve
+        improve = false
+        for i in 1:N, j in 1:N
+            for v in [0, 1]
+                if best_A[i, j] == v
+                    continue  # Skip if no change
+                end
 
-            A_new = copy(best_A)
-            A_new[i, j] = v
+                A_new = copy(best_A)
+                A_new[i, j] = v
 
-            new_delta = reward_calc(encode_matrix(A_new))
-            if new_delta > best_delta
-                best_delta = new_delta
-                best_A = A_new
+                new_delta = reward_calc(encode_matrix(A_new))
+                if new_delta > best_delta
+                    best_delta = new_delta
+                    best_A = A_new
+                    improve = true
+                end
             end
         end
     end
