@@ -74,7 +74,7 @@ function empty_starting_point()::String
     used_path = "upper_bound_used.flag"
     if !isfile(used_path)
         # only use once
-        # use the known upper bound matrix as a starting point with 5% probability
+        # use the known upper bound matrix as a starting point
         upper_bound_matrix = [
         0 0 1 1 0 1 1 0 1 1 0;
         0 0 1 0 1 1 0 1 1 0 1;
@@ -93,9 +93,9 @@ function empty_starting_point()::String
             write(f, "used")
         end
         return encode_matrix(upper_bound_matrix)
-        
+
     else
-        mat = zeros(Int, N, N)
+        mat = rand(0:1, N, N) # random 0/1 matrix
         return encode_matrix(mat)
     end
 end
