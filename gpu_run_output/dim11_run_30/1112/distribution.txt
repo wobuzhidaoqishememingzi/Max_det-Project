@@ -1,0 +1,6 @@
+Score: 1458.0, Count: 16
+Score: 1215.0, Count: 67
+Score: 1053.0, Count: 18
+Score: 972.0, Count: 2
+Score: 873.0, Count: 3
+Score: 840.0, Count: 1

@@ -1,4 +1,4 @@
-const N = 11 # Size of the matrix (N x N)
+const N = 12 # Size of the matrix (N x N)
 
 using LinearAlgebra
 using Combinatorics
@@ -76,17 +76,18 @@ function empty_starting_point()::String
         # only use once
         # use the known upper bound matrix as a starting point
         upper_bound_matrix = [
-        0 0 1 1 0 1 1 0 1 1 0;
-        0 0 1 0 1 1 0 1 1 0 1;
-        1 1 0 0 0 1 1 1 1 0 0;
-        1 0 0 0 1 1 1 0 0 1 1;
-        0 1 0 1 0 1 0 1 0 1 1;
-        1 1 1 1 1 1 0 0 0 0 0;
-        1 0 1 1 0 0 1 1 0 0 1;
-        0 1 1 0 1 0 1 1 0 1 0;
-        1 1 1 0 0 0 0 0 1 1 1;
-        1 0 0 1 1 0 0 1 1 1 0;
-        0 1 0 1 1 0 1 0 1 0 1
+        1 1 1 1 0 0 1 1 0 1 0 0;
+        1 0 0 0 1 0 1 0 1 1 1 0;
+        1 0 1 1 0 1 1 0 0 0 1 1;
+        0 1 0 1 0 1 1 1 1 0 1 0;
+        1 1 0 1 1 0 0 0 1 0 0 1;
+        0 1 1 0 0 0 0 0 1 1 1 1;
+        0 0 1 1 1 1 0 0 1 1 0 0;
+        1 1 1 0 1 1 0 1 0 0 1 0;
+        1 0 0 0 0 1 0 1 1 1 0 1;
+        0 1 0 0 1 1 1 0 0 1 0 1;
+        0 0 1 0 1 0 1 1 1 0 0 1;
+        0 0 0 1 1 0 0 1 0 1 1 1
     ]
     # write into a file to mark that we have used the upper bound matrix
         open(used_path, "w") do f
