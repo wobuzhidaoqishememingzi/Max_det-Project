@@ -1,0 +1,2 @@
+Score: 3645.0, Count: 33
+Score: 3159.0, Count: 67
