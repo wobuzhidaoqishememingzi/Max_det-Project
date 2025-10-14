@@ -1,0 +1,5 @@
+Score:25515.0, Count:5
+Score:24435.0, Count:39
+Score:24300.0, Count:6
+Score:24099.0, Count:41
+Score:24003.0, Count:9
