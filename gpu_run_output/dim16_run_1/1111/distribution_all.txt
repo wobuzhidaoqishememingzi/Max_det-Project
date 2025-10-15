@@ -1,0 +1,5 @@
+Score:299008.0, Count:65
+Score:294912.0, Count:11
+Score:286720.0, Count:13
+Score:282624.0, Count:4
+Score:276480.0, Count:7
