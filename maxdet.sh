@@ -11,7 +11,7 @@
 #SBATCH --gpus=1g.20gb:1
 
 # Request a certain amount of time (4 hour)
-#SBATCH --time=02:40:00
+#SBATCH --time=02:50:00
 
 # Request cpus
 #SBATCH --cpus-per-gpu=2
