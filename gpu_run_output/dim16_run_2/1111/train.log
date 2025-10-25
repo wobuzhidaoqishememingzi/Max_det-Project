@@ -1011,3 +1011,1255 @@ INFO - 10/16/25 11:11:18 - 3:27:55 - step 1300 | loss 0.0425 | step time 218.19m
 INFO - 10/16/25 11:11:40 - 3:28:17 - step 1400 | loss 0.0422 | step time 218.14ms
 INFO - 10/16/25 11:12:02 - 3:28:39 - Memory allocated:  43.97MB, reserved: 16126.00MB
 INFO - 10/16/25 11:12:02 - 3:28:39 - generating
+INFO - 10/17/25 03:48:08 - 0:00:00 - ============ Initialized logger ============
+INFO - 10/17/25 03:48:08 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111 --exp_id "1111"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     exp_id: 1111
+                                     exp_name: dim16_run_2
+                                     final_database_size: 100
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 25
+                                     max_output_length: 271
+                                     max_steps: 1500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 128
+                                     n_embd2: 128
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 8
+                                     n_nodes: 1
+                                     n_tokens: 15
+                                     nb_local_searches: 800
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 800
+                                     num_workers: 8
+                                     sample_only: 40000
+                                     seed: -1
+                                     target_db_size: 100
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 10/17/25 03:48:08 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     
+INFO - 10/17/25 03:48:08 - 0:00:00 - Running command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
+
+WARNING - 10/17/25 03:48:08 - 0:00:00 - Signal handler installed.
+INFO - 10/17/25 03:48:08 - 0:00:00 - seed: 185067149
+INFO - 10/17/25 03:48:08 - 0:00:00 - initializing at generation: 11
+INFO - 10/17/25 03:48:08 - 0:00:00 - number of examples in the dataset: 100
+INFO - 10/17/25 03:48:08 - 0:00:00 - max word length: 112
+INFO - 10/17/25 03:48:08 - 0:00:00 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 03:48:08 - 0:00:00 - vocabulary:
+INFO - 10/17/25 03:48:08 - 0:00:00 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 03:48:08 - 0:00:00 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 03:48:08 - 0:00:00 - dataset determined that: vocab_size=16, block_size=272
+INFO - 10/17/25 03:48:08 - 0:00:00 - model #params: 1625344
+INFO - 10/17/25 03:48:08 - 0:00:00 - resuming from existing model
+INFO - 10/17/25 03:48:08 - 0:00:00 - ============ Start of generation 11 ============
+INFO - 10/17/25 03:48:08 - 0:00:00 - Memory allocated:  8.46MB, reserved: 18.00MB
+INFO - 10/17/25 03:48:08 - 0:00:00 - training
+INFO - 10/17/25 03:48:13 - 0:00:05 - step 0 | loss 0.0550 | step time 546.40ms
+INFO - 10/17/25 03:48:35 - 0:00:27 - step 100 | loss 0.0420 | step time 217.82ms
+INFO - 10/17/25 03:48:56 - 0:00:49 - step 200 | loss 0.0433 | step time 217.75ms
+INFO - 10/17/25 03:49:18 - 0:01:10 - step 300 | loss 0.0440 | step time 217.82ms
+INFO - 10/17/25 03:49:40 - 0:01:32 - step 400 | loss 0.0428 | step time 217.75ms
+INFO - 10/17/25 03:50:02 - 0:01:54 - step 500 | loss 0.0437 | step time 217.77ms
+INFO - 10/17/25 03:50:02 - 0:01:54 - step 500 train loss: 0.042696233838796616 test loss: 0.09130191802978516
+INFO - 10/17/25 03:50:02 - 0:01:54 - test loss 0.09130191802978516 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 03:50:24 - 0:02:16 - step 600 | loss 0.0423 | step time 217.84ms
+INFO - 10/17/25 03:50:46 - 0:02:38 - step 700 | loss 0.0431 | step time 217.77ms
+INFO - 10/17/25 03:51:07 - 0:03:00 - step 800 | loss 0.0432 | step time 217.77ms
+INFO - 10/17/25 03:51:29 - 0:03:21 - step 900 | loss 0.0419 | step time 217.78ms
+INFO - 10/17/25 03:51:51 - 0:03:43 - step 1000 | loss 0.0424 | step time 217.72ms
+INFO - 10/17/25 03:51:51 - 0:03:43 - step 1000 train loss: 0.04243456944823265 test loss: 0.16255484521389008
+INFO - 10/17/25 03:52:13 - 0:04:05 - step 1100 | loss 0.0426 | step time 217.78ms
+INFO - 10/17/25 03:52:35 - 0:04:27 - step 1200 | loss 0.0433 | step time 217.71ms
+INFO - 10/17/25 03:52:57 - 0:04:49 - step 1300 | loss 0.0424 | step time 218.70ms
+INFO - 10/17/25 03:53:18 - 0:05:10 - step 1400 | loss 0.0444 | step time 217.61ms
+INFO - 10/17/25 03:53:40 - 0:05:32 - Memory allocated:  43.97MB, reserved: 2272.00MB
+INFO - 10/17/25 03:53:40 - 0:05:32 - generating
+INFO - 10/17/25 06:22:07 - 2:33:59 - distribution of sample lengths: average: 334.8341 max: 838
+INFO - 10/17/25 06:22:07 - 2:33:59 - printed 40000 samples
+INFO - 10/17/25 06:22:07 - 2:33:59 - decoding
+INFO - 10/17/25 06:22:08 - 2:34:00 - Decoding complete. Check the output in /home/yuebi/Project/dim16_run/dim16_run_2/1111/transformer-output-decoded.txt
+INFO - 10/17/25 06:22:08 - 2:34:00 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 06:22:08 - 2:34:00 - ============ End of generation 11 ============
+INFO - 10/17/25 06:22:08 - 2:34:00 - launching search.jl
+INFO - 10/17/25 06:22:08 - 2:34:00 - JULIA_NUM_THREADS is set to 1
+INFO - 10/17/25 06:27:23 - 2:39:15 - distribution of scores(all rounds)
+INFO - 10/17/25 06:27:23 - 2:39:15 - Score:299008.0, Count:100
+                                     
+INFO - 10/17/25 06:27:23 - 2:39:15 - tokenizing
+INFO - 10/17/25 06:27:23 - 2:39:15 - Loading tokenizer from /home/yuebi/Project/dim16_run/dim16_run_2/1111/tokenizer_data/tokenizer.json...
+INFO - 10/17/25 06:27:23 - 2:39:15 - 0 / 100
+INFO - 10/17/25 06:27:23 - 2:39:15 - number of examples in the dataset: 100
+INFO - 10/17/25 06:27:23 - 2:39:15 - max word length: 112
+INFO - 10/17/25 06:27:23 - 2:39:15 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 06:27:23 - 2:39:15 - vocabulary:
+INFO - 10/17/25 06:27:23 - 2:39:15 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 06:27:23 - 2:39:15 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 06:27:23 - 2:39:15 - ============ Start of generation 12 ============
+INFO - 10/17/25 06:27:23 - 2:39:15 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 06:27:23 - 2:39:15 - training
+INFO - 10/17/25 06:27:23 - 2:39:15 - step 0 | loss 0.0500 | step time 227.84ms
+INFO - 10/17/25 06:27:45 - 2:39:37 - step 100 | loss 0.0428 | step time 218.12ms
+INFO - 10/17/25 06:28:06 - 2:39:59 - step 200 | loss 0.0429 | step time 218.21ms
+INFO - 10/17/25 06:28:28 - 2:40:20 - step 300 | loss 0.0432 | step time 218.15ms
+INFO - 10/17/25 06:28:50 - 2:40:42 - step 400 | loss 0.0428 | step time 218.11ms
+INFO - 10/17/25 06:29:12 - 2:41:04 - step 500 | loss 0.0427 | step time 218.09ms
+INFO - 10/17/25 06:29:12 - 2:41:04 - step 500 train loss: 0.042378008365631104 test loss: 0.11849796026945114
+INFO - 10/17/25 06:29:12 - 2:41:04 - test loss 0.11849796026945114 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 06:29:34 - 2:41:26 - step 600 | loss 0.0456 | step time 218.10ms
+INFO - 10/17/25 06:29:56 - 2:41:48 - step 700 | loss 0.0413 | step time 218.25ms
+INFO - 10/17/25 06:30:18 - 2:42:10 - step 800 | loss 0.0423 | step time 218.12ms
+INFO - 10/17/25 06:30:39 - 2:42:32 - step 900 | loss 0.0426 | step time 218.11ms
+INFO - 10/17/25 06:31:01 - 2:42:53 - step 1000 | loss 0.0423 | step time 218.07ms
+INFO - 10/17/25 06:31:02 - 2:42:54 - step 1000 train loss: 0.04239342361688614 test loss: 0.15283264219760895
+INFO - 10/17/25 06:31:23 - 2:43:16 - step 1100 | loss 0.0416 | step time 218.12ms
+INFO - 10/17/25 06:31:45 - 2:43:37 - step 1200 | loss 0.0417 | step time 218.26ms
+INFO - 10/17/25 06:32:07 - 2:43:59 - step 1300 | loss 0.0423 | step time 218.07ms
+INFO - 10/17/25 06:32:29 - 2:44:21 - step 1400 | loss 0.0426 | step time 218.14ms
+INFO - 10/17/25 06:32:50 - 2:44:43 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 06:32:50 - 2:44:43 - generating
+INFO - 10/17/25 06:38:18 - 0:00:00 - ============ Initialized logger ============
+INFO - 10/17/25 06:38:18 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111 --exp_id "1111"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     exp_id: 1111
+                                     exp_name: dim16_run_2
+                                     final_database_size: 100
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 25
+                                     max_output_length: 271
+                                     max_steps: 1500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 128
+                                     n_embd2: 128
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 8
+                                     n_nodes: 1
+                                     n_tokens: 15
+                                     nb_local_searches: 800
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 800
+                                     num_workers: 8
+                                     sample_only: 40000
+                                     seed: -1
+                                     target_db_size: 100
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 10/17/25 06:38:18 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     
+INFO - 10/17/25 06:38:18 - 0:00:00 - Running command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
+
+WARNING - 10/17/25 06:38:18 - 0:00:00 - Signal handler installed.
+INFO - 10/17/25 06:38:18 - 0:00:00 - seed: 994926259
+INFO - 10/17/25 06:38:18 - 0:00:00 - initializing at generation: 12
+INFO - 10/17/25 06:38:18 - 0:00:00 - number of examples in the dataset: 100
+INFO - 10/17/25 06:38:18 - 0:00:00 - max word length: 112
+INFO - 10/17/25 06:38:18 - 0:00:00 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 06:38:18 - 0:00:00 - vocabulary:
+INFO - 10/17/25 06:38:18 - 0:00:00 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 06:38:18 - 0:00:00 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 06:38:18 - 0:00:00 - dataset determined that: vocab_size=16, block_size=272
+INFO - 10/17/25 06:38:18 - 0:00:00 - model #params: 1625344
+INFO - 10/17/25 06:38:18 - 0:00:00 - resuming from existing model
+INFO - 10/17/25 06:38:18 - 0:00:00 - ============ Start of generation 12 ============
+INFO - 10/17/25 06:38:18 - 0:00:00 - Memory allocated:  8.46MB, reserved: 18.00MB
+INFO - 10/17/25 06:38:18 - 0:00:00 - training
+INFO - 10/17/25 06:38:23 - 0:00:05 - step 0 | loss 0.0438 | step time 557.03ms
+INFO - 10/17/25 06:38:45 - 0:00:27 - step 100 | loss 0.0423 | step time 218.75ms
+INFO - 10/17/25 06:39:07 - 0:00:49 - step 200 | loss 0.0423 | step time 217.90ms
+INFO - 10/17/25 06:39:28 - 0:01:10 - step 300 | loss 0.0424 | step time 218.20ms
+INFO - 10/17/25 06:39:50 - 0:01:32 - step 400 | loss 0.0421 | step time 217.87ms
+INFO - 10/17/25 06:40:12 - 0:01:54 - step 500 | loss 0.0423 | step time 217.92ms
+INFO - 10/17/25 06:40:12 - 0:01:54 - step 500 train loss: 0.042974017560482025 test loss: 0.11515721678733826
+INFO - 10/17/25 06:40:12 - 0:01:54 - test loss 0.11515721678733826 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 06:40:34 - 0:02:16 - step 600 | loss 0.0426 | step time 217.88ms
+INFO - 10/17/25 06:40:56 - 0:02:38 - step 700 | loss 0.0424 | step time 218.42ms
+INFO - 10/17/25 06:41:18 - 0:03:00 - step 800 | loss 0.0422 | step time 218.02ms
+INFO - 10/17/25 06:41:39 - 0:03:21 - step 900 | loss 0.0422 | step time 218.05ms
+INFO - 10/17/25 06:42:01 - 0:03:43 - step 1000 | loss 0.0437 | step time 218.16ms
+INFO - 10/17/25 06:42:02 - 0:03:44 - step 1000 train loss: 0.04258590191602707 test loss: 0.15820744633674622
+INFO - 10/17/25 06:42:23 - 0:04:05 - step 1100 | loss 0.0432 | step time 217.77ms
+INFO - 10/17/25 06:42:45 - 0:04:27 - step 1200 | loss 0.0439 | step time 217.76ms
+INFO - 10/17/25 06:43:07 - 0:04:49 - step 1300 | loss 0.0423 | step time 217.76ms
+INFO - 10/17/25 06:43:29 - 0:05:11 - step 1400 | loss 0.0421 | step time 217.76ms
+INFO - 10/17/25 06:43:50 - 0:05:32 - Memory allocated:  43.97MB, reserved: 2272.00MB
+INFO - 10/17/25 06:43:50 - 0:05:32 - generating
+INFO - 10/17/25 09:12:21 - 2:34:02 - distribution of sample lengths: average: 335.082175 max: 352
+INFO - 10/17/25 09:12:21 - 2:34:02 - printed 40000 samples
+INFO - 10/17/25 09:12:21 - 2:34:02 - decoding
+INFO - 10/17/25 09:12:21 - 2:34:03 - Decoding complete. Check the output in /home/yuebi/Project/dim16_run/dim16_run_2/1111/transformer-output-decoded.txt
+INFO - 10/17/25 09:12:21 - 2:34:03 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 09:12:21 - 2:34:03 - ============ End of generation 12 ============
+INFO - 10/17/25 09:12:21 - 2:34:03 - launching search.jl
+INFO - 10/17/25 09:12:21 - 2:34:03 - JULIA_NUM_THREADS is set to 1
+INFO - 10/17/25 09:17:37 - 2:39:19 - distribution of scores(all rounds)
+INFO - 10/17/25 09:17:37 - 2:39:19 - Score:299008.0, Count:100
+                                     
+INFO - 10/17/25 09:17:37 - 2:39:19 - tokenizing
+INFO - 10/17/25 09:17:37 - 2:39:19 - Loading tokenizer from /home/yuebi/Project/dim16_run/dim16_run_2/1111/tokenizer_data/tokenizer.json...
+INFO - 10/17/25 09:17:37 - 2:39:19 - 0 / 100
+INFO - 10/17/25 09:17:37 - 2:39:19 - number of examples in the dataset: 100
+INFO - 10/17/25 09:17:37 - 2:39:19 - max word length: 112
+INFO - 10/17/25 09:17:37 - 2:39:19 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 09:17:37 - 2:39:19 - vocabulary:
+INFO - 10/17/25 09:17:37 - 2:39:19 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 09:17:37 - 2:39:19 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 09:17:37 - 2:39:19 - ============ Start of generation 13 ============
+INFO - 10/17/25 09:17:37 - 2:39:19 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 09:17:37 - 2:39:19 - training
+INFO - 10/17/25 09:17:37 - 2:39:19 - step 0 | loss 0.0414 | step time 225.64ms
+INFO - 10/17/25 09:17:59 - 2:39:41 - step 100 | loss 0.0424 | step time 218.09ms
+INFO - 10/17/25 09:18:21 - 2:40:03 - step 200 | loss 0.0421 | step time 218.17ms
+INFO - 10/17/25 09:18:42 - 2:40:24 - step 300 | loss 0.0422 | step time 218.19ms
+INFO - 10/17/25 09:19:04 - 2:40:46 - step 400 | loss 0.0415 | step time 218.09ms
+INFO - 10/17/25 09:19:26 - 2:41:08 - step 500 | loss 0.0413 | step time 218.08ms
+INFO - 10/17/25 09:19:26 - 2:41:08 - step 500 train loss: 0.04247850179672241 test loss: 0.10625153034925461
+INFO - 10/17/25 09:19:26 - 2:41:08 - test loss 0.10625153034925461 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 09:19:48 - 2:41:30 - step 600 | loss 0.0440 | step time 218.47ms
+INFO - 10/17/25 09:20:10 - 2:41:52 - step 700 | loss 0.0421 | step time 218.39ms
+INFO - 10/17/25 09:20:32 - 2:42:14 - step 800 | loss 0.0422 | step time 218.90ms
+INFO - 10/17/25 09:20:54 - 2:42:36 - step 900 | loss 0.0430 | step time 218.53ms
+INFO - 10/17/25 09:21:15 - 2:42:57 - step 1000 | loss 0.0423 | step time 219.21ms
+INFO - 10/17/25 09:21:16 - 2:42:58 - step 1000 train loss: 0.04224997013807297 test loss: 0.21427302062511444
+INFO - 10/17/25 09:21:38 - 2:43:20 - step 1100 | loss 0.0428 | step time 217.98ms
+INFO - 10/17/25 09:21:59 - 2:43:41 - step 1200 | loss 0.0419 | step time 218.27ms
+INFO - 10/17/25 09:22:21 - 2:44:03 - step 1300 | loss 0.0429 | step time 218.97ms
+INFO - 10/17/25 09:22:43 - 2:44:25 - step 1400 | loss 0.0420 | step time 218.94ms
+INFO - 10/17/25 09:23:05 - 2:44:47 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 09:23:05 - 2:44:47 - generating
+INFO - 10/17/25 09:28:20 - 0:00:00 - ============ Initialized logger ============
+INFO - 10/17/25 09:28:20 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111 --exp_id "1111"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     exp_id: 1111
+                                     exp_name: dim16_run_2
+                                     final_database_size: 100
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 25
+                                     max_output_length: 271
+                                     max_steps: 1500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 128
+                                     n_embd2: 128
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 8
+                                     n_nodes: 1
+                                     n_tokens: 15
+                                     nb_local_searches: 800
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 800
+                                     num_workers: 8
+                                     sample_only: 40000
+                                     seed: -1
+                                     target_db_size: 100
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 10/17/25 09:28:20 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     
+INFO - 10/17/25 09:28:20 - 0:00:00 - Running command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
+
+WARNING - 10/17/25 09:28:20 - 0:00:00 - Signal handler installed.
+INFO - 10/17/25 09:28:20 - 0:00:00 - seed: 871782404
+INFO - 10/17/25 09:28:20 - 0:00:00 - initializing at generation: 13
+INFO - 10/17/25 09:28:20 - 0:00:00 - number of examples in the dataset: 100
+INFO - 10/17/25 09:28:20 - 0:00:00 - max word length: 112
+INFO - 10/17/25 09:28:20 - 0:00:00 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 09:28:20 - 0:00:00 - vocabulary:
+INFO - 10/17/25 09:28:20 - 0:00:00 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 09:28:20 - 0:00:00 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 09:28:20 - 0:00:00 - dataset determined that: vocab_size=16, block_size=272
+INFO - 10/17/25 09:28:20 - 0:00:00 - model #params: 1625344
+INFO - 10/17/25 09:28:20 - 0:00:00 - resuming from existing model
+INFO - 10/17/25 09:28:20 - 0:00:00 - ============ Start of generation 13 ============
+INFO - 10/17/25 09:28:20 - 0:00:00 - Memory allocated:  8.46MB, reserved: 18.00MB
+INFO - 10/17/25 09:28:20 - 0:00:00 - training
+INFO - 10/17/25 09:28:25 - 0:00:05 - step 0 | loss 0.0524 | step time 557.32ms
+INFO - 10/17/25 09:28:47 - 0:00:27 - step 100 | loss 0.0429 | step time 217.92ms
+INFO - 10/17/25 09:29:09 - 0:00:49 - step 200 | loss 0.0444 | step time 217.88ms
+INFO - 10/17/25 09:29:30 - 0:01:10 - step 300 | loss 0.0423 | step time 217.90ms
+INFO - 10/17/25 09:29:52 - 0:01:32 - step 400 | loss 0.0421 | step time 218.70ms
+INFO - 10/17/25 09:30:14 - 0:01:54 - step 500 | loss 0.0429 | step time 217.68ms
+INFO - 10/17/25 09:30:14 - 0:01:54 - step 500 train loss: 0.04253588616847992 test loss: 0.13011683523654938
+INFO - 10/17/25 09:30:14 - 0:01:54 - test loss 0.13011683523654938 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 09:30:36 - 0:02:16 - step 600 | loss 0.0427 | step time 217.69ms
+INFO - 10/17/25 09:30:58 - 0:02:38 - step 700 | loss 0.0428 | step time 218.04ms
+INFO - 10/17/25 09:31:20 - 0:03:00 - step 800 | loss 0.0421 | step time 217.87ms
+INFO - 10/17/25 09:31:41 - 0:03:21 - step 900 | loss 0.0541 | step time 218.07ms
+INFO - 10/17/25 09:32:03 - 0:03:43 - step 1000 | loss 0.0421 | step time 218.36ms
+INFO - 10/17/25 09:32:03 - 0:03:43 - step 1000 train loss: 0.0423564575612545 test loss: 0.26094627380371094
+INFO - 10/17/25 09:32:25 - 0:04:05 - step 1100 | loss 0.0423 | step time 218.00ms
+INFO - 10/17/25 09:32:47 - 0:04:27 - step 1200 | loss 0.0429 | step time 217.54ms
+INFO - 10/17/25 09:33:09 - 0:04:49 - step 1300 | loss 0.0434 | step time 218.11ms
+INFO - 10/17/25 09:33:30 - 0:05:11 - step 1400 | loss 0.0424 | step time 217.93ms
+INFO - 10/17/25 09:33:52 - 0:05:32 - Memory allocated:  43.97MB, reserved: 2272.00MB
+INFO - 10/17/25 09:33:52 - 0:05:32 - generating
+INFO - 10/17/25 12:02:17 - 2:33:57 - distribution of sample lengths: average: 335.223125 max: 352
+INFO - 10/17/25 12:02:17 - 2:33:57 - printed 40000 samples
+INFO - 10/17/25 12:02:17 - 2:33:57 - decoding
+INFO - 10/17/25 12:02:18 - 2:33:58 - Decoding complete. Check the output in /home/yuebi/Project/dim16_run/dim16_run_2/1111/transformer-output-decoded.txt
+INFO - 10/17/25 12:02:18 - 2:33:58 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 12:02:18 - 2:33:58 - ============ End of generation 13 ============
+INFO - 10/17/25 12:02:18 - 2:33:58 - launching search.jl
+INFO - 10/17/25 12:02:18 - 2:33:58 - JULIA_NUM_THREADS is set to 1
+INFO - 10/17/25 12:07:33 - 2:39:13 - distribution of scores(all rounds)
+INFO - 10/17/25 12:07:33 - 2:39:13 - Score:299008.0, Count:100
+                                     
+INFO - 10/17/25 12:07:33 - 2:39:13 - tokenizing
+INFO - 10/17/25 12:07:33 - 2:39:13 - Loading tokenizer from /home/yuebi/Project/dim16_run/dim16_run_2/1111/tokenizer_data/tokenizer.json...
+INFO - 10/17/25 12:07:33 - 2:39:13 - 0 / 100
+INFO - 10/17/25 12:07:33 - 2:39:13 - number of examples in the dataset: 100
+INFO - 10/17/25 12:07:33 - 2:39:13 - max word length: 112
+INFO - 10/17/25 12:07:33 - 2:39:13 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 12:07:33 - 2:39:13 - vocabulary:
+INFO - 10/17/25 12:07:33 - 2:39:13 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 12:07:33 - 2:39:13 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 12:07:33 - 2:39:13 - ============ Start of generation 14 ============
+INFO - 10/17/25 12:07:33 - 2:39:13 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 12:07:33 - 2:39:13 - training
+INFO - 10/17/25 12:07:33 - 2:39:13 - step 0 | loss 0.4621 | step time 226.19ms
+INFO - 10/17/25 12:07:55 - 2:39:35 - step 100 | loss 0.0428 | step time 218.32ms
+INFO - 10/17/25 12:08:17 - 2:39:57 - step 200 | loss 0.0435 | step time 218.39ms
+INFO - 10/17/25 12:08:39 - 2:40:19 - step 300 | loss 0.0425 | step time 218.20ms
+INFO - 10/17/25 12:09:01 - 2:40:41 - step 400 | loss 0.0428 | step time 218.30ms
+INFO - 10/17/25 12:09:22 - 2:41:03 - step 500 | loss 0.0429 | step time 218.12ms
+INFO - 10/17/25 12:09:23 - 2:41:03 - step 500 train loss: 0.04274728521704674 test loss: 0.09422434866428375
+INFO - 10/17/25 12:09:23 - 2:41:03 - test loss 0.09422434866428375 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 12:09:45 - 2:41:25 - step 600 | loss 0.0433 | step time 218.45ms
+INFO - 10/17/25 12:10:06 - 2:41:46 - step 700 | loss 0.0561 | step time 218.11ms
+INFO - 10/17/25 12:10:28 - 2:42:08 - step 800 | loss 0.0430 | step time 218.14ms
+INFO - 10/17/25 12:10:50 - 2:42:30 - step 900 | loss 0.0422 | step time 218.31ms
+INFO - 10/17/25 12:11:12 - 2:42:52 - step 1000 | loss 0.0429 | step time 218.38ms
+INFO - 10/17/25 12:11:12 - 2:42:52 - step 1000 train loss: 0.04262766242027283 test loss: 0.19747725129127502
+INFO - 10/17/25 12:11:34 - 2:43:14 - step 1100 | loss 0.0426 | step time 218.00ms
+INFO - 10/17/25 12:11:56 - 2:43:36 - step 1200 | loss 0.0426 | step time 218.19ms
+INFO - 10/17/25 12:12:18 - 2:43:58 - step 1300 | loss 0.0418 | step time 218.08ms
+INFO - 10/17/25 12:12:39 - 2:44:19 - step 1400 | loss 0.0436 | step time 218.99ms
+INFO - 10/17/25 12:13:01 - 2:44:41 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 12:13:01 - 2:44:41 - generating
+INFO - 10/17/25 12:18:27 - 0:00:00 - ============ Initialized logger ============
+INFO - 10/17/25 12:18:27 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111 --exp_id "1111"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     exp_id: 1111
+                                     exp_name: dim16_run_2
+                                     final_database_size: 100
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 25
+                                     max_output_length: 271
+                                     max_steps: 1500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 128
+                                     n_embd2: 128
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 8
+                                     n_nodes: 1
+                                     n_tokens: 15
+                                     nb_local_searches: 800
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 800
+                                     num_workers: 8
+                                     sample_only: 40000
+                                     seed: -1
+                                     target_db_size: 100
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 10/17/25 12:18:27 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     
+INFO - 10/17/25 12:18:27 - 0:00:00 - Running command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
+
+WARNING - 10/17/25 12:18:27 - 0:00:00 - Signal handler installed.
+INFO - 10/17/25 12:18:27 - 0:00:00 - seed: 71764182
+INFO - 10/17/25 12:18:27 - 0:00:00 - initializing at generation: 14
+INFO - 10/17/25 12:18:27 - 0:00:00 - number of examples in the dataset: 100
+INFO - 10/17/25 12:18:27 - 0:00:00 - max word length: 112
+INFO - 10/17/25 12:18:27 - 0:00:00 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 12:18:27 - 0:00:00 - vocabulary:
+INFO - 10/17/25 12:18:27 - 0:00:00 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 12:18:27 - 0:00:00 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 12:18:27 - 0:00:00 - dataset determined that: vocab_size=16, block_size=272
+INFO - 10/17/25 12:18:27 - 0:00:00 - model #params: 1625344
+INFO - 10/17/25 12:18:27 - 0:00:00 - resuming from existing model
+INFO - 10/17/25 12:18:27 - 0:00:00 - ============ Start of generation 14 ============
+INFO - 10/17/25 12:18:27 - 0:00:00 - Memory allocated:  8.46MB, reserved: 18.00MB
+INFO - 10/17/25 12:18:27 - 0:00:00 - training
+INFO - 10/17/25 12:18:32 - 0:00:05 - step 0 | loss 0.0486 | step time 546.60ms
+INFO - 10/17/25 12:18:54 - 0:00:27 - step 100 | loss 0.0422 | step time 218.22ms
+INFO - 10/17/25 12:19:16 - 0:00:49 - step 200 | loss 0.0420 | step time 218.00ms
+INFO - 10/17/25 12:19:37 - 0:01:10 - step 300 | loss 0.0427 | step time 217.88ms
+INFO - 10/17/25 12:19:59 - 0:01:32 - step 400 | loss 0.0433 | step time 217.93ms
+INFO - 10/17/25 12:20:21 - 0:01:54 - step 500 | loss 0.0426 | step time 218.79ms
+INFO - 10/17/25 12:20:21 - 0:01:54 - step 500 train loss: 0.04252784699201584 test loss: 0.10997148603200912
+INFO - 10/17/25 12:20:21 - 0:01:54 - test loss 0.10997148603200912 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 12:20:43 - 0:02:16 - step 600 | loss 0.0414 | step time 219.04ms
+INFO - 10/17/25 12:21:05 - 0:02:38 - step 700 | loss 0.0438 | step time 218.19ms
+INFO - 10/17/25 12:21:27 - 0:03:00 - step 800 | loss 0.0423 | step time 217.88ms
+INFO - 10/17/25 12:21:49 - 0:03:22 - step 900 | loss 0.0425 | step time 217.74ms
+INFO - 10/17/25 12:22:10 - 0:03:43 - step 1000 | loss 0.0427 | step time 218.87ms
+INFO - 10/17/25 12:22:11 - 0:03:44 - step 1000 train loss: 0.04229098930954933 test loss: 0.2384805977344513
+INFO - 10/17/25 12:22:32 - 0:04:05 - step 1100 | loss 0.0422 | step time 217.71ms
+INFO - 10/17/25 12:22:54 - 0:04:27 - step 1200 | loss 0.0425 | step time 217.72ms
+INFO - 10/17/25 12:23:16 - 0:04:49 - step 1300 | loss 0.0432 | step time 218.59ms
+INFO - 10/17/25 12:23:38 - 0:05:11 - step 1400 | loss 0.0436 | step time 217.66ms
+INFO - 10/17/25 12:23:59 - 0:05:32 - Memory allocated:  43.97MB, reserved: 2272.00MB
+INFO - 10/17/25 12:23:59 - 0:05:32 - generating
+INFO - 10/17/25 14:52:20 - 2:33:53 - distribution of sample lengths: average: 335.243125 max: 355
+INFO - 10/17/25 14:52:20 - 2:33:53 - printed 40000 samples
+INFO - 10/17/25 14:52:20 - 2:33:53 - decoding
+INFO - 10/17/25 14:52:21 - 2:33:54 - Decoding complete. Check the output in /home/yuebi/Project/dim16_run/dim16_run_2/1111/transformer-output-decoded.txt
+INFO - 10/17/25 14:52:21 - 2:33:54 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 14:52:21 - 2:33:54 - ============ End of generation 14 ============
+INFO - 10/17/25 14:52:21 - 2:33:54 - launching search.jl
+INFO - 10/17/25 14:52:21 - 2:33:54 - JULIA_NUM_THREADS is set to 1
+INFO - 10/17/25 14:57:30 - 2:39:03 - distribution of scores(all rounds)
+INFO - 10/17/25 14:57:30 - 2:39:03 - Score:299008.0, Count:100
+                                     
+INFO - 10/17/25 14:57:30 - 2:39:03 - tokenizing
+INFO - 10/17/25 14:57:30 - 2:39:03 - Loading tokenizer from /home/yuebi/Project/dim16_run/dim16_run_2/1111/tokenizer_data/tokenizer.json...
+INFO - 10/17/25 14:57:30 - 2:39:03 - 0 / 100
+INFO - 10/17/25 14:57:30 - 2:39:03 - number of examples in the dataset: 100
+INFO - 10/17/25 14:57:30 - 2:39:03 - max word length: 110
+INFO - 10/17/25 14:57:30 - 2:39:03 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 14:57:30 - 2:39:03 - vocabulary:
+INFO - 10/17/25 14:57:30 - 2:39:03 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 14:57:30 - 2:39:03 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 14:57:30 - 2:39:03 - ============ Start of generation 15 ============
+INFO - 10/17/25 14:57:30 - 2:39:03 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 14:57:30 - 2:39:03 - training
+INFO - 10/17/25 14:57:30 - 2:39:03 - step 0 | loss 0.6221 | step time 227.20ms
+INFO - 10/17/25 14:57:52 - 2:39:25 - step 100 | loss 0.0434 | step time 218.17ms
+INFO - 10/17/25 14:58:14 - 2:39:47 - step 200 | loss 0.0423 | step time 218.05ms
+INFO - 10/17/25 14:58:36 - 2:40:09 - step 300 | loss 0.0420 | step time 218.36ms
+INFO - 10/17/25 14:58:57 - 2:40:30 - step 400 | loss 0.0423 | step time 218.26ms
+INFO - 10/17/25 14:59:19 - 2:40:52 - step 500 | loss 0.0428 | step time 218.15ms
+INFO - 10/17/25 14:59:19 - 2:40:52 - step 500 train loss: 0.04246807098388672 test loss: 0.19127151370048523
+INFO - 10/17/25 14:59:19 - 2:40:52 - test loss 0.19127151370048523 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 14:59:41 - 2:41:14 - step 600 | loss 0.0425 | step time 218.13ms
+INFO - 10/17/25 15:00:03 - 2:41:36 - step 700 | loss 0.0432 | step time 218.27ms
+INFO - 10/17/25 15:00:25 - 2:41:58 - step 800 | loss 0.0453 | step time 218.40ms
+INFO - 10/17/25 15:00:47 - 2:42:20 - step 900 | loss 0.0428 | step time 218.09ms
+INFO - 10/17/25 15:01:09 - 2:42:42 - step 1000 | loss 0.0417 | step time 218.16ms
+INFO - 10/17/25 15:01:09 - 2:42:42 - step 1000 train loss: 0.04234996810555458 test loss: 0.2967049777507782
+INFO - 10/17/25 15:01:31 - 2:43:04 - step 1100 | loss 0.0426 | step time 218.05ms
+INFO - 10/17/25 15:01:52 - 2:43:25 - step 1200 | loss 0.0431 | step time 218.08ms
+INFO - 10/17/25 15:02:14 - 2:43:47 - step 1300 | loss 0.0426 | step time 218.17ms
+INFO - 10/17/25 15:02:36 - 2:44:09 - step 1400 | loss 0.0414 | step time 218.05ms
+INFO - 10/17/25 15:02:58 - 2:44:31 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 15:02:58 - 2:44:31 - generating
+INFO - 10/17/25 15:08:34 - 0:00:00 - ============ Initialized logger ============
+INFO - 10/17/25 15:08:34 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111 --exp_id "1111"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     exp_id: 1111
+                                     exp_name: dim16_run_2
+                                     final_database_size: 100
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 25
+                                     max_output_length: 271
+                                     max_steps: 1500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 128
+                                     n_embd2: 128
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 8
+                                     n_nodes: 1
+                                     n_tokens: 15
+                                     nb_local_searches: 800
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 800
+                                     num_workers: 8
+                                     sample_only: 40000
+                                     seed: -1
+                                     target_db_size: 100
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 10/17/25 15:08:34 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     
+INFO - 10/17/25 15:08:34 - 0:00:00 - Running command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
+
+WARNING - 10/17/25 15:08:34 - 0:00:00 - Signal handler installed.
+INFO - 10/17/25 15:08:34 - 0:00:00 - seed: 962390437
+INFO - 10/17/25 15:08:34 - 0:00:00 - initializing at generation: 15
+INFO - 10/17/25 15:08:34 - 0:00:00 - number of examples in the dataset: 100
+INFO - 10/17/25 15:08:34 - 0:00:00 - max word length: 110
+INFO - 10/17/25 15:08:34 - 0:00:00 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 15:08:34 - 0:00:00 - vocabulary:
+INFO - 10/17/25 15:08:34 - 0:00:00 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 15:08:34 - 0:00:00 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 15:08:34 - 0:00:00 - dataset determined that: vocab_size=16, block_size=272
+INFO - 10/17/25 15:08:34 - 0:00:00 - model #params: 1625344
+INFO - 10/17/25 15:08:34 - 0:00:00 - resuming from existing model
+INFO - 10/17/25 15:08:34 - 0:00:00 - ============ Start of generation 15 ============
+INFO - 10/17/25 15:08:34 - 0:00:00 - Memory allocated:  8.46MB, reserved: 18.00MB
+INFO - 10/17/25 15:08:34 - 0:00:00 - training
+INFO - 10/17/25 15:08:39 - 0:00:05 - step 0 | loss 0.0485 | step time 553.48ms
+INFO - 10/17/25 15:09:01 - 0:00:27 - step 100 | loss 0.0430 | step time 217.77ms
+INFO - 10/17/25 15:09:23 - 0:00:48 - step 200 | loss 0.0430 | step time 217.67ms
+INFO - 10/17/25 15:09:44 - 0:01:10 - step 300 | loss 0.0421 | step time 217.54ms
+INFO - 10/17/25 15:10:06 - 0:01:32 - step 400 | loss 0.0433 | step time 217.61ms
+INFO - 10/17/25 15:10:28 - 0:01:54 - step 500 | loss 0.0431 | step time 217.60ms
+INFO - 10/17/25 15:10:28 - 0:01:54 - step 500 train loss: 0.04274607077240944 test loss: 0.10713909566402435
+INFO - 10/17/25 15:10:28 - 0:01:54 - test loss 0.10713909566402435 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 15:10:50 - 0:02:16 - step 600 | loss 0.0426 | step time 218.11ms
+INFO - 10/17/25 15:11:12 - 0:02:38 - step 700 | loss 0.0541 | step time 217.99ms
+INFO - 10/17/25 15:11:33 - 0:02:59 - step 800 | loss 0.0424 | step time 217.63ms
+INFO - 10/17/25 15:11:55 - 0:03:21 - step 900 | loss 0.0418 | step time 217.54ms
+INFO - 10/17/25 15:12:17 - 0:03:43 - step 1000 | loss 0.0419 | step time 217.57ms
+INFO - 10/17/25 15:12:17 - 0:03:43 - step 1000 train loss: 0.042389851063489914 test loss: 0.16349750757217407
+INFO - 10/17/25 15:12:39 - 0:04:05 - step 1100 | loss 0.0420 | step time 217.59ms
+INFO - 10/17/25 15:13:01 - 0:04:27 - step 1200 | loss 0.0427 | step time 217.41ms
+INFO - 10/17/25 15:13:22 - 0:04:48 - step 1300 | loss 0.0419 | step time 217.54ms
+INFO - 10/17/25 15:13:44 - 0:05:10 - step 1400 | loss 0.0436 | step time 217.54ms
+INFO - 10/17/25 15:14:06 - 0:05:32 - Memory allocated:  43.97MB, reserved: 2272.00MB
+INFO - 10/17/25 15:14:06 - 0:05:32 - generating
+INFO - 10/17/25 17:42:30 - 2:33:56 - distribution of sample lengths: average: 335.142175 max: 428
+INFO - 10/17/25 17:42:30 - 2:33:56 - printed 40000 samples
+INFO - 10/17/25 17:42:30 - 2:33:56 - decoding
+INFO - 10/17/25 17:42:31 - 2:33:57 - Decoding complete. Check the output in /home/yuebi/Project/dim16_run/dim16_run_2/1111/transformer-output-decoded.txt
+INFO - 10/17/25 17:42:31 - 2:33:57 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 17:42:31 - 2:33:57 - ============ End of generation 15 ============
+INFO - 10/17/25 17:42:31 - 2:33:57 - launching search.jl
+INFO - 10/17/25 17:42:31 - 2:33:57 - JULIA_NUM_THREADS is set to 1
+INFO - 10/17/25 17:47:44 - 2:39:10 - distribution of scores(all rounds)
+INFO - 10/17/25 17:47:44 - 2:39:10 - Score:299008.0, Count:100
+                                     
+INFO - 10/17/25 17:47:44 - 2:39:10 - tokenizing
+INFO - 10/17/25 17:47:44 - 2:39:10 - Loading tokenizer from /home/yuebi/Project/dim16_run/dim16_run_2/1111/tokenizer_data/tokenizer.json...
+INFO - 10/17/25 17:47:44 - 2:39:10 - 0 / 100
+INFO - 10/17/25 17:47:44 - 2:39:10 - number of examples in the dataset: 100
+INFO - 10/17/25 17:47:44 - 2:39:10 - max word length: 110
+INFO - 10/17/25 17:47:44 - 2:39:10 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 17:47:44 - 2:39:10 - vocabulary:
+INFO - 10/17/25 17:47:44 - 2:39:10 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 17:47:44 - 2:39:10 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 17:47:44 - 2:39:10 - ============ Start of generation 16 ============
+INFO - 10/17/25 17:47:44 - 2:39:10 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 17:47:44 - 2:39:10 - training
+INFO - 10/17/25 17:47:45 - 2:39:11 - step 0 | loss 0.0740 | step time 225.30ms
+INFO - 10/17/25 17:48:07 - 2:39:33 - step 100 | loss 0.0429 | step time 218.06ms
+INFO - 10/17/25 17:48:28 - 2:39:54 - step 200 | loss 0.0427 | step time 218.12ms
+INFO - 10/17/25 17:48:50 - 2:40:16 - step 300 | loss 0.0421 | step time 218.03ms
+INFO - 10/17/25 17:49:12 - 2:40:38 - step 400 | loss 0.0422 | step time 218.02ms
+INFO - 10/17/25 17:49:34 - 2:41:00 - step 500 | loss 0.0430 | step time 218.06ms
+INFO - 10/17/25 17:49:34 - 2:41:00 - step 500 train loss: 0.04247412458062172 test loss: 0.09294523298740387
+INFO - 10/17/25 17:49:34 - 2:41:00 - test loss 0.09294523298740387 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 17:49:56 - 2:41:22 - step 600 | loss 0.0462 | step time 218.13ms
+INFO - 10/17/25 17:50:18 - 2:41:44 - step 700 | loss 0.0413 | step time 218.11ms
+INFO - 10/17/25 17:50:40 - 2:42:05 - step 800 | loss 0.0418 | step time 218.30ms
+INFO - 10/17/25 17:51:01 - 2:42:27 - step 900 | loss 0.0427 | step time 218.30ms
+INFO - 10/17/25 17:51:23 - 2:42:49 - step 1000 | loss 0.0422 | step time 218.05ms
+INFO - 10/17/25 17:51:23 - 2:42:49 - step 1000 train loss: 0.04247363656759262 test loss: 0.15529298782348633
+INFO - 10/17/25 17:51:45 - 2:43:11 - step 1100 | loss 0.0432 | step time 218.01ms
+INFO - 10/17/25 17:52:07 - 2:43:33 - step 1200 | loss 0.0425 | step time 218.08ms
+INFO - 10/17/25 17:52:29 - 2:43:55 - step 1300 | loss 0.0417 | step time 218.02ms
+INFO - 10/17/25 17:52:51 - 2:44:17 - step 1400 | loss 0.0456 | step time 218.00ms
+INFO - 10/17/25 17:53:12 - 2:44:38 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 17:53:12 - 2:44:38 - generating
+INFO - 10/17/25 17:58:36 - 0:00:00 - ============ Initialized logger ============
+INFO - 10/17/25 17:58:36 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111 --exp_id "1111"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     exp_id: 1111
+                                     exp_name: dim16_run_2
+                                     final_database_size: 100
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 25
+                                     max_output_length: 271
+                                     max_steps: 1500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 128
+                                     n_embd2: 128
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 8
+                                     n_nodes: 1
+                                     n_tokens: 15
+                                     nb_local_searches: 800
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 800
+                                     num_workers: 8
+                                     sample_only: 40000
+                                     seed: -1
+                                     target_db_size: 100
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 10/17/25 17:58:36 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     
+INFO - 10/17/25 17:58:36 - 0:00:00 - Running command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
+
+WARNING - 10/17/25 17:58:36 - 0:00:00 - Signal handler installed.
+INFO - 10/17/25 17:58:36 - 0:00:00 - seed: 239755343
+INFO - 10/17/25 17:58:36 - 0:00:00 - initializing at generation: 16
+INFO - 10/17/25 17:58:36 - 0:00:00 - number of examples in the dataset: 100
+INFO - 10/17/25 17:58:36 - 0:00:00 - max word length: 110
+INFO - 10/17/25 17:58:36 - 0:00:00 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 17:58:36 - 0:00:00 - vocabulary:
+INFO - 10/17/25 17:58:36 - 0:00:00 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 17:58:36 - 0:00:00 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 17:58:36 - 0:00:00 - dataset determined that: vocab_size=16, block_size=272
+INFO - 10/17/25 17:58:36 - 0:00:00 - model #params: 1625344
+INFO - 10/17/25 17:58:36 - 0:00:00 - resuming from existing model
+INFO - 10/17/25 17:58:36 - 0:00:00 - ============ Start of generation 16 ============
+INFO - 10/17/25 17:58:36 - 0:00:00 - Memory allocated:  8.46MB, reserved: 18.00MB
+INFO - 10/17/25 17:58:36 - 0:00:00 - training
+INFO - 10/17/25 17:58:41 - 0:00:05 - step 0 | loss 0.0491 | step time 540.85ms
+INFO - 10/17/25 17:59:03 - 0:00:27 - step 100 | loss 0.0424 | step time 218.60ms
+INFO - 10/17/25 17:59:24 - 0:00:48 - step 200 | loss 0.0432 | step time 218.02ms
+INFO - 10/17/25 17:59:46 - 0:01:10 - step 300 | loss 0.0424 | step time 218.73ms
+INFO - 10/17/25 18:00:08 - 0:01:32 - step 400 | loss 0.0429 | step time 217.99ms
+INFO - 10/17/25 18:00:30 - 0:01:54 - step 500 | loss 0.0423 | step time 217.94ms
+INFO - 10/17/25 18:00:30 - 0:01:54 - step 500 train loss: 0.042453765869140625 test loss: 0.0914318636059761
+INFO - 10/17/25 18:00:30 - 0:01:54 - test loss 0.0914318636059761 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 18:00:52 - 0:02:16 - step 600 | loss 0.0428 | step time 217.88ms
+INFO - 10/17/25 18:01:14 - 0:02:38 - step 700 | loss 0.0424 | step time 217.96ms
+INFO - 10/17/25 18:01:36 - 0:03:00 - step 800 | loss 0.0420 | step time 218.07ms
+INFO - 10/17/25 18:01:57 - 0:03:21 - step 900 | loss 0.0418 | step time 218.04ms
+INFO - 10/17/25 18:02:19 - 0:03:43 - step 1000 | loss 0.0421 | step time 218.00ms
+INFO - 10/17/25 18:02:19 - 0:03:43 - step 1000 train loss: 0.042290735989809036 test loss: 0.1634857952594757
+INFO - 10/17/25 18:02:41 - 0:04:05 - step 1100 | loss 0.0434 | step time 217.94ms
+INFO - 10/17/25 18:03:03 - 0:04:27 - step 1200 | loss 0.0421 | step time 217.74ms
+INFO - 10/17/25 18:03:25 - 0:04:49 - step 1300 | loss 0.0491 | step time 217.80ms
+INFO - 10/17/25 18:03:47 - 0:05:11 - step 1400 | loss 0.0428 | step time 217.71ms
+INFO - 10/17/25 18:04:08 - 0:05:32 - Memory allocated:  43.97MB, reserved: 2272.00MB
+INFO - 10/17/25 18:04:08 - 0:05:32 - generating
+INFO - 10/17/25 20:32:32 - 2:33:56 - distribution of sample lengths: average: 335.1443 max: 456
+INFO - 10/17/25 20:32:32 - 2:33:56 - printed 40000 samples
+INFO - 10/17/25 20:32:32 - 2:33:56 - decoding
+INFO - 10/17/25 20:32:33 - 2:33:57 - Decoding complete. Check the output in /home/yuebi/Project/dim16_run/dim16_run_2/1111/transformer-output-decoded.txt
+INFO - 10/17/25 20:32:33 - 2:33:57 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 20:32:33 - 2:33:57 - ============ End of generation 16 ============
+INFO - 10/17/25 20:32:33 - 2:33:57 - launching search.jl
+INFO - 10/17/25 20:32:33 - 2:33:57 - JULIA_NUM_THREADS is set to 1
+INFO - 10/17/25 20:37:46 - 2:39:10 - distribution of scores(all rounds)
+INFO - 10/17/25 20:37:46 - 2:39:10 - Score:299008.0, Count:100
+                                     
+INFO - 10/17/25 20:37:46 - 2:39:10 - tokenizing
+INFO - 10/17/25 20:37:46 - 2:39:10 - Loading tokenizer from /home/yuebi/Project/dim16_run/dim16_run_2/1111/tokenizer_data/tokenizer.json...
+INFO - 10/17/25 20:37:46 - 2:39:10 - 0 / 100
+INFO - 10/17/25 20:37:46 - 2:39:10 - number of examples in the dataset: 100
+INFO - 10/17/25 20:37:46 - 2:39:10 - max word length: 110
+INFO - 10/17/25 20:37:46 - 2:39:10 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 20:37:46 - 2:39:10 - vocabulary:
+INFO - 10/17/25 20:37:46 - 2:39:10 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 20:37:46 - 2:39:10 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 20:37:46 - 2:39:10 - ============ Start of generation 17 ============
+INFO - 10/17/25 20:37:46 - 2:39:10 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 20:37:46 - 2:39:10 - training
+INFO - 10/17/25 20:37:46 - 2:39:10 - step 0 | loss 0.0692 | step time 225.22ms
+INFO - 10/17/25 20:38:08 - 2:39:32 - step 100 | loss 0.0457 | step time 218.22ms
+INFO - 10/17/25 20:38:30 - 2:39:54 - step 200 | loss 0.0437 | step time 218.23ms
+INFO - 10/17/25 20:38:52 - 2:40:16 - step 300 | loss 0.0425 | step time 218.47ms
+INFO - 10/17/25 20:39:13 - 2:40:37 - step 400 | loss 0.0423 | step time 218.27ms
+INFO - 10/17/25 20:39:35 - 2:40:59 - step 500 | loss 0.0432 | step time 218.41ms
+INFO - 10/17/25 20:39:35 - 2:40:59 - step 500 train loss: 0.042611200362443924 test loss: 0.11247993260622025
+INFO - 10/17/25 20:39:35 - 2:40:59 - test loss 0.11247993260622025 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 20:39:57 - 2:41:21 - step 600 | loss 0.0515 | step time 218.24ms
+INFO - 10/17/25 20:40:19 - 2:41:43 - step 700 | loss 0.0424 | step time 218.31ms
+INFO - 10/17/25 20:40:41 - 2:42:05 - step 800 | loss 0.0415 | step time 218.85ms
+INFO - 10/17/25 20:41:03 - 2:42:27 - step 900 | loss 0.0429 | step time 218.23ms
+INFO - 10/17/25 20:41:25 - 2:42:49 - step 1000 | loss 0.0437 | step time 218.27ms
+INFO - 10/17/25 20:41:25 - 2:42:49 - step 1000 train loss: 0.042419515550136566 test loss: 0.19060052931308746
+INFO - 10/17/25 20:41:47 - 2:43:11 - step 1100 | loss 0.0418 | step time 218.23ms
+INFO - 10/17/25 20:42:09 - 2:43:33 - step 1200 | loss 0.0608 | step time 218.25ms
+INFO - 10/17/25 20:42:30 - 2:43:54 - step 1300 | loss 0.0425 | step time 218.27ms
+INFO - 10/17/25 20:42:52 - 2:44:16 - step 1400 | loss 0.0426 | step time 218.30ms
+INFO - 10/17/25 20:43:14 - 2:44:38 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 20:43:14 - 2:44:38 - generating
+INFO - 10/17/25 20:48:42 - 0:00:00 - ============ Initialized logger ============
+INFO - 10/17/25 20:48:42 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111 --exp_id "1111"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     exp_id: 1111
+                                     exp_name: dim16_run_2
+                                     final_database_size: 100
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 25
+                                     max_output_length: 271
+                                     max_steps: 1500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 128
+                                     n_embd2: 128
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 8
+                                     n_nodes: 1
+                                     n_tokens: 15
+                                     nb_local_searches: 800
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 800
+                                     num_workers: 8
+                                     sample_only: 40000
+                                     seed: -1
+                                     target_db_size: 100
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 10/17/25 20:48:42 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     
+INFO - 10/17/25 20:48:42 - 0:00:00 - Running command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
+
+WARNING - 10/17/25 20:48:42 - 0:00:00 - Signal handler installed.
+INFO - 10/17/25 20:48:42 - 0:00:00 - seed: 916386617
+INFO - 10/17/25 20:48:42 - 0:00:00 - initializing at generation: 17
+INFO - 10/17/25 20:48:42 - 0:00:00 - number of examples in the dataset: 100
+INFO - 10/17/25 20:48:42 - 0:00:00 - max word length: 110
+INFO - 10/17/25 20:48:42 - 0:00:00 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 20:48:42 - 0:00:00 - vocabulary:
+INFO - 10/17/25 20:48:42 - 0:00:00 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 20:48:42 - 0:00:00 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 20:48:42 - 0:00:00 - dataset determined that: vocab_size=16, block_size=272
+INFO - 10/17/25 20:48:42 - 0:00:00 - model #params: 1625344
+INFO - 10/17/25 20:48:42 - 0:00:00 - resuming from existing model
+INFO - 10/17/25 20:48:42 - 0:00:00 - ============ Start of generation 17 ============
+INFO - 10/17/25 20:48:42 - 0:00:00 - Memory allocated:  8.46MB, reserved: 18.00MB
+INFO - 10/17/25 20:48:42 - 0:00:00 - training
+INFO - 10/17/25 20:48:47 - 0:00:05 - step 0 | loss 0.0524 | step time 551.83ms
+INFO - 10/17/25 20:49:09 - 0:00:27 - step 100 | loss 0.0434 | step time 218.47ms
+INFO - 10/17/25 20:49:31 - 0:00:48 - step 200 | loss 0.0429 | step time 217.69ms
+INFO - 10/17/25 20:49:52 - 0:01:10 - step 300 | loss 0.0429 | step time 218.03ms
+INFO - 10/17/25 20:50:14 - 0:01:32 - step 400 | loss 0.0427 | step time 217.53ms
+INFO - 10/17/25 20:50:36 - 0:01:54 - step 500 | loss 0.0415 | step time 217.55ms
+INFO - 10/17/25 20:50:36 - 0:01:54 - step 500 train loss: 0.04242616519331932 test loss: 0.09144457429647446
+INFO - 10/17/25 20:50:36 - 0:01:54 - test loss 0.09144457429647446 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 20:50:58 - 0:02:16 - step 600 | loss 0.0427 | step time 217.51ms
+INFO - 10/17/25 20:51:20 - 0:02:38 - step 700 | loss 0.0423 | step time 217.57ms
+INFO - 10/17/25 20:51:41 - 0:02:59 - step 800 | loss 0.0421 | step time 217.49ms
+INFO - 10/17/25 20:52:03 - 0:03:21 - step 900 | loss 0.0418 | step time 217.51ms
+INFO - 10/17/25 20:52:25 - 0:03:43 - step 1000 | loss 0.0428 | step time 217.46ms
+INFO - 10/17/25 20:52:25 - 0:03:43 - step 1000 train loss: 0.042344070971012115 test loss: 0.1705121248960495
+INFO - 10/17/25 20:52:47 - 0:04:05 - step 1100 | loss 0.0423 | step time 217.43ms
+INFO - 10/17/25 20:53:09 - 0:04:27 - step 1200 | loss 0.0439 | step time 218.16ms
+INFO - 10/17/25 20:53:31 - 0:04:49 - step 1300 | loss 0.0421 | step time 217.58ms
+INFO - 10/17/25 20:53:52 - 0:05:10 - step 1400 | loss 0.0423 | step time 218.35ms
+INFO - 10/17/25 20:54:14 - 0:05:32 - Memory allocated:  43.97MB, reserved: 2272.00MB
+INFO - 10/17/25 20:54:14 - 0:05:32 - generating
+INFO - 10/17/25 23:22:44 - 2:34:02 - distribution of sample lengths: average: 335.326525 max: 353
+INFO - 10/17/25 23:22:44 - 2:34:02 - printed 40000 samples
+INFO - 10/17/25 23:22:44 - 2:34:02 - decoding
+INFO - 10/17/25 23:22:45 - 2:34:03 - Decoding complete. Check the output in /home/yuebi/Project/dim16_run/dim16_run_2/1111/transformer-output-decoded.txt
+INFO - 10/17/25 23:22:45 - 2:34:03 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 23:22:45 - 2:34:03 - ============ End of generation 17 ============
+INFO - 10/17/25 23:22:45 - 2:34:03 - launching search.jl
+INFO - 10/17/25 23:22:45 - 2:34:03 - JULIA_NUM_THREADS is set to 1
+INFO - 10/17/25 23:27:59 - 2:39:17 - distribution of scores(all rounds)
+INFO - 10/17/25 23:27:59 - 2:39:17 - Score:299008.0, Count:100
+                                     
+INFO - 10/17/25 23:27:59 - 2:39:17 - tokenizing
+INFO - 10/17/25 23:27:59 - 2:39:17 - Loading tokenizer from /home/yuebi/Project/dim16_run/dim16_run_2/1111/tokenizer_data/tokenizer.json...
+INFO - 10/17/25 23:27:59 - 2:39:17 - 0 / 100
+INFO - 10/17/25 23:27:59 - 2:39:17 - number of examples in the dataset: 100
+INFO - 10/17/25 23:27:59 - 2:39:17 - max word length: 110
+INFO - 10/17/25 23:27:59 - 2:39:17 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 23:27:59 - 2:39:17 - vocabulary:
+INFO - 10/17/25 23:27:59 - 2:39:17 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 23:27:59 - 2:39:17 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 23:27:59 - 2:39:17 - ============ Start of generation 18 ============
+INFO - 10/17/25 23:27:59 - 2:39:17 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 23:27:59 - 2:39:17 - training
+INFO - 10/17/25 23:28:00 - 2:39:18 - step 0 | loss 0.2537 | step time 227.61ms
+INFO - 10/17/25 23:28:22 - 2:39:40 - step 100 | loss 0.0429 | step time 218.02ms
+INFO - 10/17/25 23:28:43 - 2:40:01 - step 200 | loss 0.0436 | step time 218.00ms
+INFO - 10/17/25 23:29:05 - 2:40:23 - step 300 | loss 0.0424 | step time 218.00ms
+INFO - 10/17/25 23:29:27 - 2:40:45 - step 400 | loss 0.0424 | step time 218.06ms
+INFO - 10/17/25 23:29:49 - 2:41:07 - step 500 | loss 0.0513 | step time 218.06ms
+INFO - 10/17/25 23:29:49 - 2:41:07 - step 500 train loss: 0.047015268355607986 test loss: 0.17733554542064667
+INFO - 10/17/25 23:29:49 - 2:41:07 - test loss 0.17733554542064667 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 23:30:11 - 2:41:29 - step 600 | loss 0.0420 | step time 217.97ms
+INFO - 10/17/25 23:30:33 - 2:41:51 - step 700 | loss 0.0428 | step time 218.08ms
+INFO - 10/17/25 23:30:55 - 2:42:13 - step 800 | loss 0.0427 | step time 219.12ms
+INFO - 10/17/25 23:31:16 - 2:42:34 - step 900 | loss 0.0428 | step time 219.02ms
+INFO - 10/17/25 23:31:38 - 2:42:56 - step 1000 | loss 0.0433 | step time 219.04ms
+INFO - 10/17/25 23:31:39 - 2:42:57 - step 1000 train loss: 0.042470987886190414 test loss: 0.15033093094825745
+INFO - 10/17/25 23:31:39 - 2:42:57 - test loss 0.15033093094825745 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 23:32:00 - 2:43:18 - step 1100 | loss 0.0423 | step time 219.06ms
+INFO - 10/17/25 23:32:22 - 2:43:40 - step 1200 | loss 0.0428 | step time 219.08ms
+INFO - 10/17/25 23:32:44 - 2:44:02 - step 1300 | loss 0.0425 | step time 218.07ms
+INFO - 10/17/25 23:33:06 - 2:44:24 - step 1400 | loss 0.0422 | step time 218.49ms
+INFO - 10/17/25 23:33:28 - 2:44:46 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/17/25 23:33:28 - 2:44:46 - generating
+INFO - 10/17/25 23:38:44 - 0:00:00 - ============ Initialized logger ============
+INFO - 10/17/25 23:38:44 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111 --exp_id "1111"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     exp_id: 1111
+                                     exp_name: dim16_run_2
+                                     final_database_size: 100
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 25
+                                     max_output_length: 271
+                                     max_steps: 1500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 128
+                                     n_embd2: 128
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 8
+                                     n_nodes: 1
+                                     n_tokens: 15
+                                     nb_local_searches: 800
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 800
+                                     num_workers: 8
+                                     sample_only: 40000
+                                     seed: -1
+                                     target_db_size: 100
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 10/17/25 23:38:44 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     
+INFO - 10/17/25 23:38:44 - 0:00:00 - Running command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
+
+WARNING - 10/17/25 23:38:44 - 0:00:00 - Signal handler installed.
+INFO - 10/17/25 23:38:44 - 0:00:00 - seed: 813778340
+INFO - 10/17/25 23:38:44 - 0:00:00 - initializing at generation: 18
+INFO - 10/17/25 23:38:44 - 0:00:00 - number of examples in the dataset: 100
+INFO - 10/17/25 23:38:44 - 0:00:00 - max word length: 110
+INFO - 10/17/25 23:38:44 - 0:00:00 - number of unique characters in the vocabulary: 15
+INFO - 10/17/25 23:38:44 - 0:00:00 - vocabulary:
+INFO - 10/17/25 23:38:44 - 0:00:00 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/17/25 23:38:44 - 0:00:00 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/17/25 23:38:44 - 0:00:00 - dataset determined that: vocab_size=16, block_size=272
+INFO - 10/17/25 23:38:44 - 0:00:00 - model #params: 1625344
+INFO - 10/17/25 23:38:44 - 0:00:00 - resuming from existing model
+INFO - 10/17/25 23:38:44 - 0:00:00 - ============ Start of generation 18 ============
+INFO - 10/17/25 23:38:44 - 0:00:00 - Memory allocated:  8.46MB, reserved: 18.00MB
+INFO - 10/17/25 23:38:44 - 0:00:00 - training
+INFO - 10/17/25 23:38:49 - 0:00:05 - step 0 | loss 0.0579 | step time 546.47ms
+INFO - 10/17/25 23:39:11 - 0:00:27 - step 100 | loss 0.0420 | step time 218.34ms
+INFO - 10/17/25 23:39:33 - 0:00:48 - step 200 | loss 0.0420 | step time 217.78ms
+INFO - 10/17/25 23:39:54 - 0:01:10 - step 300 | loss 0.0426 | step time 218.77ms
+INFO - 10/17/25 23:40:16 - 0:01:32 - step 400 | loss 0.0416 | step time 218.76ms
+INFO - 10/17/25 23:40:38 - 0:01:54 - step 500 | loss 0.0421 | step time 218.07ms
+INFO - 10/17/25 23:40:38 - 0:01:54 - step 500 train loss: 0.0424642413854599 test loss: 0.12870095670223236
+INFO - 10/17/25 23:40:38 - 0:01:54 - test loss 0.12870095670223236 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/17/25 23:41:00 - 0:02:16 - step 600 | loss 0.0422 | step time 217.90ms
+INFO - 10/17/25 23:41:22 - 0:02:38 - step 700 | loss 0.0422 | step time 218.80ms
+INFO - 10/17/25 23:41:44 - 0:03:00 - step 800 | loss 0.0423 | step time 218.89ms
+INFO - 10/17/25 23:42:06 - 0:03:22 - step 900 | loss 0.0422 | step time 218.85ms
+INFO - 10/17/25 23:42:28 - 0:03:43 - step 1000 | loss 0.0428 | step time 218.88ms
+INFO - 10/17/25 23:42:28 - 0:03:44 - step 1000 train loss: 0.04234031215310097 test loss: 0.2098873257637024
+INFO - 10/17/25 23:42:50 - 0:04:06 - step 1100 | loss 0.0421 | step time 218.83ms
+INFO - 10/17/25 23:43:11 - 0:04:27 - step 1200 | loss 0.0418 | step time 218.43ms
+INFO - 10/17/25 23:43:33 - 0:04:49 - step 1300 | loss 0.0449 | step time 218.71ms
+INFO - 10/17/25 23:43:55 - 0:05:11 - step 1400 | loss 0.0429 | step time 218.78ms
+INFO - 10/17/25 23:44:17 - 0:05:33 - Memory allocated:  43.97MB, reserved: 2272.00MB
+INFO - 10/17/25 23:44:17 - 0:05:33 - generating
+INFO - 10/18/25 02:12:46 - 2:34:02 - distribution of sample lengths: average: 335.211025 max: 455
+INFO - 10/18/25 02:12:46 - 2:34:02 - printed 40000 samples
+INFO - 10/18/25 02:12:46 - 2:34:02 - decoding
+INFO - 10/18/25 02:12:47 - 2:34:03 - Decoding complete. Check the output in /home/yuebi/Project/dim16_run/dim16_run_2/1111/transformer-output-decoded.txt
+INFO - 10/18/25 02:12:47 - 2:34:03 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/18/25 02:12:47 - 2:34:03 - ============ End of generation 18 ============
+INFO - 10/18/25 02:12:47 - 2:34:03 - launching search.jl
+INFO - 10/18/25 02:12:47 - 2:34:03 - JULIA_NUM_THREADS is set to 1
+INFO - 10/18/25 02:18:04 - 2:39:20 - distribution of scores(all rounds)
+INFO - 10/18/25 02:18:04 - 2:39:20 - Score:299008.0, Count:100
+                                     
+INFO - 10/18/25 02:18:04 - 2:39:20 - tokenizing
+INFO - 10/18/25 02:18:04 - 2:39:20 - Loading tokenizer from /home/yuebi/Project/dim16_run/dim16_run_2/1111/tokenizer_data/tokenizer.json...
+INFO - 10/18/25 02:18:04 - 2:39:20 - 0 / 100
+INFO - 10/18/25 02:18:04 - 2:39:20 - number of examples in the dataset: 100
+INFO - 10/18/25 02:18:04 - 2:39:20 - max word length: 110
+INFO - 10/18/25 02:18:04 - 2:39:20 - number of unique characters in the vocabulary: 15
+INFO - 10/18/25 02:18:04 - 2:39:20 - vocabulary:
+INFO - 10/18/25 02:18:04 - 2:39:20 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/18/25 02:18:04 - 2:39:20 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/18/25 02:18:04 - 2:39:20 - ============ Start of generation 19 ============
+INFO - 10/18/25 02:18:04 - 2:39:20 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/18/25 02:18:04 - 2:39:20 - training
+INFO - 10/18/25 02:18:04 - 2:39:20 - step 0 | loss 0.1174 | step time 225.47ms
+INFO - 10/18/25 02:18:26 - 2:39:42 - step 100 | loss 0.0426 | step time 218.17ms
+INFO - 10/18/25 02:18:48 - 2:40:04 - step 200 | loss 0.0423 | step time 218.20ms
+INFO - 10/18/25 02:19:10 - 2:40:26 - step 300 | loss 0.0428 | step time 218.47ms
+INFO - 10/18/25 02:19:31 - 2:40:47 - step 400 | loss 0.0419 | step time 218.17ms
+INFO - 10/18/25 02:19:53 - 2:41:09 - step 500 | loss 0.0429 | step time 218.17ms
+INFO - 10/18/25 02:19:53 - 2:41:09 - step 500 train loss: 0.04243440926074982 test loss: 0.148709237575531
+INFO - 10/18/25 02:19:53 - 2:41:09 - test loss 0.148709237575531 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/18/25 02:20:15 - 2:41:31 - step 600 | loss 0.0430 | step time 218.56ms
+INFO - 10/18/25 02:20:37 - 2:41:53 - step 700 | loss 0.0435 | step time 218.30ms
+INFO - 10/18/25 02:20:59 - 2:42:15 - step 800 | loss 0.0430 | step time 218.78ms
+INFO - 10/18/25 02:21:21 - 2:42:37 - step 900 | loss 0.0424 | step time 218.21ms
+INFO - 10/18/25 02:21:43 - 2:42:59 - step 1000 | loss 0.0421 | step time 218.22ms
+INFO - 10/18/25 02:21:43 - 2:42:59 - step 1000 train loss: 0.04227479547262192 test loss: 0.25377699732780457
+INFO - 10/18/25 02:22:05 - 2:43:21 - step 1100 | loss 0.0421 | step time 218.80ms
+INFO - 10/18/25 02:22:27 - 2:43:43 - step 1200 | loss 0.0426 | step time 218.62ms
+INFO - 10/18/25 02:22:48 - 2:44:04 - step 1300 | loss 0.0430 | step time 218.23ms
+INFO - 10/18/25 02:23:10 - 2:44:26 - step 1400 | loss 0.0426 | step time 218.17ms
+INFO - 10/18/25 02:23:32 - 2:44:48 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/18/25 02:23:32 - 2:44:48 - generating
+INFO - 10/18/25 02:28:51 - 0:00:00 - ============ Initialized logger ============
+INFO - 10/18/25 02:28:51 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111 --exp_id "1111"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     exp_id: 1111
+                                     exp_name: dim16_run_2
+                                     final_database_size: 100
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 25
+                                     max_output_length: 271
+                                     max_steps: 1500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 128
+                                     n_embd2: 128
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 8
+                                     n_nodes: 1
+                                     n_tokens: 15
+                                     nb_local_searches: 800
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 800
+                                     num_workers: 8
+                                     sample_only: 40000
+                                     seed: -1
+                                     target_db_size: 100
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 10/18/25 02:28:51 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     
+INFO - 10/18/25 02:28:51 - 0:00:00 - Running command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
+
+WARNING - 10/18/25 02:28:51 - 0:00:00 - Signal handler installed.
+INFO - 10/18/25 02:28:51 - 0:00:00 - seed: 785057757
+INFO - 10/18/25 02:28:51 - 0:00:00 - initializing at generation: 19
+INFO - 10/18/25 02:28:51 - 0:00:00 - number of examples in the dataset: 100
+INFO - 10/18/25 02:28:51 - 0:00:00 - max word length: 110
+INFO - 10/18/25 02:28:51 - 0:00:00 - number of unique characters in the vocabulary: 15
+INFO - 10/18/25 02:28:51 - 0:00:00 - vocabulary:
+INFO - 10/18/25 02:28:51 - 0:00:00 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/18/25 02:28:51 - 0:00:00 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/18/25 02:28:51 - 0:00:00 - dataset determined that: vocab_size=16, block_size=272
+INFO - 10/18/25 02:28:51 - 0:00:00 - model #params: 1625344
+INFO - 10/18/25 02:28:51 - 0:00:00 - resuming from existing model
+INFO - 10/18/25 02:28:51 - 0:00:00 - ============ Start of generation 19 ============
+INFO - 10/18/25 02:28:51 - 0:00:00 - Memory allocated:  8.46MB, reserved: 18.00MB
+INFO - 10/18/25 02:28:51 - 0:00:00 - training
+INFO - 10/18/25 02:28:56 - 0:00:05 - step 0 | loss 0.0507 | step time 552.53ms
+INFO - 10/18/25 02:29:18 - 0:00:27 - step 100 | loss 0.0424 | step time 217.75ms
+INFO - 10/18/25 02:29:40 - 0:00:49 - step 200 | loss 0.0422 | step time 217.73ms
+INFO - 10/18/25 02:30:01 - 0:01:10 - step 300 | loss 0.0424 | step time 218.12ms
+INFO - 10/18/25 02:30:23 - 0:01:32 - step 400 | loss 0.0419 | step time 218.28ms
+INFO - 10/18/25 02:30:45 - 0:01:54 - step 500 | loss 0.0418 | step time 217.77ms
+INFO - 10/18/25 02:30:45 - 0:01:54 - step 500 train loss: 0.04253844544291496 test loss: 0.12501756846904755
+INFO - 10/18/25 02:30:45 - 0:01:54 - test loss 0.12501756846904755 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/18/25 02:31:07 - 0:02:16 - step 600 | loss 0.0424 | step time 218.08ms
+INFO - 10/18/25 02:31:29 - 0:02:38 - step 700 | loss 0.0431 | step time 217.86ms
+INFO - 10/18/25 02:31:51 - 0:03:00 - step 800 | loss 0.0426 | step time 217.77ms
+INFO - 10/18/25 02:32:12 - 0:03:21 - step 900 | loss 0.0427 | step time 217.79ms
+INFO - 10/18/25 02:32:34 - 0:03:43 - step 1000 | loss 0.0429 | step time 217.67ms
+INFO - 10/18/25 02:32:34 - 0:03:43 - step 1000 train loss: 0.04236466437578201 test loss: 0.24221490323543549
+INFO - 10/18/25 02:32:56 - 0:04:05 - step 1100 | loss 0.0421 | step time 218.70ms
+INFO - 10/18/25 02:33:18 - 0:04:27 - step 1200 | loss 0.0419 | step time 218.03ms
+INFO - 10/18/25 02:33:40 - 0:04:49 - step 1300 | loss 0.0426 | step time 218.30ms
+INFO - 10/18/25 02:34:02 - 0:05:11 - step 1400 | loss 0.0417 | step time 218.29ms
+INFO - 10/18/25 02:34:23 - 0:05:32 - Memory allocated:  43.97MB, reserved: 2272.00MB
+INFO - 10/18/25 02:34:23 - 0:05:32 - generating
+INFO - 10/18/25 05:02:56 - 2:34:05 - distribution of sample lengths: average: 333.33425 max: 858
+INFO - 10/18/25 05:02:56 - 2:34:05 - printed 40000 samples
+INFO - 10/18/25 05:02:56 - 2:34:05 - decoding
+INFO - 10/18/25 05:02:57 - 2:34:06 - Decoding complete. Check the output in /home/yuebi/Project/dim16_run/dim16_run_2/1111/transformer-output-decoded.txt
+INFO - 10/18/25 05:02:57 - 2:34:06 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/18/25 05:02:57 - 2:34:06 - ============ End of generation 19 ============
+INFO - 10/18/25 05:02:57 - 2:34:06 - launching search.jl
+INFO - 10/18/25 05:02:57 - 2:34:06 - JULIA_NUM_THREADS is set to 1
+INFO - 10/18/25 05:06:40 - 2:37:49 - distribution of scores(all rounds)
+INFO - 10/18/25 05:06:40 - 2:37:49 - Score:299008.0, Count:100
+                                     
+INFO - 10/18/25 05:06:40 - 2:37:49 - tokenizing
+INFO - 10/18/25 05:06:40 - 2:37:49 - Loading tokenizer from /home/yuebi/Project/dim16_run/dim16_run_2/1111/tokenizer_data/tokenizer.json...
+INFO - 10/18/25 05:06:40 - 2:37:49 - 0 / 100
+INFO - 10/18/25 05:06:40 - 2:37:49 - number of examples in the dataset: 100
+INFO - 10/18/25 05:06:40 - 2:37:49 - max word length: 110
+INFO - 10/18/25 05:06:40 - 2:37:49 - number of unique characters in the vocabulary: 15
+INFO - 10/18/25 05:06:40 - 2:37:49 - vocabulary:
+INFO - 10/18/25 05:06:40 - 2:37:49 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/18/25 05:06:40 - 2:37:49 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/18/25 05:06:40 - 2:37:49 - ============ Start of generation 20 ============
+INFO - 10/18/25 05:06:40 - 2:37:49 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/18/25 05:06:40 - 2:37:49 - training
+INFO - 10/18/25 05:06:40 - 2:37:49 - step 0 | loss 0.2745 | step time 225.12ms
+INFO - 10/18/25 05:07:02 - 2:38:11 - step 100 | loss 0.0455 | step time 218.12ms
+INFO - 10/18/25 05:07:24 - 2:38:33 - step 200 | loss 0.0437 | step time 218.04ms
+INFO - 10/18/25 05:07:46 - 2:38:54 - step 300 | loss 0.0419 | step time 218.44ms
+INFO - 10/18/25 05:08:07 - 2:39:16 - step 400 | loss 0.0422 | step time 218.16ms
+INFO - 10/18/25 05:08:29 - 2:39:38 - step 500 | loss 0.0418 | step time 218.06ms
+INFO - 10/18/25 05:08:29 - 2:39:38 - step 500 train loss: 0.04261593893170357 test loss: 0.1815337985754013
+INFO - 10/18/25 05:08:29 - 2:39:38 - test loss 0.1815337985754013 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/18/25 05:08:51 - 2:40:00 - step 600 | loss 0.0425 | step time 218.07ms
+INFO - 10/18/25 05:09:13 - 2:40:22 - step 700 | loss 0.0424 | step time 218.69ms
+INFO - 10/18/25 05:09:35 - 2:40:44 - step 800 | loss 0.0558 | step time 218.04ms
+INFO - 10/18/25 05:09:57 - 2:41:06 - step 900 | loss 0.0419 | step time 218.04ms
+INFO - 10/18/25 05:10:18 - 2:41:27 - step 1000 | loss 0.0427 | step time 218.26ms
+INFO - 10/18/25 05:10:19 - 2:41:28 - step 1000 train loss: 0.04241674765944481 test loss: 0.3006356656551361
+INFO - 10/18/25 05:10:41 - 2:41:50 - step 1100 | loss 0.0423 | step time 219.00ms
+INFO - 10/18/25 05:11:02 - 2:42:11 - step 1200 | loss 0.0424 | step time 218.26ms
+INFO - 10/18/25 05:11:24 - 2:42:33 - step 1300 | loss 0.0425 | step time 219.02ms
+INFO - 10/18/25 05:11:46 - 2:42:55 - step 1400 | loss 0.0421 | step time 218.35ms
+INFO - 10/18/25 05:12:08 - 2:43:17 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/18/25 05:12:08 - 2:43:17 - generating
+INFO - 10/18/25 05:18:58 - 0:00:00 - ============ Initialized logger ============
+INFO - 10/18/25 05:18:58 - 0:00:00 - batch_size: 32
+                                     command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111 --exp_id "1111"
+                                     cpu: False
+                                     debug: False
+                                     debug_slurm: False
+                                     dump_path: /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     exp_id: 1111
+                                     exp_name: dim16_run_2
+                                     final_database_size: 100
+                                     gen_batch_size: 1000
+                                     global_rank: 0
+                                     is_master: True
+                                     is_slurm_job: True
+                                     learning_rate: 0.0005
+                                     local_rank: 0
+                                     master_addr: gpu-6
+                                     master_port: -1
+                                     max_epochs: 25
+                                     max_output_length: 271
+                                     max_steps: 1500
+                                     multi_gpu: False
+                                     multi_node: False
+                                     n_embd: 128
+                                     n_embd2: 128
+                                     n_gpu_per_node: 1
+                                     n_head: 8
+                                     n_layer: 8
+                                     n_nodes: 1
+                                     n_tokens: 15
+                                     nb_local_searches: 800
+                                     nb_threads: 1
+                                     node_id: 0
+                                     num_initial_empty_objects: 800
+                                     num_workers: 8
+                                     sample_only: 40000
+                                     seed: -1
+                                     target_db_size: 100
+                                     temperature: 1.0
+                                     top_k: -1
+                                     type: transformer
+                                     weight_decay: 0.01
+                                     world_size: 1
+INFO - 10/18/25 05:18:58 - 0:00:00 - The experiment will be stored in /home/yuebi/Project/dim16_run/dim16_run_2/1111
+                                     
+INFO - 10/18/25 05:18:58 - 0:00:00 - Running command: python fc_loop.py --exp_name=dim16_run_2 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=25 --type=transformer --max-output-length=271 --sample-only=40000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
+
+WARNING - 10/18/25 05:18:58 - 0:00:00 - Signal handler installed.
+INFO - 10/18/25 05:18:58 - 0:00:00 - seed: 995051732
+INFO - 10/18/25 05:18:58 - 0:00:00 - initializing at generation: 20
+INFO - 10/18/25 05:18:58 - 0:00:00 - number of examples in the dataset: 100
+INFO - 10/18/25 05:18:58 - 0:00:00 - max word length: 110
+INFO - 10/18/25 05:18:58 - 0:00:00 - number of unique characters in the vocabulary: 15
+INFO - 10/18/25 05:18:58 - 0:00:00 - vocabulary:
+INFO - 10/18/25 05:18:58 - 0:00:00 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/18/25 05:18:58 - 0:00:00 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/18/25 05:18:58 - 0:00:00 - dataset determined that: vocab_size=16, block_size=272
+INFO - 10/18/25 05:18:58 - 0:00:00 - model #params: 1625344
+INFO - 10/18/25 05:18:58 - 0:00:00 - resuming from existing model
+INFO - 10/18/25 05:18:58 - 0:00:00 - ============ Start of generation 20 ============
+INFO - 10/18/25 05:18:58 - 0:00:00 - Memory allocated:  8.46MB, reserved: 18.00MB
+INFO - 10/18/25 05:18:58 - 0:00:00 - training
+INFO - 10/18/25 05:19:03 - 0:00:05 - step 0 | loss 0.0578 | step time 556.07ms
+INFO - 10/18/25 05:19:25 - 0:00:27 - step 100 | loss 0.0426 | step time 217.86ms
+INFO - 10/18/25 05:19:47 - 0:00:49 - step 200 | loss 0.0425 | step time 218.17ms
+INFO - 10/18/25 05:20:09 - 0:01:11 - step 300 | loss 0.0507 | step time 217.77ms
+INFO - 10/18/25 05:20:31 - 0:01:33 - step 400 | loss 0.0418 | step time 218.42ms
+INFO - 10/18/25 05:20:53 - 0:01:55 - step 500 | loss 0.0431 | step time 218.93ms
+INFO - 10/18/25 05:20:53 - 0:01:55 - step 500 train loss: 0.0423840694129467 test loss: 0.2598840296268463
+INFO - 10/18/25 05:20:53 - 0:01:55 - test loss 0.2598840296268463 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/18/25 05:21:15 - 0:02:17 - step 600 | loss 0.0422 | step time 217.80ms
+INFO - 10/18/25 05:21:36 - 0:02:38 - step 700 | loss 0.0425 | step time 218.94ms
+INFO - 10/18/25 05:21:58 - 0:03:00 - step 800 | loss 0.0417 | step time 217.80ms
+INFO - 10/18/25 05:22:20 - 0:03:22 - step 900 | loss 0.0494 | step time 218.16ms
+INFO - 10/18/25 05:22:42 - 0:03:44 - step 1000 | loss 0.0413 | step time 218.09ms
+INFO - 10/18/25 05:22:42 - 0:03:44 - step 1000 train loss: 0.042194463312625885 test loss: 0.3644275367259979
+INFO - 10/18/25 05:23:04 - 0:04:06 - step 1100 | loss 0.0420 | step time 217.89ms
+INFO - 10/18/25 05:23:26 - 0:04:28 - step 1200 | loss 0.0425 | step time 218.25ms
+INFO - 10/18/25 05:23:48 - 0:04:50 - step 1300 | loss 0.0425 | step time 217.88ms
+INFO - 10/18/25 05:24:09 - 0:05:11 - step 1400 | loss 0.0411 | step time 218.36ms
+INFO - 10/18/25 05:24:31 - 0:05:33 - Memory allocated:  43.97MB, reserved: 2272.00MB
+INFO - 10/18/25 05:24:31 - 0:05:33 - generating
+INFO - 10/18/25 07:53:01 - 2:34:02 - distribution of sample lengths: average: 335.558675 max: 352
+INFO - 10/18/25 07:53:01 - 2:34:02 - printed 40000 samples
+INFO - 10/18/25 07:53:01 - 2:34:02 - decoding
+INFO - 10/18/25 07:53:01 - 2:34:03 - Decoding complete. Check the output in /home/yuebi/Project/dim16_run/dim16_run_2/1111/transformer-output-decoded.txt
+INFO - 10/18/25 07:53:01 - 2:34:03 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/18/25 07:53:01 - 2:34:03 - ============ End of generation 20 ============
+INFO - 10/18/25 07:53:01 - 2:34:03 - launching search.jl
+INFO - 10/18/25 07:53:01 - 2:34:03 - JULIA_NUM_THREADS is set to 1
+INFO - 10/18/25 07:58:14 - 2:39:16 - distribution of scores(all rounds)
+INFO - 10/18/25 07:58:14 - 2:39:16 - Score:299008.0, Count:100
+                                     
+INFO - 10/18/25 07:58:14 - 2:39:16 - tokenizing
+INFO - 10/18/25 07:58:14 - 2:39:16 - Loading tokenizer from /home/yuebi/Project/dim16_run/dim16_run_2/1111/tokenizer_data/tokenizer.json...
+INFO - 10/18/25 07:58:14 - 2:39:16 - 0 / 100
+INFO - 10/18/25 07:58:14 - 2:39:16 - number of examples in the dataset: 100
+INFO - 10/18/25 07:58:14 - 2:39:16 - max word length: 110
+INFO - 10/18/25 07:58:14 - 2:39:16 - number of unique characters in the vocabulary: 15
+INFO - 10/18/25 07:58:14 - 2:39:16 - vocabulary:
+INFO - 10/18/25 07:58:14 - 2:39:16 - ['V0', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14']
+INFO - 10/18/25 07:58:14 - 2:39:16 - split up the dataset into 90 training examples and 10 test examples
+INFO - 10/18/25 07:58:14 - 2:39:16 - ============ Start of generation 21 ============
+INFO - 10/18/25 07:58:14 - 2:39:16 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/18/25 07:58:14 - 2:39:16 - training
+INFO - 10/18/25 07:58:14 - 2:39:16 - step 0 | loss 0.0980 | step time 225.39ms
+INFO - 10/18/25 07:58:36 - 2:39:38 - step 100 | loss 0.0426 | step time 218.12ms
+INFO - 10/18/25 07:58:58 - 2:40:00 - step 200 | loss 0.0427 | step time 218.11ms
+INFO - 10/18/25 07:59:19 - 2:40:21 - step 300 | loss 0.0424 | step time 218.45ms
+INFO - 10/18/25 07:59:41 - 2:40:43 - step 400 | loss 0.0428 | step time 218.18ms
+INFO - 10/18/25 08:00:03 - 2:41:05 - step 500 | loss 0.0511 | step time 218.14ms
+INFO - 10/18/25 08:00:03 - 2:41:05 - step 500 train loss: 0.04383115842938423 test loss: 0.25912728905677795
+INFO - 10/18/25 08:00:03 - 2:41:05 - test loss 0.25912728905677795 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/18/25 08:00:25 - 2:41:27 - step 600 | loss 0.0419 | step time 218.10ms
+INFO - 10/18/25 08:00:47 - 2:41:49 - step 700 | loss 0.0428 | step time 218.27ms
+INFO - 10/18/25 08:01:09 - 2:42:11 - step 800 | loss 0.0424 | step time 218.12ms
+INFO - 10/18/25 08:01:31 - 2:42:33 - step 900 | loss 0.0419 | step time 218.15ms
+INFO - 10/18/25 08:01:52 - 2:42:54 - step 1000 | loss 0.0427 | step time 218.74ms
+INFO - 10/18/25 08:01:53 - 2:42:55 - step 1000 train loss: 0.04234791919589043 test loss: 0.24499234557151794
+INFO - 10/18/25 08:01:53 - 2:42:55 - test loss 0.24499234557151794 is the best so far, saving model to /home/yuebi/Project/dim16_run/dim16_run_2/1111/model.pt
+INFO - 10/18/25 08:02:15 - 2:43:16 - step 1100 | loss 0.0427 | step time 218.13ms
+INFO - 10/18/25 08:02:36 - 2:43:38 - step 1200 | loss 0.0424 | step time 218.11ms
+INFO - 10/18/25 08:02:58 - 2:44:00 - step 1300 | loss 0.0415 | step time 218.60ms
+INFO - 10/18/25 08:03:20 - 2:44:22 - step 1400 | loss 0.0419 | step time 219.35ms
+INFO - 10/18/25 08:03:42 - 2:44:44 - Memory allocated:  43.97MB, reserved: 16126.00MB
+INFO - 10/18/25 08:03:42 - 2:44:44 - generating
