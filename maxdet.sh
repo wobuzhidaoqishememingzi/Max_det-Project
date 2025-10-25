@@ -1,6 +1,8 @@
 #!/bin/bash -l
 # maxdet.sh
 
+#SBATCH --job-name=maxdet16
+
 #SBATCH --mail-user=ybili@ucdavis.edu
 #SBATCH --mail-type=ALL
 
