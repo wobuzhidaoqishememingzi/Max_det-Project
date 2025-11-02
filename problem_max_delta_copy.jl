@@ -71,7 +71,7 @@ function empty_starting_point()::String
 
     since we add randomness in the local search, here we can start with a fix all-zero matrix.
     """
-    used_path = "upper_bound_used.flag"
+    used_path = "upper_bound_used.txt"
     if !isfile(used_path)
         # only use once
         # use the known upper bound matrix as a starting point
