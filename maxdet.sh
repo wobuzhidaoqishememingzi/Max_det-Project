@@ -1,7 +1,7 @@
 #!/bin/bash -l
 # maxdet.sh
 
-#SBATCH --job-name=maxdet16
+#SBATCH --job-name=maxdet15
 
 #SBATCH --mail-user=ybili@ucdavis.edu
 #SBATCH --mail-type=ALL
@@ -13,7 +13,7 @@
 #SBATCH --gpus=1g.10gb:1
 
 # Request a certain amount of time (hour per epoch)
-#SBATCH --time=03:20:00
+#SBATCH --time=03:00:00
 
 # Request cpus
 #SBATCH --cpus-per-gpu=2
@@ -29,4 +29,4 @@
 
 source ~/.bashrc
 conda activate pytorch
-python fc_loop.py --exp_name=dim16_run_7 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=22 --type=transformer --max-output-length=271 --sample-only=35000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
+python fc_loop.py --exp_name=dim15_run_4 --dump_path=/home/yuebi/Project/dim15_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=20 --type=transformer --max-output-length=239 --sample-only=50000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
