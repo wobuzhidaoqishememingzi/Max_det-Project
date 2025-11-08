@@ -71,7 +71,7 @@ function empty_starting_point()::String
 
     since we add randomness in the local search, here we can start with a fix all-zero matrix.
     """
-    used_path = joinpath(@__DIR__, "upper_bound_used.txt")
+    used_path = "/home/yuebi/Project/dim16_run/dim16_run_7/1111/upper_bound_used.txt"
     
     if !isfile(used_path)
         # only use once
