@@ -71,7 +71,7 @@ function empty_starting_point()::String
 
     since we add randomness in the local search, here we can start with a fix all-zero matrix.
     """
-    used_path = "/home/yuebi/Project/dim16_run/dim16_run_7/1111/upper_bound_used.txt"
+    used_path = "/home/yuebi/Project/dim16_run/dim16_run_8/1111/upper_bound_used.txt"
     upper_bound_matrix = [
         1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0;
         1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 0;
