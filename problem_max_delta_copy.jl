@@ -72,11 +72,7 @@ function empty_starting_point()::String
     since we add randomness in the local search, here we can start with a fix all-zero matrix.
     """
     used_path = "/home/yuebi/Project/dim16_run/dim16_run_7/1111/upper_bound_used.txt"
-    
-    if !isfile(used_path)
-        # only use once
-        # use the known upper bound matrix as a starting point
-        upper_bound_matrix = [
+    upper_bound_matrix = [
         1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0;
         1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 0;
         0 0 1 1 1 1 0 1 1 0 0 1 1 0 1 1;
@@ -93,17 +89,25 @@ function empty_starting_point()::String
         0 1 0 0 1 1 1 1 0 1 1 1 1 0 0 1;
         1 0 0 0 1 1 0 1 1 1 1 0 1 1 1 0;
         1 0 1 0 0 1 1 0 1 1 0 1 1 1 0 1
-    ]
-    # write into a file to mark that we have used the upper bound matrix
-        open(used_path, "w") do f
-            write(f, "used")
+        ]
+    
+    if !isfile(used_path)
+        # only use once
+        # use the known upper bound matrix as a starting point
+        try 
+        # write into a file to mark that we have used the upper bound matrix
+            open(used_path, "x") do f
+                write(f, "used")
+            end
+            println("Using upper bound matrix.")
+            return encode_matrix(upper_bound_matrix)
+        catch e
+            println("Upper bound matrix already used.")
         end
-        return encode_matrix(upper_bound_matrix)
-
-    else
-        mat = rand(0:1, N, N) # random 0/1 matrix
-        return encode_matrix(mat)
     end
+
+    mat = rand(0:1, N, N) # random 0/1 matrix
+    return encode_matrix(mat)
 end
 
 

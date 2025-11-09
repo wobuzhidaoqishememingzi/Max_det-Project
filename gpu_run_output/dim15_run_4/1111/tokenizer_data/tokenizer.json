@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [],
+  "normalizer": null,
+  "pre_tokenizer": {
+    "type": "Whitespace"
+  },
+  "post_processor": null,
+  "decoder": null,
+  "model": {
+    "type": "BPE",
+    "dropout": null,
+    "unk_token": null,
+    "continuing_subword_prefix": null,
+    "end_of_word_suffix": null,
+    "fuse_unk": false,
+    "byte_fallback": false,
+    "vocab": {
+      ",": 0,
+      "0": 1,
+      "1": 2,
+      "10": 3,
+      "11": 4,
+      "100": 5,
+      "110": 6,
+      "1000": 7,
+      "00": 8,
+      "1011": 9,
+      "1100": 10,
+      "1010": 11,
+      "11000": 12,
+      "10011": 13,
+      "011": 14
+    },
+    "merges": [
+      "1 0",
+      "1 1",
+      "10 0",
+      "1 10",
+      "100 0",
+      "0 0",
+      "10 11",
+      "1 100",
+      "10 10",
+      "1 1000",
+      "100 11",
+      "0 11"
+    ]
+  }
+}
