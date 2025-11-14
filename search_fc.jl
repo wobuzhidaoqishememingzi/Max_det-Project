@@ -148,7 +148,7 @@ function initial_lines()
         println("Using input file")
         open(input_file, "r") do file
             for line in eachline(file)
-                if length(line) == length(empty_starting_point())
+                if length(line) == length(empty_starting_point(write_path))
                     push!(lines, line)  # Add each line to the vector
                 end
             end
@@ -156,7 +156,7 @@ function initial_lines()
     else 
         println("No input file provided")
         for _ in 1:num_initial_empty_objects
-            push!(lines, empty_starting_point())
+            push!(lines, empty_starting_point(write_path))
         end
     end
     return lines

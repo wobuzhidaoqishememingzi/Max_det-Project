@@ -65,13 +65,19 @@ function encode_matrix(m::Matrix{Int})::String
     return join(rows, ",")
 end
 
-function empty_starting_point()::String
+function empty_starting_point(write_path::String)::String
     """
     empty_starting_point: return an empty graph as a string (define a inital starting point)
 
     since we add randomness in the local search, here we can start with a fix all-zero matrix.
     """
-    used_path = "/home/yuebi/Project/dim16_run/dim16_run_8/1111/upper_bound_used.txt"
+
+    # write_path = "/home/yuebi/Project/dim16_run/dim16_run_8/1111"
+    base = "upper_bound_used"
+    extension = "txt"
+    used_path = @sprintf("%s/%s.%s", write_path, base, extension)
+    # used_path = "/home/yuebi/Project/dim16_run/dim16_run_8/1111/upper_bound_used.txt"
+    # used_path = "C:/Users/123li/Downloads/Project/results/111/upper_bound_used.txt"
     upper_bound_matrix = [
         1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0;
         1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 0;
@@ -96,12 +102,13 @@ function empty_starting_point()::String
         # use the known upper bound matrix as a starting point
         try 
         # write into a file to mark that we have used the upper bound matrix
-            open(used_path, "x") do f
+            open(used_path, "w") do f
                 write(f, "used")
             end
             println("Using upper bound matrix.")
             return encode_matrix(upper_bound_matrix)
         catch e
+            println("Error writing used marker: ", e)
             println("Upper bound matrix already used.")
         end
     end
