@@ -29,4 +29,4 @@
 
 source ~/.bashrc
 conda activate pytorch
-python fc_loop.py --exp_name=dim16_run_8 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=800 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=20 --type=transformer --max-output-length=271 --sample-only=35000 --max-steps=1500 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
+python fc_loop.py --exp_name=dim16_run_9 --dump_path=/home/yuebi/Project/dim16_run --num_initial_empty_objects=100 --final_database_size=100 --target_db_size=100 --nb_local_searches=800 --max_epochs=20 --type=transformer --max-output-length=271 --sample-only=1000 --max-steps=1000 --n_tokens=15 --n-layer=8 --n-embd=128 --n-embd2=128 --exp_id=1111
