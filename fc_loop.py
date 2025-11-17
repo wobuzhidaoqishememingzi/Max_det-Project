@@ -24,7 +24,7 @@ import argparse
 
 import collections
 
-size = 18 # size of the matrix
+size = 19 # size of the matrix
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
