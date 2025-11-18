@@ -13,7 +13,7 @@
 #SBATCH --gpus=1g.20gb:1
 
 # Request a certain amount of time (hour per epoch)
-#SBATCH --time=04:00:00
+#SBATCH --time=03:00:00
 
 # Request cpus
 #SBATCH --cpus-per-gpu=2
@@ -21,7 +21,7 @@
 # Request RAM (below = 8gb x2 cpu =16gb for the job)
 #SBATCH --mem-per-cpu=8gb
 
-#SBATCH --array=1-12%1
+#SBATCH --array=1-15%1
 #SBATCH --dependency=singleton
 
 # This will set the SLURM_NTASKS environment variable to "1"
