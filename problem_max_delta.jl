@@ -1,4 +1,4 @@
-const N = 15 # Size of the matrix (N x N)
+const N = 20 # Size of the matrix (N x N)
 
 using LinearAlgebra
 using Combinatorics
