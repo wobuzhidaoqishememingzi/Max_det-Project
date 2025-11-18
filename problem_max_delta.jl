@@ -66,7 +66,7 @@ function encode_matrix(m::Matrix{Int})::String
 end
 
 
-function empty_starting_point()::String
+function empty_starting_point(write_path::String)::String
     """
     empty_starting_point: return an empty graph as a string (define a inital starting point)
 
