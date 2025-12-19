@@ -80,7 +80,7 @@ function write_plot_to_file(db)
     txt_filename = filename = @sprintf("%s/%s.%s", write_path, "distribution", "txt")
     open(txt_filename, "w") do f
         for (rew, count) in zip(rewards, reward_counts)
-            println(f, "Score: $rew, Count: $count")
+            println(f, "Score: $(Float32(rew)), Count: $count")
         end
     end
     println("Score distribution saved to $(txt_filename)")

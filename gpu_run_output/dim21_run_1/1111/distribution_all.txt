@@ -1,0 +1,6 @@
+Score:195312500.0, Count:38
+Score:147380200.0, Count:14
+Score:144265100.0, Count:13
+Score:141899740.0, Count:13
+Score:140035790.0, Count:15
+Score:138365740.0, Count:7

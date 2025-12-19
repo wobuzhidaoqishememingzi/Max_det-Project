@@ -1,0 +1,13 @@
+Score:15237476000.0, Count:20
+Score:9985317000.0, Count:1
+Score:8707129000.0, Count:18
+Score:8434500000.0, Count:1
+Score:8418403300.0, Count:5
+Score:8336632000.0, Count:18
+Score:8274301400.0, Count:1
+Score:8222010000.0, Count:5
+Score:8188119000.0, Count:1
+Score:8185419300.0, Count:3
+Score:8164946400.0, Count:8
+Score:8097031700.0, Count:18
+Score:8078673400.0, Count:1
